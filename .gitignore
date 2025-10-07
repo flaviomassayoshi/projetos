@@ -1,0 +1,24 @@
+# Ambientes virtuais
+**/venv/
+**/__pycache__/
+
+# Configurações locais do VS Code
+.vscode/
+
+# Arquivos temporários e de cache
+*.pyc
+*.pyo
+*.log
+.cache/
+.cache.json*
+config_states/
+outputs/
+interrogate/
+node_modules/
+.idea/
+
+# Modelos e arquivos grandes
+*.ckpt
+*.safetensors
+*.pth
+models/**/*

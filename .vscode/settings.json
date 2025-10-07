@@ -1,0 +1,4 @@
+{
+    // Ativa a integração de shell para todos os terminais integrados do VS Code
+    "terminal.integrated.shellIntegration.enabled": true
+}
