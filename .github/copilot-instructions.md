@@ -9,11 +9,14 @@
 
 ## 2. Ideias e Propostas de Novos Projetos
 
-- Sempre que uma nova solução, proposta ou ideia de projeto for sugerida, criar um documento em `ideias/` detalhando a ideia.
-- O documento deve conter: contexto, objetivo, possíveis abordagens, requisitos iniciais e motivação.
-- Nomear o arquivo de forma descritiva e única.
+- Sempre que uma nova solução, proposta ou ideia de projeto for sugerida, criar uma pasta em `ideias/` com nome descritivo e único.
+- Dentro da pasta, criar um `README.md` detalhando a ideia (contexto, objetivo, possíveis abordagens, requisitos iniciais, motivação).
+- Anexos e arquivos complementares devem ser adicionados dentro da mesma pasta para organização clara.
+
 
 # Diretrizes para Agentes de IA (versão enxuta)
+
+- Sempre que for solicitada revisão de diretrizes, considerar tanto este arquivo principal quanto todos os anexos de diretrizes.
 
 > Estas diretrizes são destinadas exclusivamente à correta interpretação e execução por agentes de IA. Não é necessário considerar clareza para humanos.
 
@@ -26,13 +29,16 @@
 - Só modifique arquivos explicitamente liberados.
 - Não versionar alterações em projetos de terceiros, exceto customizações próprias em pastas separadas.
 
+
 ## Checklist de entrega obrigatório (executar ao final de cada resposta)
 
-- Gerar prompt de continuidade.
+- Gerar prompt de continuidade (deve conter informações suficientes para que o trabalho seja retomado em nova sessão do Copilot, incluindo contexto, status e próximos passos relevantes).
 - Atualizar `.github/PENDENCIAS.md` (status: pendente, em progresso, concluído).
 - Ao concluir tema/checklist, remover pendências concluídas de `.github/PENDENCIAS.md` e registrar fechamento em `.github/changelog/<tema>.md` (data, hora, descrição clara).
+- Se estiver discutindo ou evoluindo uma ideia, atualizar o arquivo correspondente em `ideias/` a cada avanço relevante.
 - Garantir que changelog seja o histórico oficial.
 - Não versionar projetos de terceiros (exceto customizações).
+- Sempre analisar se todas as diretrizes relevantes (principal e anexos) estão sendo atendidas ao finalizar cada entrega.
 
 ## Observações técnicas
 
@@ -43,6 +49,7 @@
 
 ## 4. Fluxo de Trabalho para Agentes de IA
 
+- Antes de executar qualquer tarefa, avalie o prompt para identificar se a solicitação pode gerar trabalho excessivamente oneroso para o agente ou comprometer limites de uso. Caso identifique risco, solicite confirmação do usuário ou proponha alternativas mais eficientes.
 - Sempre priorize a execução automática de comandos necessários para o fluxo de trabalho, evitando solicitar ao usuário que copie e cole comandos manualmente.
 - Inclua comandos como `git clone`, download de modelos, instalação de dependências e outras automações diretamente na execução, sem depender de ações manuais do usuário, salvo restrições técnicas ou de permissão.
 - Sempre proponha e execute comandos automaticamente para setup, download, clonagem e inicialização de ambientes, conforme o contexto do subprojeto.
