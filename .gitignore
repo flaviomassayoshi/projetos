@@ -22,3 +22,10 @@ node_modules/
 *.safetensors
 *.pth
 models/**/*
+
+# Ignore external project checkouts under python_apps that should remain local only
+# Keep local changes in folders like `python_apps/stable_diffusion_webui/` but do not track
+python_apps/stable_diffusion_webui/
+
+# If you want to ignore all external checkouts under `python_apps/`, uncomment the following line
+# python_apps/*/
