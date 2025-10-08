@@ -6,11 +6,11 @@
 - Este documento é exclusivo para agentes de IA. Não é necessário considerar clareza para humanos.
 
 
-## 2. Novos Subprojetos e Tratamento de Ideias
+## 2. Novos Subprojetos e Tratamento de Propostas
 
-- Toda nova ideia, proposta ou solução deve ser registrada diretamente como um novo subprojeto, criando uma pasta dedicada no local apropriado (ex: `python_apps/`, `extensoes/`, etc.).
+- Toda nova proposta, solução ou iniciativa deve ser registrada diretamente como um novo subprojeto, criando uma pasta dedicada no local apropriado (ex: `python_apps/`, `extensoes/`, etc.).
 - Recomenda-se utilizar o arquivo `TEMPLATE_SUBPROJETO.md` como base para a estrutura inicial do subprojeto.
-- O subprojeto pode começar apenas com README, checklists e documentação mínima, evoluindo conforme a ideia amadurece.
+- O subprojeto pode começar apenas com README, checklists e documentação mínima, evoluindo conforme a necessidade.
 - Debates, atas, roteiros e histórico devem ser centralizados na estrutura do subprojeto desde o início, garantindo rastreabilidade completa.
 
 
@@ -41,7 +41,7 @@
 - Gerar prompt de continuidade (deve conter informações suficientes para que o trabalho seja retomado em nova sessão do Copilot, incluindo contexto, status e próximos passos relevantes).
 - Atualizar `.github/PENDENCIAS.md` (status: pendente, em progresso, concluído).
 - Ao concluir tema/checklist, remover pendências concluídas de `.github/PENDENCIAS.md` e registrar fechamento em `.github/changelog/<tema>.md` (data, hora, descrição clara).
-- Se estiver discutindo ou evoluindo uma ideia, atualizar o arquivo correspondente em `ideias/` a cada avanço relevante.
+
 - Garantir que changelog seja o histórico oficial.
 - Não versionar projetos de terceiros (exceto customizações).
 - Sempre analisar se todas as diretrizes relevantes (principal e anexos) estão sendo atendidas ao finalizar cada entrega.

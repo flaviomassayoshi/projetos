@@ -43,4 +43,4 @@ Permitir que múltiplos modelos de IA (incluindo Copilot) participem de rodadas 
 
 ---
 
-> Esta ideia está aberta para debate e evolução incremental. Use o template de rodadas de debate para propor pontos, ajustes e registrar decisões.
+> Este subprojeto está aberto para debate e evolução incremental. Use o template de rodadas de debate para propor pontos, ajustes e registrar decisões.

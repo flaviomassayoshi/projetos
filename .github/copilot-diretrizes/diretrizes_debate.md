@@ -5,9 +5,9 @@ Estas diretrizes são parte do arcabouço geral de governança do Copilot e deve
 ## 1. Estrutura das Rodadas de Debate
 
 
-O fluxo de debate é padronizado para todos os projetos/ideias:
-  1. **Elaboração de Pontos pelo Responsável:**
-     - O responsável pode, a qualquer momento, propor novos pontos, dúvidas ou sugestões para debate, criando um novo arquivo em uma subpasta `debates/` da ideia (ex: `debates/debate_<data>_<tema>.md`). Recomenda-se registrar data/hora e contexto.
+O fluxo de debate é padronizado para todos os subprojetos:
+   1. **Elaboração de Pontos pelo Responsável:**
+       - O responsável pode, a qualquer momento, propor novos pontos, dúvidas ou sugestões para debate, criando um novo arquivo em uma subpasta `debates/` do subprojeto (ex: `debates/debate_<data>_<tema>.md`). Recomenda-se registrar data/hora e contexto.
   2. **Ajustes/Propostas do Copilot:**
      - O Copilot propõe ajustes, alternativas ou pede esclarecimentos antes de abrir a rodada formal.
   3. **Abertura de Nova Rodada de Debate:**
@@ -23,7 +23,7 @@ O fluxo de debate é padronizado para todos os projetos/ideias:
 
 - O responsável pode iniciar novas rodadas a qualquer momento, bastando criar novos arquivos de debate. Não há limite de rodadas.
 - Permite múltiplos pontos em paralelo, com arquivos separados.
-- O README de cada ideia deve conter apenas o sumário executivo, proposta vigente consolidada e links para os arquivos de debate/atas.
+- O README de cada subprojeto deve conter apenas o sumário executivo, proposta vigente consolidada e links para os arquivos de debate/atas.
 
 ### Template para Nova Rodada de Debate
 

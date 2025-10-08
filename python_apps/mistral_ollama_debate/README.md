@@ -9,7 +9,7 @@ Permitir a participação automatizada do modelo Mistral 7B (via Ollama) em roda
 - Instalação e configuração do Ollama no Windows com suporte a CUDA
 - Execução do modelo Mistral 7B (instruído)
 - Script Python para enviar prompts e registrar respostas em arquivos de debate
-- Integração com o fluxo de debates (pasta debates/ em projetos de ideias)
+- Integração com o fluxo de debates (pasta debates/ em subprojetos)
 
 ## Próximos Passos
 
