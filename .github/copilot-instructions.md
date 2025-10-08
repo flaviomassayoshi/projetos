@@ -1,10 +1,8 @@
-
 # Copilot Instructions
 
 ## 1. Objetivo e Organização Geral
 
 - Este documento é exclusivo para agentes de IA. Não é necessário considerar clareza para humanos.
-
 
 ## 2. Novos Subprojetos e Tratamento de Propostas
 
@@ -29,9 +27,32 @@
 
 - Cada subprojeto deve ter ambiente virtual, dependências e automações isoladas.
 - `.github/PENDENCIAS.md`: deve apenas referenciar (com links ou caminhos) os checklists de subprojetos que ainda estão em andamento. Os detalhes das pendências e tarefas devem estar centralizados nos próprios checklists de cada subprojeto.
-- Ao concluir um tema/checklist, remova a referência correspondente de `.github/PENDENCIAS.md` e registre o fechamento em `.github/changelog/<tema>.md`.
-- O changelog é o histórico oficial: cada entrada deve conter data, hora, descrição clara e tema/subprojeto. Não dependa do log do Git.
+- Ao concluir um tema/checklist:
+	- Remova a referência correspondente de `.github/PENDENCIAS.md`.
+	- Registre o fechamento em `.github/changelog/<tema>.md` (ou changelog principal, se for pendência geral).
+	- O changelog deve conter: data/hora, responsável, descrição clara, status final (concluído/cancelado), e link para o checklist/ata final.
+	- Para subprojetos, o checklist deve ser arquivado (não apagado) e marcado como concluído, mantendo rastreabilidade.
+	- Para pendências gerais do projeto, se detalhadas em arquivos anexos, também registrar encerramento no changelog principal.
+	- Ao encerrar pendências, revise `.github/PENDENCIAS.md` e outros arquivos para garantir que não há referências órfãs.
+
+	- Template mínimo para changelog:
+		- Data/hora:
+		- Responsável:
+		- Descrição:
+		- Status final:
+		- Link para checklist/ata:
+
+	- Não dependa do log do Git para histórico de pendências.
 - Sempre use checklist para roteiros e procedimentos, mantendo o detalhamento nos subprojetos.
+
+ - Checklists, roteiros e documentação de tarefas específicas de subprojetos devem ser criados e mantidos exclusivamente na pasta do respectivo subprojeto.
+ - `.github/PENDENCIAS.md` deve referenciar apenas o caminho para esses arquivos dentro dos subprojetos.
+ - Não criar ou manter checklists de subprojetos em `.github/`, exceto para pendências gerais do repositório.
+ - Pendências do projeto (não ligadas a subprojetos) podem ser detalhadas em arquivos anexos em `.github/`, e `.github/PENDENCIAS.md` pode referenciá-los normalmente.
+
+ - Sempre que uma revisão, migração ou renomeação de arquivos/pastas for solicitada pelo usuário e resultar em substituição, os arquivos e pastas antigos que deixarem de ser utilizados devem ser removidos do workspace, salvo orientação explícita em contrário. Não manter cópias desnecessárias de arquivos/pastas obsoletos.
+	 - Exceção: se houver histórico relevante, registre no changelog antes da remoção.
+	 - Esta diretriz se aplica a qualquer operação de mover, migrar, renomear ou reorganizar estrutura de subprojetos, pastas e/ou arquivos.
 - Só modifique arquivos explicitamente liberados.
 - Não versionar alterações em projetos de terceiros, exceto customizações próprias em pastas separadas.
 
@@ -50,16 +71,19 @@
 
 - Sempre consulte anexos para detalhes técnicos específicos.
 - Para execução de scripts Python/venv no Windows, siga obrigatoriamente a diretriz de execution policy (`diretrizes_execucao_venv_windows.md`).
-
+- Ao ler arquivos:
+	- Prefira ler em bloco (chunk) apenas quando o objetivo for leitura ou análise de contexto.
+	- Quando o objetivo for edição, leia o arquivo inteiro para garantir integridade e evitar inconsistências.
 - Para rodadas de debate e encerramento, siga obrigatoriamente as diretrizes em `.github/copilot-diretrizes/diretrizes_debate.md`.
 
 ## 4. Fluxo de Trabalho para Agentes de IA
 
 - Antes de executar qualquer tarefa, avalie o prompt para identificar se a solicitação pode gerar trabalho excessivamente oneroso para o agente ou comprometer limites de uso. Caso identifique risco, solicite confirmação do usuário ou proponha alternativas mais eficientes.
+- Sempre explique claramente ao usuário o que está sendo feito antes de exibir mensagens como "Working" ou executar ações demoradas. Evite mensagens genéricas sem contexto; detalhe o objetivo ou etapa em andamento para que o usuário saiba exatamente o que está sendo processado.
 - Sempre priorize a execução automática de comandos necessários para o fluxo de trabalho, evitando solicitar ao usuário que copie e cole comandos manualmente.
+- Antes de executar qualquer comando, explique claramente em linguagem natural o que ele faz, para que o usuário compreenda o propósito da ação antes da execução. Só então peça permissão para rodar comandos, exceto em casos de automações rotineiras ou quando explicitamente liberado nas diretrizes.
 - Inclua comandos como `git clone`, download de modelos, instalação de dependências e outras automações diretamente na execução, sem depender de ações manuais do usuário, salvo restrições técnicas ou de permissão.
 - Sempre proponha e execute comandos automaticamente para setup, download, clonagem e inicialização de ambientes, conforme o contexto do subprojeto.
-- Antes de executar qualquer comando, explique claramente o que ele faz, para que o usuário possa acompanhar e analisar cada etapa.
 - Use Git para versionamento. Sempre que possível, utilize um repositório Git separado para cada subprojeto independente, ou mantenha o histórico bem organizado por subpasta.
 - Ao interagir com agentes de IA, sempre especifique o contexto do subprojeto em questão para evitar mistura de informações.
 - Siga as convenções e regras ao gerar código, documentação ou automações.
