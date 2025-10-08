@@ -67,6 +67,8 @@
 - [Convenções de Código e Documentação](./copilot-diretrizes/convenções_codigo.md) — Padrões de nomenclatura, docstrings e organização de código.
 - [Diretrizes para Projetos Clonados de Terceiros](./copilot-diretrizes/projetos_terceiros.md) — Customizações, versionamento e separação de repositórios.
 - [Execução de Scripts e Ativação de venv no Windows](./copilot-diretrizes/diretrizes_execucao_venv_windows.md) — Procedimentos para ativação de venv e execução de scripts Python no Windows.
-- [Exemplos e Casos Especiais](./copilot-diretrizes/exemplos_casos_especiais.md) — Procedimentos de atualização de pendências, setup, CI, workflows e casos não convencionais.
+- [Checklists Práticos e Templates](./copilot-diretrizes/checklists_praticos.md) — Exemplos práticos e templates de checklist para agentes de IA.
+- [Fluxos de Encerramento, Changelog e Prompt de Retomada](./copilot-diretrizes/fluxos_encerramento.md) — Fluxos de encerramento, exemplos de changelog e modelo de prompt de retomada.
+- [Instruções de Setup, CI e Automação](./copilot-diretrizes/instrucoes_setup_CI.md) — Setup de ambiente, integração contínua e automações recorrentes.
 - [Rodadas de Debate e Encerramento](./copilot-diretrizes/diretrizes_debate.md) — Fluxo de debates, atas e tabelas de decisão entre modelos de IA.
 ## Observação Geral sobre Referência de Arquivos
