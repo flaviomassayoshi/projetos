@@ -4,11 +4,13 @@
 
 ---
 
+
 ## Instruções de Uso
 - Utilize este template sempre que for propor ou registrar uma atualização no manifesto principal.
 - Preencha todos os campos e siga a estrutura sugerida.
 - Inclua trechos essenciais e exemplos, se necessário, para tornar o manifesto autossuficiente.
-- Registre data, responsável e links para discussões, atas ou changelogs relacionados.
+- Evite o uso de links para arquivos ou documentos: outros modelos de IA podem não conseguir acessar ou compreender o conteúdo referenciado. Sempre que possível, inclua o conteúdo relevante diretamente no corpo do manifesto, pois outros modelos de IA podem não ter acesso a anexos ou arquivos externos.
+- Registre data, responsável e, se necessário, referências para discussões, atas ou changelogs relacionados, sempre priorizando clareza e autossuficiência do registro.
 
 ---
 

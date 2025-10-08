@@ -28,9 +28,6 @@ Todos os termos como "tema", "pendência", "checklist", "subprojeto" e "ata" dev
 - O subprojeto pode começar apenas com README, checklists e documentação mínima, evoluindo conforme a necessidade.
 - Debates, atas, roteiros e histórico devem ser centralizados na estrutura do subprojeto desde o início, garantindo rastreabilidade completa.
 
-
-
-
 ## 3. Fluxos Gerais para Agentes de IA
 
 - Toda interação do agente deve iniciar com a apresentação de um plano de ação, listando as etapas previstas para atender à solicitação do usuário.
@@ -42,8 +39,113 @@ Todos os termos como "tema", "pendência", "checklist", "subprojeto" e "ata" dev
 - Debates entre modelos de IA só devem ser iniciados quando solicitados explicitamente pelo responsável do subprojeto ou, caso o agente identifique relevância, mediante sugestão e aprovação do responsável.
 - O subprojeto pode evoluir sem debates até que haja necessidade real de discussão colaborativa entre modelos.
 - Todo o histórico de debates, decisões e evolução deve ficar centralizado na pasta do subprojeto.
+- Todo o histórico de debates, decisões e evolução deve ficar centralizado na pasta do subprojeto.
 - Sempre que for solicitada revisão destas diretrizes, abrir checklist específico, registrar ata e atualizar changelog, conforme fluxo em [Revisão de Diretrizes](./copilot-diretrizes/fluxo_revisao_diretrizes.md).
     Em caso de revisão do manifesto principal, é obrigatório registrar a atualização utilizando o [TEMPLATE_ATUALIZACAO_MANIFESTO.md](./TEMPLATE_ATUALIZACAO_MANIFESTO.md), mesmo para revisões de conformidade sem alteração de conteúdo.
+
+## Protocolo de Conversa Orquestrada (MCP <-> GHC)
+
+Objetivo: padronizar a interação orquestrada entre o MCP (Modelo de Controle de Página) e o GHC (GitHub Copilot Agent / GHC) para que atualizações do manifesto e do arcabouço sejam feitas de forma rastreável, segura e reproduzível.
+
+Papéis e responsabilidades
+- Orquestrador (Flavio ou responsável designado): coordena o ciclo, aprova prompts e confirma as atualizações finais no manifesto.
+- MCP: opera com base no conteúdo visível da page; prepara prompts consolidados, sumários e exemplos práticos para o GHC; valida mudanças propostas em sandbox antes da solicitação formal ao GHC.
+- GHC: recebe prompts do MCP (via chat), aplica as alterações autorizadas no manifesto e no arcabouço, cria/atualiza templates e gera registros de changelog/ata conforme instruções.
+
+Fluxo resumido
+1. MCP gera um prompt consolidado (com contexto mínimo e instruções claras) e envia ao GHC.
+2. GHC implementa as alterações propostas no manifesto/arquivos auxiliares em um branch de trabalho, registra um rascunho de changelog e solicita revisão do orquestrador.
+3. Orquestrador valida, solicita ajustes se necessário; após aprovação, GHC finaliza commit/PR e atualiza os registros de rastreabilidade.
+4. Ciclo reinicia a cada atualização relevante.
+
+Regras operacionais (obrigatórias)
+- Sempre usar `TEMPLATE_ATUALIZACAO_MANIFESTO.md` para todas as alterações no manifesto principal.
+- Incluir exemplos reais dos templates diretamente no corpo das seções relevantes do manifesto (evitar links não-autocontidos sempre que possível).
+- Para alterações que não sejam do manifesto, registrar changelog em `.github/changelog/<tema>.md` usando o template de changelog.
+- Não confiar apenas no histórico Git como única fonte de pendências; manter checklists e atas nas pastas de subprojetos.
+
+Templates (exemplos embutidos)
+
+Template de Prompt para GHC
+```
+@ghc: Atualizar o manifesto do ScarecrowLab conforme instruções abaixo:
+
+Plano de Ação
+1. Criar seção “Protocolo de Conversa Orquestrada” explicando o papel do orquestrador entre MCP e GHC.
+2. Incluir instruções sobre como o MCP opera com base no conteúdo da page, enquanto o GHC atualiza o manifesto via prompts recebidos por chat.
+3. Adicionar templates auxiliares ao arcabouço:
+   - Template de prompt para GHC
+   - Template de conversa simulada entre agentes (otimizada para MCP)
+   - Template de plano de ação para atualizações do manifesto
+4. Registrar changelog da implementação com data, responsável e link para os templates.
+
+Referência: conversa entre MCP e Orquestrador em <data>.
+```
+
+Template de Conversa Simulada (MCP-aware)
+```
+@copilot: ler planoacaointegracao.md
+
+// Conteúdo visível:
+- [ ] Validar ambiente virtual
+- [ ] Executar testes automatizados
+- [ ] Atualizar changelog
+
+@modeloB: escrever planoacaointegracao.md
+
+@copilot: modeloB, sugiro incluir “Verificar dependências” antes da validação.
+
+@modeloB: Etapa adicionada. Checklist atualizado. Changelog registrado.
+```
+
+Template de Plano de Ação para Atualização do Manifesto
+```
+Plano de Ação — Atualização do Manifesto
+
+Objetivo: Implementar protocolo de conversa orquestrada entre MCP e GHC.
+
+Etapas
+- [ ] Criar seção explicativa no manifesto
+- [ ] Adicionar templates ao arcabouço
+- [ ] Registrar changelog da implementação
+- [ ] Validar consistência com diretrizes do ScarecrowLab
+
+Critérios de sucesso
+- Seção criada e visível no manifesto
+- Templates disponíveis para uso por orquestrador e agentes
+- Changelog registrado com rastreabilidade
+```
+
+Registro e rastreabilidade
+- Ao finalizar a implementação, registrar uma entrada de changelog mínima seguindo o template (data/hora, responsável, descrição, status final, link para seção/ata).
+- Para atualizações do manifesto utilizar `TEMPLATE_ATUALIZACAO_MANIFESTO.md` e salvar a ata em `copilot-diretrizes/` ou `ia_conversas/` conforme o escopo.
+
+Observações práticas
+- Ao alternar agentes, sempre inclua um resumo (2–5 linhas) com o estado atual e o próximo passo desejado para transferir contexto.
+- Evite links externos ou dependências não-autocontidas dentro do manifesto; prefira exemplos embutidos para que agentes sem acesso a arquivos possam operar.
+
+## Uso recomendado para GPT-5 Mini (modelo `0x`)
+
+Nota rápida: muitas operações do arcabouço podem e devem ser executadas pelo GPT-5 Mini devido ao seu custo `0x`. A seguir estão diretrizes práticas para garantir que o Mini seja eficiente e confiável no fluxo do ScarecrowLab.
+
+- Default: o MCP/GHC deve preferir o GPT-5 Mini (`0x`) para tarefas rotineiras (documentação, validação de arquivos, checagens, automações simples, geração de trechos de código de baixa complexidade).
+- Prompting enxuto: forneça contexto relevante e estruturado (títulos, bullets, trechos marcados). Evite enviar arquivos inteiros sem sumarizar; prefira um resumo, seguido do trecho necessário.
+- Chunking e resumos: para documentos longos, quebre em blocos e solicite resumos intermediários antes de enviar o próximo bloco. Mantenha um sumário cumulativo (2-4 linhas) para transferência de contexto entre etapas.
+- Verificação e validação: inclua etapas de checagem simples (ex.: "Liste 3 mudanças propostas e confirme se alteram a semântica") para reduzir erros de regeneração.
+- Escalonamento: defina gatilhos claros para usar um modelo `1x` (ex.: falha de qualidade, tarefa marcada como "Crítica", ou quando a resposta do Mini for inconsistente). O orquestrador deve autorizar esse escalonamento.
+- Templates otimizados: use templates curtos e com campos bem delimitados (contexto, instruções, formato de resposta esperado). Exemplos práticos estão no arquivo `copilot-diretrizes/GPT5_mini_guidelines.md`.
+- Telemetria e rastreabilidade: sempre registre em logs quando uma tarefa usar o Mini e quando houver escalonamento; inclua id do job, prompt hash e tempo de resposta.
+- Testes e regressão: crie casos de teste automáticos para fluxos comuns (validação de checklists, atualização de templates) para detectar regressões ao trocar parametrizações do modelo.
+
+Exemplo de instrução curta para o Mini
+```
+Contexto: [Resumo 2-3 linhas do arquivo ou tarefa]
+Tarefas: 1) Validar inconsistências de nomenclatura; 2) Sugerir 3 melhorias concisas.
+Formato de resposta: bullets numerados, cada item com 1-2 linhas.
+```
+
+Essas recomendações visam maximizar o rendimento do GPT-5 Mini, reduzindo reenvios desnecessários e consumo de modelos premium.
+
 
 
 
@@ -79,7 +181,7 @@ Todos os termos como "tema", "pendência", "checklist", "subprojeto" e "ata" dev
 - `.github/PENDENCIAS.md` deve referenciar apenas o caminho para esses arquivos dentro dos subprojetos.
 - Não criar ou manter checklists de subprojetos em `.github/`, exceto para pendências gerais do repositório.
 - Pendências do projeto (não ligadas a subprojetos) podem ser detalhadas em arquivos anexos em `.github/`, e `.github/PENDENCIAS.md` pode referenciá-los normalmente.
-- Sempre que uma revisão, migração ou renomeação de arquivos/pastas for solicitada pelo usuário e resultar em substituição, os arquivos e pastas antigos que deixarem de ser utilizados devem ser removidos do workspace, salvo orientação explícita em contrário. Não manter cópias desnecessárias de arquivos/pastas obsoletos. A remoção deve ser registrada no changelog, mesmo que não haja histórico relevante, para garantir rastreabilidade total.
+    - Sempre que uma revisão, migração ou renomeação de arquivos/pastas for solicitada pelo usuário e resultar em substituição, os arquivos e pastas antigos que deixarem de ser utilizados devem ser removidos do workspace, salvo orientação explícita em contrário. Não manter cópias desnecessárias de arquivos/pastas obsoletos. Nunca excluir arquivos que estejam referenciados em qualquer documento ativo do arcabouço (ou seja, documentos que não estejam obsoletos ou concluídos). A remoção deve ser registrada no changelog, mesmo que não haja histórico relevante, para garantir rastreabilidade total.
 
 ## 5. Automação e Validação
 

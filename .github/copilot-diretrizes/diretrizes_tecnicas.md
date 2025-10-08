@@ -16,3 +16,33 @@
 - Cada subprojeto deve isolar regras de negócio do domínio central, mantendo interfaces/adapters para bancos, APIs, UI, automações, etc.
 - Novas integrações devem ser implementadas como adapters, sem acoplamento direto ao núcleo.
 - Essa abordagem facilita testes, manutenção, automação e evolução incremental, além de favorecer rastreabilidade e governança.
+
+## Escolha de Modelos de IA
+
+Objetivo: orientar a seleção de modelos de IA (ex.: GPT-5 Mini, GPT-5, GPT-4o, etc.) com base em custo, desempenho e adequação às tarefas do arcabouço.
+
+Critérios práticos
+- Custo e multiplicadores: valores como `0x`, `1x`, `3.33x` representam multiplicadores de custo/consumo de requisições. Priorize modelos `0x` para uso contínuo e reserve `1x` ou superiores para tarefas críticas.
+- Complexidade da tarefa:
+	- Simples / Rotina: documentação, validação de arquivos, automações básicas — use `0x` (ex.: GPT-5 Mini).
+	- Moderada: geração de trechos de código, análises de impacto, revisões estruturais — `0x` normalmente suficiente; avaliar caso a caso.
+	- Crítica / Complexa: geração de código avançado, análise profunda de arquitetura, decisões automatizadas com impacto — considere `1x` (GPT-5 completo) ou modelo premium.
+- Latência e disponibilidade: prefira modelos menores quando a latência é sensível e reserve modelos maiores para jobs batch ou interações assíncronas.
+- Privacidade e dados sensíveis: verifique políticas do provedor antes de enviar dados sensíveis; prefira processamento local/adapters isolados quando necessário.
+
+Estratégia operacional
+- Default: configurar agentes para usar um modelo `0x` por padrão (economia, disponibilidade).
+- Escalonamento: permitir override manual/por política para `1x`/`3.33x` em tarefas explicitadas no plano de ação.
+- Gatekeeping: exigir aprovação do orquestrador (Flavio ou responsável) para alterar modelo padrão em pipelines automatizados que consomem créditos.
+
+Monitoramento e rastreabilidade
+- Registrar no changelog ou no checklist de entrega quando uma tarefa usar modelos `1x`+; incluir data, responsável, justificativa e custo estimado.
+- Instrumentar telemetria (logs de uso por job/agente) para auditar consumo e detectar uso indevido de modelos premium.
+
+Transferência de contexto entre agentes
+- Ao alternar agentes (ex.: MCP -> GHC), incluir resumo (2–5 linhas) com estado atual e próximo passo para preservar contexto. Não assumir que o novo agente herdará automaticamente o histórico.
+
+Exemplo de regra simples
+- "Usar GPT-5 Mini (`0x`) para todas as tarefas de rotina. Para tarefas classificadas como 'Crítica', solicitar aprovação do orquestrador e registrar uso do GPT-5 (`1x`) no changelog." 
+
+Observação: adaptar as recomendações acima conforme as políticas do provedor e o plano de assinatura (Pro, Enterprise, etc.).
