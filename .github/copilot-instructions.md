@@ -5,14 +5,21 @@
 
 - Este documento é exclusivo para agentes de IA. Não é necessário considerar clareza para humanos.
 
-## 2. Ideias e Propostas de Novos Projetos
 
-- Sempre que uma nova solução, proposta ou ideia de projeto for sugerida, criar uma pasta em `ideias/` com nome descritivo e único.
-- Dentro da pasta, criar um `README.md` detalhando a ideia (contexto, objetivo, possíveis abordagens, requisitos iniciais, motivação).
-- Anexos e arquivos complementares devem ser adicionados dentro da mesma pasta para organização clara.
+## 2. Novos Subprojetos e Tratamento de Ideias
+
+- Toda nova ideia, proposta ou solução deve ser registrada diretamente como um novo subprojeto, criando uma pasta dedicada no local apropriado (ex: `python_apps/`, `extensoes/`, etc.).
+- Recomenda-se utilizar o arquivo `TEMPLATE_SUBPROJETO.md` como base para a estrutura inicial do subprojeto.
+- O subprojeto pode começar apenas com README, checklists e documentação mínima, evoluindo conforme a ideia amadurece.
+- Debates, atas, roteiros e histórico devem ser centralizados na estrutura do subprojeto desde o início, garantindo rastreabilidade completa.
+
 
 
 # Diretrizes para Agentes de IA (versão enxuta)
+
+- Debates entre modelos de IA só devem ser iniciados quando solicitados explicitamente pelo responsável do subprojeto ou, caso o agente identifique relevância, mediante sugestão e aprovação do responsável.
+- O subprojeto pode evoluir sem debates até que haja necessidade real de discussão colaborativa entre modelos.
+- Todo o histórico de debates, decisões e evolução deve ficar centralizado na pasta do subprojeto, mantendo rastreabilidade e organização.
 
 - Sempre que for solicitada revisão de diretrizes, considerar tanto este arquivo principal quanto todos os anexos de diretrizes.
 
@@ -21,9 +28,10 @@
 ## Estrutura e Controle
 
 - Cada subprojeto deve ter ambiente virtual, dependências e automações isoladas.
-- `.github/PENDENCIAS.md`: lista apenas pendências abertas. Ao concluir um tema/checklist, remova as pendências concluídas e registre o fechamento em `.github/changelog/<tema>.md`.
+- `.github/PENDENCIAS.md`: deve apenas referenciar (com links ou caminhos) os checklists de subprojetos que ainda estão em andamento. Os detalhes das pendências e tarefas devem estar centralizados nos próprios checklists de cada subprojeto.
+- Ao concluir um tema/checklist, remova a referência correspondente de `.github/PENDENCIAS.md` e registre o fechamento em `.github/changelog/<tema>.md`.
 - O changelog é o histórico oficial: cada entrada deve conter data, hora, descrição clara e tema/subprojeto. Não dependa do log do Git.
-- Sempre use checklist para roteiros e procedimentos.
+- Sempre use checklist para roteiros e procedimentos, mantendo o detalhamento nos subprojetos.
 - Só modifique arquivos explicitamente liberados.
 - Não versionar alterações em projetos de terceiros, exceto customizações próprias em pastas separadas.
 
@@ -57,6 +65,12 @@
 - Siga as convenções e regras ao gerar código, documentação ou automações.
 
 ---
+
+
+## Glossário
+
+- **MCP**: Microsoft Copilot (Copilot integrado ao VS Code, Windows, Microsoft 365, etc.)
+- **GHB**: GitHub Copilot (Copilot tradicional, integrado ao GitHub e editores de código)
 
 ## Índice de Diretrizes Detalhadas
 
