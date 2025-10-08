@@ -53,54 +53,20 @@
  - Sempre que uma revisão, migração ou renomeação de arquivos/pastas for solicitada pelo usuário e resultar em substituição, os arquivos e pastas antigos que deixarem de ser utilizados devem ser removidos do workspace, salvo orientação explícita em contrário. Não manter cópias desnecessárias de arquivos/pastas obsoletos.
 	 - Exceção: se houver histórico relevante, registre no changelog antes da remoção.
 	 - Esta diretriz se aplica a qualquer operação de mover, migrar, renomear ou reorganizar estrutura de subprojetos, pastas e/ou arquivos.
-- Só modifique arquivos explicitamente liberados.
-- Não versionar alterações em projetos de terceiros, exceto customizações próprias em pastas separadas.
 
+# Copilot Instructions
 
-## Checklist de entrega obrigatório (executar ao final de cada resposta)
-
-- Gerar prompt de continuidade (deve conter informações suficientes para que o trabalho seja retomado em nova sessão do Copilot, incluindo contexto, status e próximos passos relevantes).
-- Atualizar `.github/PENDENCIAS.md` (status: pendente, em progresso, concluído).
-- Ao concluir tema/checklist, remover pendências concluídas de `.github/PENDENCIAS.md` e registrar fechamento em `.github/changelog/<tema>.md` (data, hora, descrição clara).
-
-- Garantir que changelog seja o histórico oficial.
-- Não versionar projetos de terceiros (exceto customizações).
-- Sempre analisar se todas as diretrizes relevantes (principal e anexos) estão sendo atendidas ao finalizar cada entrega.
-
-## Observações técnicas
-
-- Sempre consulte anexos para detalhes técnicos específicos.
-- Para execução de scripts Python/venv no Windows, siga obrigatoriamente a diretriz de execution policy (`diretrizes_execucao_venv_windows.md`).
-- Ao ler arquivos:
-	- Prefira ler em bloco (chunk) apenas quando o objetivo for leitura ou análise de contexto.
-	- Quando o objetivo for edição, leia o arquivo inteiro para garantir integridade e evitar inconsistências.
-- Para rodadas de debate e encerramento, siga obrigatoriamente as diretrizes em `.github/copilot-diretrizes/diretrizes_debate.md`.
-
-## 4. Fluxo de Trabalho para Agentes de IA
-
-- Antes de executar qualquer tarefa, avalie o prompt para identificar se a solicitação pode gerar trabalho excessivamente oneroso para o agente ou comprometer limites de uso. Caso identifique risco, solicite confirmação do usuário ou proponha alternativas mais eficientes.
-- Sempre explique claramente ao usuário o que está sendo feito antes de exibir mensagens como "Working" ou executar ações demoradas. Evite mensagens genéricas sem contexto; detalhe o objetivo ou etapa em andamento para que o usuário saiba exatamente o que está sendo processado.
-- Sempre priorize a execução automática de comandos necessários para o fluxo de trabalho, evitando solicitar ao usuário que copie e cole comandos manualmente.
-- Antes de executar qualquer comando, explique claramente em linguagem natural o que ele faz, para que o usuário compreenda o propósito da ação antes da execução. Só então peça permissão para rodar comandos, exceto em casos de automações rotineiras ou quando explicitamente liberado nas diretrizes.
-- Inclua comandos como `git clone`, download de modelos, instalação de dependências e outras automações diretamente na execução, sem depender de ações manuais do usuário, salvo restrições técnicas ou de permissão.
-- Sempre proponha e execute comandos automaticamente para setup, download, clonagem e inicialização de ambientes, conforme o contexto do subprojeto.
-- Use Git para versionamento. Sempre que possível, utilize um repositório Git separado para cada subprojeto independente, ou mantenha o histórico bem organizado por subpasta.
-- Ao interagir com agentes de IA, sempre especifique o contexto do subprojeto em questão para evitar mistura de informações.
-- Siga as convenções e regras ao gerar código, documentação ou automações.
-
----
-
-
-## Glossário
-
-- **MCP**: Microsoft Copilot (Copilot integrado ao VS Code, Windows, Microsoft 365, etc.)
-- **GHB**: GitHub Copilot (Copilot tradicional, integrado ao GitHub e editores de código)
+**Objetivo:** Este documento serve como sumário executivo e índice central das diretrizes para agentes de IA. Todo o detalhamento, exemplos, templates e fluxos estão modularizados nos anexos abaixo.
 
 ## Índice de Diretrizes Detalhadas
 
-- [Diretrizes Técnicas do Ambiente Local](./copilot-diretrizes/diretrizes_tecnicas.md) <!-- Consulte para requisitos de hardware, ambiente Python, CUDA, troubleshooting de GPU, etc. -->
-- [Convenções de Código e Documentação](./copilot-diretrizes/convenções_codigo.md) <!-- Use ao gerar código, revisar padrões de nomenclatura, docstrings e organização de código. -->
-- [Diretrizes para Projetos Clonados de Terceiros](./copilot-diretrizes/projetos_terceiros.md) <!-- Consulte ao lidar com projetos de terceiros, customizações, versionamento e separação de repositórios. -->
-- [Execução de Scripts e Ativação de venv no Windows](./copilot-diretrizes/diretrizes_execucao_venv_windows.md) <!-- Use sempre que for ativar venv ou rodar scripts Python no Windows. -->
-- [Exemplos e Casos Especiais](./copilot-diretrizes/exemplos_casos_especiais.md) <!-- Consulte para procedimentos de atualização de pendências, setup, CI, workflows e casos não convencionais. -->
-- [Rodadas de Debate e Encerramento](./copilot-diretrizes/diretrizes_debate.md) <!-- Siga obrigatoriamente ao conduzir debates entre modelos de IA, consolidar decisões e registrar atas. -->
+- [Template de Checklist](./TEMPLATE_CHECKLIST.md) — Modelo padrão para criação de novos checklists por agentes de IA.
+- [Template de Changelog](./copilot-diretrizes/template_changelog.md) — Estrutura mínima para registro de encerramento de temas/checklists.
+- [Glossário de Termos](./copilot-diretrizes/glossario.md) — Definições e siglas relevantes para agentes de IA.
+- [Diretrizes Técnicas do Ambiente Local](./copilot-diretrizes/diretrizes_tecnicas.md) — Requisitos de hardware, ambiente Python, troubleshooting de GPU, etc.
+- [Convenções de Código e Documentação](./copilot-diretrizes/convenções_codigo.md) — Padrões de nomenclatura, docstrings e organização de código.
+- [Diretrizes para Projetos Clonados de Terceiros](./copilot-diretrizes/projetos_terceiros.md) — Customizações, versionamento e separação de repositórios.
+- [Execução de Scripts e Ativação de venv no Windows](./copilot-diretrizes/diretrizes_execucao_venv_windows.md) — Procedimentos para ativação de venv e execução de scripts Python no Windows.
+- [Exemplos e Casos Especiais](./copilot-diretrizes/exemplos_casos_especiais.md) — Procedimentos de atualização de pendências, setup, CI, workflows e casos não convencionais.
+- [Rodadas de Debate e Encerramento](./copilot-diretrizes/diretrizes_debate.md) — Fluxo de debates, atas e tabelas de decisão entre modelos de IA.
+## Observação Geral sobre Referência de Arquivos

@@ -3,6 +3,7 @@
 
 - [PENDENTE] Avaliação prévia de custo/complexidade do prompt antes de execuções onerosas (inclusão de diretriz em copilot-instructions.md)
 
+
 # Checklists e Pendências de Subprojetos
 
 - [Checklist: Execução de scripts e ativação de venv no Windows](checklist_execucao_venv_windows.md)
