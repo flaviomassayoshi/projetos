@@ -1,6 +1,10 @@
 
 # TEMPLATE DE CHECKLIST (Uso exclusivo para agentes de IA)
 
+> Consulte também:
+> - `TEMPLATE_PLANO_ACAO.md` para planos de ação.
+> - `TEMPLATE_CHECKLIST_ENTREGA.md` para checklists de entrega vinculados a planos de ação.
+
 **Objetivo:** (Descreva o objetivo do checklist, contexto e motivação.)
 
 

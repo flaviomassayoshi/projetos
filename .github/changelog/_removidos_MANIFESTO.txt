@@ -1,0 +1,1 @@
+Arquivos de changelog de atualização do manifesto removidos em 2025-10-08 por decisão de diretrizes. Não é mais necessário changelog para atualização do manifesto do projeto.

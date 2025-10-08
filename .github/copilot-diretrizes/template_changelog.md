@@ -10,4 +10,4 @@
 - Status final:
 - Link para checklist/ata:
 
-> Utilize este template para cada fechamento de tema/checklist. Adapte conforme a necessidade do subprojeto.
+> Utilize este template para cada fechamento de tema/checklist, exceto atualização do manifesto do projeto. Adapte conforme a necessidade do subprojeto.

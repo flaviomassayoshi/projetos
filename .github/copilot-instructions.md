@@ -17,14 +17,18 @@
 
 ## 3. Fluxos Gerais para Agentes de IA
 
+
 - Toda interação do agente deve iniciar com a apresentação de um plano de ação, listando as etapas previstas para atender à solicitação do usuário.
-- Ao final da interação, o agente deve converter o plano de ação em um checklist de entrega da interação (ou seja, um checklist temporário, específico daquela resposta), marcando cada item como concluído para garantir que todas as etapas foram executadas antes da resposta final.
+- Ao final da interação, o agente deve converter o plano de ação em um checklist de entrega da interação, marcando cada item como concluído para garantir que todas as etapas foram executadas antes da resposta final.
+- O agente deve avaliar, a cada interação, se o plano de ação e o checklist de entrega devem ser temporários (apenas para controle da resposta) ou persistentes (arquivados para rastreabilidade futura). Essa decisão deve ser justificada brevemente na resposta ou no próprio artefato.
+- Critérios para persistência incluem: interações de maior complexidade, múltiplos agentes envolvidos, decisões estratégicas, fluxos longos, dependências externas, impacto relevante ou quando solicitado pelo responsável do subprojeto.
+- Em caso de persistência, o plano de ação e/ou checklist de entrega devem ser salvos em arquivo próprio, referenciados no changelog e/ou índice de pendências, conforme o fluxo do projeto.
 - O checklist de entrega da interação não deve ser confundido com os checklists formais de subprojetos ou processos, que são documentos rastreáveis e arquivados no repositório.
-- O checklist de entrega da interação pode ser temporário (apenas para controle da resposta) ou, se houver necessidade de rastreabilidade formal, pode ser arquivado conforme o fluxo do projeto.
 - Debates entre modelos de IA só devem ser iniciados quando solicitados explicitamente pelo responsável do subprojeto ou, caso o agente identifique relevância, mediante sugestão e aprovação do responsável.
 - O subprojeto pode evoluir sem debates até que haja necessidade real de discussão colaborativa entre modelos.
 - Todo o histórico de debates, decisões e evolução deve ficar centralizado na pasta do subprojeto.
 - Sempre que for solicitada revisão destas diretrizes, abrir checklist específico, registrar ata e atualizar changelog, conforme fluxo em [Revisão de Diretrizes](./copilot-diretrizes/fluxo_revisao_diretrizes.md).
+    Em caso de revisão do manifesto principal, é obrigatório registrar a atualização utilizando o [TEMPLATE_ATUALIZACAO_MANIFESTO.md](./TEMPLATE_ATUALIZACAO_MANIFESTO.md), mesmo para revisões de conformidade sem alteração de conteúdo.
 
 ## 4. Estrutura, Controle e Rastreamento
 
@@ -32,10 +36,10 @@
 - `.github/PENDENCIAS.md` deve apenas referenciar (com links ou caminhos) os checklists de subprojetos em andamento. Os detalhes das pendências e tarefas devem estar centralizados nos próprios checklists de cada subprojeto.
 - Sempre que um tema/checklist for concluído:
     - Remover a referência correspondente de `.github/PENDENCIAS.md`.
-    - Registrar o fechamento em `.github/changelog/<tema>.md` (ou changelog principal, se for pendência geral).
-    - O changelog deve conter: data/hora, responsável, descrição clara, status final (concluído/cancelado), e link para o checklist/ata final.
+    - Registrar o fechamento em `.github/changelog/<tema>.md` (ou changelog principal, se for pendência geral), exceto para atualizações do manifesto do projeto, que não exigem changelog.
+    - O changelog deve conter: data/hora, responsável, descrição clara, status final (concluído/cancelado), e link para o checklist/ata final, exceto para atualizações do manifesto.
     - Para subprojetos, o checklist deve ser arquivado (não apagado) e marcado como concluído, mantendo rastreabilidade.
-    - Para pendências gerais do projeto, se detalhadas em arquivos anexos, também registrar encerramento no changelog principal.
+    - Para pendências gerais do projeto, se detalhadas em arquivos anexos, também registrar encerramento no changelog principal. Atualizações do manifesto não devem gerar changelog.
     - Ao encerrar pendências, revise `.github/PENDENCIAS.md` e outros arquivos para garantir que não há referências órfãs. Sempre atualizar/remover links imediatamente após o encerramento.
 - Não dependa do log do Git para histórico de pendências.
 - Sempre use checklist para roteiros e procedimentos, mantendo o detalhamento nos subprojetos.
@@ -64,9 +68,11 @@ Exemplo:
 - Ao retomar, continue a partir da etapa de complementação/criação dos anexos, validando se todos os fluxos e exemplos estão acessíveis."
 
 
+
 ## 7. Edição e Manutenção das Diretrizes
 
 - Sempre que possível, ajuste, complemente ou reorganize parágrafos e tópicos já existentes antes de criar novos tópicos ou anexos. Isso evita fragmentação, redundância e mantém a documentação coesa.
+- Ao criar ou executar um checklist, marque cada etapa concluída diretamente no arquivo do checklist, garantindo rastreabilidade e evitando pendências "fantasmas".
 - Todo anexo de diretrizes deve conter, no início, um parágrafo de instruções de uso (IA only), explicando objetivo, contexto e orientações para agentes de IA.
 - Ao editar anexos, mantenha sempre esse parágrafo atualizado e visível.
 - O glossário deve ser mantido em ordem alfabética, sem redundâncias, unificando definições semelhantes.
@@ -75,9 +81,13 @@ Exemplo:
 - Sempre registre mudanças relevantes em changelog e ata, conforme o fluxo de revisão.
 
 
+
 Consulte sempre os anexos antes de responder ou executar tarefas. Os detalhes, exemplos, templates e fluxos completos estão modularizados nos arquivos abaixo:
 
-- [Comandos e Protocolo de Conversa entre IAs](./ia_conversas/README.md) — Padrão de comandos e fluxo para comunicação manual entre modelos de IA.
+-- [Comandos e Protocolo de Conversa entre IAs](./ia_conversas/README.md) — Padrão de comandos e fluxo para comunicação manual entre modelos de IA.
+
+-- [Template de Plano de Ação](./TEMPLATE_PLANO_ACAO.md) — Modelo para registro de planos de ação, etapas e critérios de sucesso.
+-- [Template de Checklist de Entrega](./TEMPLATE_CHECKLIST_ENTREGA.md) — Modelo para controle e rastreabilidade de entregas vinculadas a planos de ação.
 
 - [Template de Checklist](./TEMPLATE_CHECKLIST.md) — Modelo padrão para criação de novos checklists por agentes de IA.
 - [Template de Changelog](./copilot-diretrizes/template_changelog.md) — Estrutura mínima para registro de encerramento de temas/checklists.
