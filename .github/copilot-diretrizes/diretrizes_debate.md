@@ -13,17 +13,21 @@ O fluxo de debate é padronizado para todos os subprojetos:
   3. **Abertura de Nova Rodada de Debate:**
      - Cada rodada deve ser numerada/sequenciada no arquivo de debate, com separadores visuais e tema/ponto debatido.
   4. **Análise e Sugestões de Modelo Participante Externo:**
-     - O modelo externo avalia criticamente os pontos propostos e sugere melhorias, correções ou acréscimos.
+     - O modelo externo deve exercer análise crítica sobre os pontos propostos, evitando concordância automática e apresentando argumentos fundamentados, sugestões de melhoria, correções ou acréscimos.
+     - É obrigatório que cada modelo envolvido no debate manifeste posicionamento próprio, mesmo que parcialmente divergente, salvo quando houver consenso justificado após análise crítica.
+     - Os modelos devem manter flexibilidade para buscar soluções que atendam aos objetivos do projeto, mas sem abrir mão da análise crítica independente.
   5. **Réplica do GitHub Copilot:**
-     - O Copilot responde ponto a ponto, podendo concordar, discordar ou propor alternativas.
+     - O Copilot responde ponto a ponto, devendo também exercer análise crítica, evitando concordância automática e apresentando justificativas claras para cada posição (concordância, discordância ou alternativas).
+     - A concordância total só é permitida quando houver consenso justificado após análise crítica explícita.
   6. **Tréplica do Modelo Participante Externo:**
-     - O modelo externo responde à réplica, reforçando ou ajustando argumentos.
+     - O modelo externo responde à réplica, reforçando, ajustando ou contrapondo argumentos, sempre com análise crítica e fundamentação.
   7. **Tabela de Decisões para Aprovação Final:**
      - Pontos debatidos são organizados em tabela, com justificativa, opção recomendada e campo para alternativa. A tabela deve ser obrigatória ao final de cada rodada, mesmo que parcial.
 
-- O responsável pode iniciar novas rodadas a qualquer momento, bastando criar novos arquivos de debate. Não há limite de rodadas.
-- Permite múltiplos pontos em paralelo, com arquivos separados.
-- O README de cada subprojeto deve conter apenas o sumário executivo, proposta vigente consolidada e links para os arquivos de debate/atas.
+   - O responsável pode iniciar novas rodadas a qualquer momento, bastando criar novos arquivos de debate. Não há limite de rodadas.
+   - Permite múltiplos pontos em paralelo, com arquivos separados.
+   - O README de cada subprojeto deve conter apenas o sumário executivo, proposta vigente consolidada e links para os arquivos de debate/atas.
+   - É vedada a concordância automática entre modelos; todos os participantes devem demonstrar análise crítica e justificar suas posições, promovendo debates construtivos e flexíveis para atingir os objetivos do projeto.
 
 ### Template para Nova Rodada de Debate
 

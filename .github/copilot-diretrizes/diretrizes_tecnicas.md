@@ -9,3 +9,10 @@
 - Só usar `--use-cpu all` se não houver GPU
 - Se erro "Torch not compiled with CUDA enabled", revisar instalação
 - Para troubleshooting: `nvidia-smi` para checar driver/GPU
+
+## Arquitetura e Modularidade
+
+- Recomenda-se fortemente o uso de arquitetura hexagonal (Ports and Adapters) ou, no mínimo, modularidade e separação clara entre núcleo de domínio e integrações externas.
+- Cada subprojeto deve isolar regras de negócio do domínio central, mantendo interfaces/adapters para bancos, APIs, UI, automações, etc.
+- Novas integrações devem ser implementadas como adapters, sem acoplamento direto ao núcleo.
+- Essa abordagem facilita testes, manutenção, automação e evolução incremental, além de favorecer rastreabilidade e governança.
