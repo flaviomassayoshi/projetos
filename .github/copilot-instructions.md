@@ -1,6 +1,4 @@
 
-
-
 # Copilot Instructions
 
 ## 1. Objetivo e Organização Geral
@@ -45,7 +43,7 @@
 - Sempre consulte anexos para detalhes técnicos específicos.
 - Para execução de scripts Python/venv no Windows, siga obrigatoriamente a diretriz de execution policy (`diretrizes_execucao_venv_windows.md`).
 
-
+- Para rodadas de debate e encerramento, siga obrigatoriamente as diretrizes em `.github/copilot-diretrizes/diretrizes_debate.md`.
 
 ## 4. Fluxo de Trabalho para Agentes de IA
 
@@ -57,15 +55,14 @@
 - Use Git para versionamento. Sempre que possível, utilize um repositório Git separado para cada subprojeto independente, ou mantenha o histórico bem organizado por subpasta.
 - Ao interagir com agentes de IA, sempre especifique o contexto do subprojeto em questão para evitar mistura de informações.
 - Siga as convenções e regras ao gerar código, documentação ou automações.
-- Sempre que uma ação exigir confirmação do usuário, considere uma reação positiva (👍/curtida) ou resposta afirmativa ("sim", "ok", etc.) como autorização explícita para prosseguir imediatamente, sem pedir nova confirmação.
-- Quando novos arquivos de configuração ou workflows forem adicionados (ex: `.editorconfig`, CI), documente o propósito e uso neste arquivo.
 
 ---
 
 ## Índice de Diretrizes Detalhadas
 
-- [Diretrizes Técnicas do Ambiente Local](./diretrizes_tecnicas.md)
-- [Convenções de Código e Documentação](./convenções_codigo.md)
-- [Diretrizes para Projetos Clonados de Terceiros](./projetos_terceiros.md)
-- [Execução de Scripts e Ativação de venv no Windows](./diretrizes_execucao_venv_windows.md) <!-- Consulte esta diretriz sempre que for iniciar processos que dependam de venv ativa no Windows -->
-- [Exemplos e Casos Especiais](./exemplos_casos_especiais.md)
+- [Diretrizes Técnicas do Ambiente Local](./copilot-diretrizes/diretrizes_tecnicas.md) <!-- Consulte para requisitos de hardware, ambiente Python, CUDA, troubleshooting de GPU, etc. -->
+- [Convenções de Código e Documentação](./copilot-diretrizes/convenções_codigo.md) <!-- Use ao gerar código, revisar padrões de nomenclatura, docstrings e organização de código. -->
+- [Diretrizes para Projetos Clonados de Terceiros](./copilot-diretrizes/projetos_terceiros.md) <!-- Consulte ao lidar com projetos de terceiros, customizações, versionamento e separação de repositórios. -->
+- [Execução de Scripts e Ativação de venv no Windows](./copilot-diretrizes/diretrizes_execucao_venv_windows.md) <!-- Use sempre que for ativar venv ou rodar scripts Python no Windows. -->
+- [Exemplos e Casos Especiais](./copilot-diretrizes/exemplos_casos_especiais.md) <!-- Consulte para procedimentos de atualização de pendências, setup, CI, workflows e casos não convencionais. -->
+- [Rodadas de Debate e Encerramento](./copilot-diretrizes/diretrizes_debate.md) <!-- Siga obrigatoriamente ao conduzir debates entre modelos de IA, consolidar decisões e registrar atas. -->
