@@ -1,51 +1,45 @@
 
+
+
 # Copilot Instructions
 
 ## 1. Objetivo e Organização Geral
 
-- A pasta `d:\projetos` é o repositório central para todos os seus projetos pessoais.
-- Cada projeto ou aplicação deve ser organizado em subpastas separadas (ex: `python_apps/meu_app`, `extensoes/minha_extensao`).
-- Para cada subprojeto, mantenha arquivos de configuração, dependências e histórico separados sempre que possível.
-- Pendências e próximos passos gerais estão em `.github/PENDENCIAS.md`. **Só consulte este arquivo se ele for citado em instruções ou tarefas.**
-- Apenas arquivos explicitamente listados abaixo podem ser modificados automaticamente pelo agente sem aprovação manual no VS Code:
-  - `.github/PENDENCIAS.md`
-  
+- Este documento é exclusivo para agentes de IA. Não é necessário considerar clareza para humanos.
 
-## 2. Estrutura dos Subprojetos e Ambientes
+## 2. Ideias e Propostas de Novos Projetos
 
-- Cada subprojeto deve ter seu próprio ambiente virtual, arquivos de dependência e automações separadas.
-- Não compartilhe ambientes entre subprojetos para evitar conflitos.
-- Mantenha arquivos de configuração, dependências e automações separados para cada subprojeto.
+- Sempre que uma nova solução, proposta ou ideia de projeto for sugerida, criar um documento em `ideias/` detalhando a ideia.
+- O documento deve conter: contexto, objetivo, possíveis abordagens, requisitos iniciais e motivação.
+- Nomear o arquivo de forma descritiva e única.
 
-## 3. Automação, Controle de Pendências e Changelog
+# Diretrizes para Agentes de IA (versão enxuta)
 
-- Todas as diretrizes gerais e obrigatórias estão centralizadas neste arquivo. Consulte sempre este documento para regras sobre:
-  - Prompt de continuidade (sempre ao final de cada resposta, com contexto rastreável do checklist/fluxo em andamento)
-  - Execução do checklist de entrega obrigatório (após cada prompt de continuidade, garantindo automação, registro e rastreabilidade)
-  - Registro automático de pendências
-  - Uso de checklist para roteiros e procedimentos
-  - Confirmação de ações por reações positivas
-  - Restrições de versionamento para projetos de terceiros
+> Estas diretrizes são destinadas exclusivamente à correta interpretação e execução por agentes de IA. Não é necessário considerar clareza para humanos.
 
-- Os anexos detalham aspectos técnicos, exemplos e casos especiais. Não repita regras gerais nos anexos; apenas aprofunde ou exemplifique.
+## Estrutura e Controle
 
-- O agente deve sempre, ao final de cada resposta, gerar o prompt de continuidade e, em seguida, executar o checklist de entrega obrigatório, que é diferente do checklist de pendências do arquivo `.github/PENDENCIAS.md`.
+- Cada subprojeto deve ter ambiente virtual, dependências e automações isoladas.
+- `.github/PENDENCIAS.md`: lista apenas pendências abertas. Ao concluir um tema/checklist, remova as pendências concluídas e registre o fechamento em `.github/changelog/<tema>.md`.
+- O changelog é o histórico oficial: cada entrada deve conter data, hora, descrição clara e tema/subprojeto. Não dependa do log do Git.
+- Sempre use checklist para roteiros e procedimentos.
+- Só modifique arquivos explicitamente liberados.
+- Não versionar alterações em projetos de terceiros, exceto customizações próprias em pastas separadas.
 
-- Checklist de entrega obrigatório:
-  - Verificar se o prompt de continuidade foi gerado e apresentado corretamente.
-  - Atualizar o arquivo de pendências (`.github/PENDENCIAS.md`) com todas as novas atividades e tópicos relevantes, atualizando o status de cada item (pendente, em progresso, concluído).
-  - Garantir que nenhuma alteração em projetos de terceiros (ex: stable diffusion) seja incluída no versionamento principal, exceto customizações próprias em pastas separadas.
-  - Registrar automaticamente no changelog/histórico do projeto (em `.github/changelog/`, com data e hora) decisões importantes, aprendizados ou evoluções relevantes, sem aguardar confirmação manual do usuário. O registro deve ser feito em arquivos temáticos (ex: `stable_diffusion.md`, `infraestrutura.md`) conforme instruções detalhadas em `.github/changelog/README.md`, incluindo data, hora, descrição clara e organização por tema ou subprojeto.
+## Checklist de entrega obrigatório (executar ao final de cada resposta)
 
-  Se outros arquivos forem liberados para modificação automática, adicione-os a esta lista.
-- Sempre que uma nova atividade, tópico ou ajuste for solicitado pelo usuário, registre automaticamente a pendência em `.github/PENDENCIAS.md` para controle e histórico.
-- Isso garante que nenhum item importante será esquecido, mesmo que o usuário não acompanhe manualmente.
-- Sempre que um roteiro ou procedimento for registrado em `.github/PENDENCIAS.md` ou outro arquivo de controle, utilize o formato de checklist para garantir rastreabilidade, acompanhamento e conclusão clara de cada etapa.
-- Checklist de entrega obrigatório:
-  - Verificar se o prompt de continuidade foi gerado e apresentado corretamente.
-  - Atualizar o arquivo de pendências (`.github/PENDENCIAS.md`) com todas as novas atividades e tópicos relevantes, atualizando o status de cada item (pendente, em progresso, concluído).
-  - Garantir que nenhuma alteração em projetos de terceiros (ex: stable diffusion) seja incluída no versionamento principal, exceto customizações próprias em pastas separadas.
-  - Registrar automaticamente no changelog/histórico do projeto (em `.github/changelog/`, com data e hora) decisões importantes, aprendizados ou evoluções relevantes, sem aguardar confirmação manual do usuário. O registro deve ser feito em arquivos temáticos (ex: `stable_diffusion.md`, `infraestrutura.md`) conforme instruções detalhadas em `.github/changelog/README.md`, incluindo data, hora, descrição clara e organização por tema ou subprojeto.
+- Gerar prompt de continuidade.
+- Atualizar `.github/PENDENCIAS.md` (status: pendente, em progresso, concluído).
+- Ao concluir tema/checklist, remover pendências concluídas de `.github/PENDENCIAS.md` e registrar fechamento em `.github/changelog/<tema>.md` (data, hora, descrição clara).
+- Garantir que changelog seja o histórico oficial.
+- Não versionar projetos de terceiros (exceto customizações).
+
+## Observações técnicas
+
+- Sempre consulte anexos para detalhes técnicos específicos.
+- Para execução de scripts Python/venv no Windows, siga obrigatoriamente a diretriz de execution policy (`diretrizes_execucao_venv_windows.md`).
+
+
 
 ## 4. Fluxo de Trabalho para Agentes de IA
 

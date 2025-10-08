@@ -11,12 +11,7 @@
 - [ ] Adicionar arquivos de configuração automáticos (.editorconfig, linters, etc.)
 - [ ] Documentar o README.md do projeto
 
-## Stable Diffusion WebUI
-- [ ] Garantir instalação do PyTorch com suporte CUDA 12.1 para RTX 4070
-- [ ] Ajustar/remover flags de CPU nos scripts de inicialização
-- [ ] Validar funcionamento do xFormers com CUDA
-- [ ] Testar geração de imagens utilizando GPU
-- [ ] Documentar setup e troubleshooting específico para GPU
+
 
 ### Checklist para Configuração Avançada (LoL Skins)
 - [ ] Instalar dependências: torch, torchvision, xformers
