@@ -7,6 +7,9 @@
 - Cada projeto ou aplicação deve ser organizado em subpastas separadas (ex: `python_apps/meu_app`, `extensoes/minha_extensao`).
 - Para cada subprojeto, mantenha arquivos de configuração, dependências e histórico separados sempre que possível.
 - Pendências e próximos passos gerais estão em `.github/PENDENCIAS.md`. **Só consulte este arquivo se ele for citado em instruções ou tarefas.**
+- Apenas arquivos explicitamente listados abaixo podem ser modificados automaticamente pelo agente sem aprovação manual no VS Code:
+  - `.github/PENDENCIAS.md`
+  
 
 ## 2. Estrutura dos Subprojetos e Ambientes
 
@@ -16,16 +19,30 @@
 
 ## 3. Automação, Controle de Pendências e Changelog
 
-- O agente deve sempre gerar um prompt de continuidade de sessão ao final de cada resposta, antes de permitir nova mensagem do usuário, mesmo sem interrupção da sessão.
-- Apenas arquivos explicitamente listados abaixo podem ser modificados automaticamente pelo agente sem aprovação manual no VS Code:
-  - `.github/PENDENCIAS.md`
-  
+- Todas as diretrizes gerais e obrigatórias estão centralizadas neste arquivo. Consulte sempre este documento para regras sobre:
+  - Prompt de continuidade (sempre ao final de cada resposta, com contexto rastreável do checklist/fluxo em andamento)
+  - Execução do checklist de entrega obrigatório (após cada prompt de continuidade, garantindo automação, registro e rastreabilidade)
+  - Registro automático de pendências
+  - Uso de checklist para roteiros e procedimentos
+  - Confirmação de ações por reações positivas
+  - Restrições de versionamento para projetos de terceiros
+
+- Os anexos detalham aspectos técnicos, exemplos e casos especiais. Não repita regras gerais nos anexos; apenas aprofunde ou exemplifique.
+
+- O agente deve sempre, ao final de cada resposta, gerar o prompt de continuidade e, em seguida, executar o checklist de entrega obrigatório, que é diferente do checklist de pendências do arquivo `.github/PENDENCIAS.md`.
+
+- Checklist de entrega obrigatório:
+  - Verificar se o prompt de continuidade foi gerado e apresentado corretamente.
+  - Atualizar o arquivo de pendências (`.github/PENDENCIAS.md`) com todas as novas atividades e tópicos relevantes, atualizando o status de cada item (pendente, em progresso, concluído).
+  - Garantir que nenhuma alteração em projetos de terceiros (ex: stable diffusion) seja incluída no versionamento principal, exceto customizações próprias em pastas separadas.
+  - Registrar automaticamente no changelog/histórico do projeto (em `.github/changelog/`, com data e hora) decisões importantes, aprendizados ou evoluções relevantes, sem aguardar confirmação manual do usuário. O registro deve ser feito em arquivos temáticos (ex: `stable_diffusion.md`, `infraestrutura.md`) conforme instruções detalhadas em `.github/changelog/README.md`, incluindo data, hora, descrição clara e organização por tema ou subprojeto.
+
   Se outros arquivos forem liberados para modificação automática, adicione-os a esta lista.
 - Sempre que uma nova atividade, tópico ou ajuste for solicitado pelo usuário, registre automaticamente a pendência em `.github/PENDENCIAS.md` para controle e histórico.
 - Isso garante que nenhum item importante será esquecido, mesmo que o usuário não acompanhe manualmente.
 - Sempre que um roteiro ou procedimento for registrado em `.github/PENDENCIAS.md` ou outro arquivo de controle, utilize o formato de checklist para garantir rastreabilidade, acompanhamento e conclusão clara de cada etapa.
 - Checklist de entrega obrigatório:
-  - Verificar se o prompt de retomada foi gerado e apresentado corretamente.
+  - Verificar se o prompt de continuidade foi gerado e apresentado corretamente.
   - Atualizar o arquivo de pendências (`.github/PENDENCIAS.md`) com todas as novas atividades e tópicos relevantes, atualizando o status de cada item (pendente, em progresso, concluído).
   - Garantir que nenhuma alteração em projetos de terceiros (ex: stable diffusion) seja incluída no versionamento principal, exceto customizações próprias em pastas separadas.
   - Registrar automaticamente no changelog/histórico do projeto (em `.github/changelog/`, com data e hora) decisões importantes, aprendizados ou evoluções relevantes, sem aguardar confirmação manual do usuário. O registro deve ser feito em arquivos temáticos (ex: `stable_diffusion.md`, `infraestrutura.md`) conforme instruções detalhadas em `.github/changelog/README.md`, incluindo data, hora, descrição clara e organização por tema ou subprojeto.
@@ -49,4 +66,5 @@
 - [Diretrizes Técnicas do Ambiente Local](./diretrizes_tecnicas.md)
 - [Convenções de Código e Documentação](./convenções_codigo.md)
 - [Diretrizes para Projetos Clonados de Terceiros](./projetos_terceiros.md)
+- [Execução de Scripts e Ativação de venv no Windows](./diretrizes_execucao_venv_windows.md) <!-- Consulte esta diretriz sempre que for iniciar processos que dependam de venv ativa no Windows -->
 - [Exemplos e Casos Especiais](./exemplos_casos_especiais.md)
