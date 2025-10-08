@@ -21,30 +21,43 @@
 
 ---
 
+
 ## Estrutura Recomendada do Manifesto
 
-### 1. Visão Geral
+### 1. Objetivo do Manifesto
+(Explique o objetivo principal do manifesto e o público-alvo, garantindo clareza para agentes de IA e humanos.)
+
+### 2. Visão Geral
 (Descreva o propósito do ScarecrowLab, contexto e identidade do laboratório)
 
-### 2. Princípios Centrais
+### 3. Princípios Centrais
 (Listar e explicar os princípios que regem o laboratório: modularização, rastreabilidade, automação, integração entre IAs, etc.)
 
-### 3. Como Funciona
+### 4. Fluxograma Operacional
+(Inclua um fluxograma ou diagrama (ASCII/Markdown) ilustrando o ciclo de uma pendência, do plano de ação ao encerramento.)
+
+### 5. Como Funciona
 (Explique o fluxo de trabalho, organização dos subprojetos, uso de checklists, changelogs, debates, comandos e templates)
 
-### 4. Comandos e Protocolos Entre IAs
+### 6. Comandos e Protocolos Entre IAs
 (Detalhe os comandos padrão, exemplos de uso e boas práticas para comunicação entre agentes)
 
-### 5. Templates Essenciais
-(Inclua ou atualize os principais templates: checklist, changelog, conversa IA, exemplos práticos)
+### 7. Templates Essenciais
+(Inclua ou atualize os principais templates: checklist, changelog, conversa IA, exemplos práticos, template de ata.)
 
-### 6. Glossário Essencial
+### 8. Diretrizes para Versionamento de Arquivos Markdown
+(Inclua orientações para nomeação, versionamento e histórico de arquivos colaborativos.)
+
+### 9. Exemplo de Conversa entre IAs
+(Inclua um exemplo prático de interação entre modelos, demonstrando o protocolo de comunicação.)
+
+### 10. Glossário Essencial
 (Atualize ou acrescente definições relevantes para o contexto do laboratório)
 
-### 7. Como Agentes de IA Atuam no ScarecrowLab
+### 11. Como Agentes de IA Atuam no ScarecrowLab
 (Explique o comportamento esperado dos agentes, fluxo de execução, registro de ações e rastreabilidade)
 
-### 8. Resumo
+### 12. Resumo
 (Consolide a identidade, propósito e diferenciais do ScarecrowLab)
 
 ---

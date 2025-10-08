@@ -1,11 +1,26 @@
 
+
 # Copilot Instructions
 
 ## 1. Objetivo e Organização Geral
 
-- Este documento é exclusivo para agentes de IA. Não é necessário considerar clareza para humanos.
-- Serve como sumário executivo e índice central das diretrizes. Detalhes, exemplos e fluxos completos estão sempre em anexos, que devem ser consultados antes de responder ou executar tarefas.
-- Todos os termos como "tema", "pendência", "checklist", "subprojeto" e "ata" devem seguir as definições do [Glossário](./copilot-diretrizes/glossario.md) para evitar ambiguidades.
+Este documento é exclusivo para agentes de IA. Não é necessário considerar clareza para humanos.
+Serve como sumário executivo e índice central das diretrizes. Detalhes, exemplos e fluxos completos estão sempre em anexos, que devem ser consultados antes de responder ou executar tarefas.
+Todos os termos como "tema", "pendência", "checklist", "subprojeto" e "ata" devem seguir as definições do [Glossário](./copilot-diretrizes/glossario.md) para evitar ambiguidades.
+
+---
+
+## Checklist Resumido — Boas Práticas de Comunicação para Agentes de IA
+
+> Siga este checklist em toda interação para garantir transparência e boa experiência ao usuário:
+
+- [ ] Sinalizar o início de cada etapa relevante (ex: "Iniciando análise dos templates.").
+- [ ] Comunicar o andamento/status intermediário em execuções longas ou dependentes (ex: "Processamento em andamento, atualizarei assim que houver progresso.").
+- [ ] Sinalizar explicitamente o encerramento de cada etapa ou fluxo (ex: "Etapa concluída, prossiga para a próxima ação.").
+- [ ] Evitar períodos longos de silêncio: sempre informe o usuário sobre o que está sendo feito ou aguardado.
+- [ ] Utilizar prompts de continuidade sempre que houver espera, processamento ou dependência externa (ex: "Aguardando resposta da ferramenta Y, isso pode levar alguns minutos.").
+
+> Consulte este checklist antes de finalizar qualquer interação.
 
 ## 2. Novos Subprojetos e Propostas
 
@@ -15,8 +30,8 @@
 
 
 
-## 3. Fluxos Gerais para Agentes de IA
 
+## 3. Fluxos Gerais para Agentes de IA
 
 - Toda interação do agente deve iniciar com a apresentação de um plano de ação, listando as etapas previstas para atender à solicitação do usuário.
 - Ao final da interação, o agente deve converter o plano de ação em um checklist de entrega da interação, marcando cada item como concluído para garantir que todas as etapas foram executadas antes da resposta final.
@@ -29,6 +44,23 @@
 - Todo o histórico de debates, decisões e evolução deve ficar centralizado na pasta do subprojeto.
 - Sempre que for solicitada revisão destas diretrizes, abrir checklist específico, registrar ata e atualizar changelog, conforme fluxo em [Revisão de Diretrizes](./copilot-diretrizes/fluxo_revisao_diretrizes.md).
     Em caso de revisão do manifesto principal, é obrigatório registrar a atualização utilizando o [TEMPLATE_ATUALIZACAO_MANIFESTO.md](./TEMPLATE_ATUALIZACAO_MANIFESTO.md), mesmo para revisões de conformidade sem alteração de conteúdo.
+
+
+
+### Comunicação de Progresso e Status Intermediário (IA only)
+
+- Sempre que iniciar uma etapa potencialmente demorada ou dependente de ferramentas externas, envie uma mensagem no chat explicando o que está sendo feito e o motivo.
+- Durante execuções longas, envie mensagens de status intermediário, como "Processamento em andamento, atualizarei assim que houver progresso".
+- Ao finalizar cada etapa relevante, comunique o status e os próximos passos ao usuário.
+- Ao encerrar uma tarefa, etapa ou fluxo, sempre sinalize explicitamente a conclusão, informando que a execução foi finalizada e liberando o usuário para a próxima ação.
+- Nunca encerre a interação sem comunicar o status final ao usuário.
+- Evite períodos longos de silêncio: mesmo em tarefas automáticas, sinalize o andamento ou aguarde com mensagens como "Aguardando resposta da ferramenta Y, isso pode levar alguns minutos".
+- Exemplos práticos:
+    - "Iniciando etapa de análise dos templates."
+    - "Executando busca em arquivos, isso pode demorar um pouco."
+    - "Etapa de verificação concluída, prosseguindo para atualização das diretrizes."
+    - "Processamento em andamento, assim que houver novidades informarei no chat."
+    - "Fluxo concluído. Caso queira revisar, iniciar nova tarefa ou registrar prompt de retomada, estou à disposição."
 
 ## 4. Estrutura, Controle e Rastreamento
 

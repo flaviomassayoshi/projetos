@@ -1,10 +1,54 @@
 
+
 # Manifesto de Diretrizes — ScarecrowLab
 
 > Para propor revisões ou atualizações deste manifesto, utilize o template: `TEMPLATE_ATUALIZACAO_MANIFESTO.md`.
 
+---
 
-## Visão Geral
+## Objetivo do Manifesto
+
+Este manifesto tem como objetivo principal permitir e facilitar a colaboração do aplicativo Copilot no ecossistema do ScarecrowLab. Ele define os protocolos, templates e práticas que garantem que agentes de IA — especialmente o Copilot (GHB e MCP) — possam atuar de forma integrada, disciplinada e rastreável dentro dos fluxos operacionais do laboratório.
+
+Toda atualização deste manifesto será feita diretamente nesta página, com o intuito de aprimorar continuamente o entendimento e a eficiência da colaboração entre agentes.
+
+---
+
+## Fluxograma Operacional (Ciclo de uma Pendência)
+
+```markdown
+┌──────────────┐
+│ Plano de Ação│
+└──────┬───────┘
+	│
+	▼
+┌──────────────┐
+│ Checklist    │
+└──────┬───────┘
+	│
+	▼
+┌──────────────┐
+│ Execução     │
+└──────┬───────┘
+	│
+	▼
+┌──────────────┐
+│ Checklist de │
+│ Entrega      │
+└──────┬───────┘
+	│
+	▼
+┌──────────────┐
+│ Changelog    │
+└──────┬───────┘
+	│
+	▼
+┌──────────────┐
+│ Encerramento │
+└──────────────┘
+```
+
+---
 
 O ScarecrowLab é um laboratório de integração, automação e governança de agentes de IA, orientado por modularização, rastreabilidade e transparência. Toda a estrutura, comandos e templates são pensados para que novas IAs entendam rapidamente o contexto, as regras e possam colaborar de forma auditável e evolutiva.
 
@@ -49,7 +93,44 @@ Exemplo:
 ---
 
 
+
 ## Templates Essenciais
+### Template de Ata
+
+```markdown
+- Data:
+- Participantes:
+- Tema:
+- Pontos discutidos:
+- Decisões tomadas:
+- Pendências abertas:
+```
+
+---
+
+## Diretrizes para Versionamento de Arquivos Markdown
+
+- Nomeie arquivos com o tema, data (YYYY-MM-DD) e tipo (ex: `ATA_debate_2025-10-08.md`).
+- Use nomes sem espaços e com letras minúsculas, separando palavras por underline.
+- Para revisões, utilize sufixos incrementais ou datas.
+- Mantenha histórico de versões relevantes, evitando sobrescrever atas e changelogs.
+
+---
+
+## Exemplo de Conversa entre IAs
+
+```markdown
+@copilot: ler conversa_modeloA_modeloB.md
+@modeloB: escrever conversa_modeloA_modeloB.md
+
+// Conversa simulada:
+
+@copilot: modeloB, por favor, revise o checklist do subprojeto X.
+@modeloB: Checklist revisado. Sugiro adicionar uma etapa para validação de ambiente.
+@copilot: Sugestão aceita. Checklist atualizado.
+```
+
+---
 
 ### Template de Plano de Ação
 Consulte: `TEMPLATE_PLANO_ACAO.md` — Modelo para registro de planos de ação, etapas e critérios de sucesso.
@@ -109,6 +190,7 @@ Consulte: `TEMPLATE_CHECKLIST_ENTREGA.md` — Modelo para controle e rastreabili
 ---
 
 
+
 ## Como Agentes de IA Atuam no ScarecrowLab
 
 - Sempre iniciam com um plano de ação e checklist de entrega.
@@ -116,6 +198,7 @@ Consulte: `TEMPLATE_CHECKLIST_ENTREGA.md` — Modelo para controle e rastreabili
 - Atualizam changelogs e removem pendências encerradas do índice central.
 - Seguem rigorosamente os templates e fluxos definidos.
 - Toda comunicação, decisão e automação é registrada para garantir rastreabilidade e transparência.
+- O MCP (Microsoft Copilot) e o GHB (GitHub Copilot) devem seguir as mesmas diretrizes, garantindo interoperabilidade e rastreabilidade entre plataformas.
 
 ---
 
