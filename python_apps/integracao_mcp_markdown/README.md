@@ -16,5 +16,10 @@ Permitir integração indireta entre Microsoft Copilot (MCP), outros agentes e s
 - Seguir diretrizes e templates do repositório.
 - Manter documentação, checklists e atas centralizados na pasta do subprojeto.
 
+## Acesso ao Repositório
+
+Para informações sobre como configurar acesso de modelos de IA ao repositório via clone local, API ou outras formas, consulte:  
+📖 **[ACESSO_REPOSITORIO_MODELOS_IA.md](../../ACESSO_REPOSITORIO_MODELOS_IA.md)**
+
 ---
 > Subprojeto aberto para evolução incremental. Use templates e checklists para propor pontos e registrar decisões.

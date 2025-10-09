@@ -43,4 +43,11 @@ Permitir que múltiplos modelos de IA (incluindo Copilot) participem de rodadas 
 
 ---
 
+## Acesso ao Repositório
+
+Para configurar acesso de diferentes modelos de IA a este repositório, consulte o guia completo:  
+📖 **[ACESSO_REPOSITORIO_MODELOS_IA.md](../../ACESSO_REPOSITORIO_MODELOS_IA.md)**
+
+---
+
 > Este subprojeto está aberto para debate e evolução incremental. Use o template de rodadas de debate para propor pontos, ajustes e registrar decisões.

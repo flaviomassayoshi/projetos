@@ -37,3 +37,15 @@ A validação das alterações deve ocorrer dentro da própria IDE, sem depender
 ## Limitações/Restrições
 
 Integração via CI/CD (ex: GitHub Actions) está vetada e não será considerada nesta proposta.
+
+## Acesso ao Repositório para Modelos de IA
+
+Para informações sobre como diferentes modelos de IA podem acessar este repositório, incluindo permissões, limitações e recomendações de segurança, consulte:
+
+📖 **[ACESSO_REPOSITORIO_MODELOS_IA.md](../../ACESSO_REPOSITORIO_MODELOS_IA.md)**
+
+Este guia aborda:
+- Como o GitHub Copilot acessa o repositório
+- Opções de acesso para modelos locais (Mistral, Ollama, etc.)
+- Configuração de permissões e credenciais
+- Melhores práticas de segurança
