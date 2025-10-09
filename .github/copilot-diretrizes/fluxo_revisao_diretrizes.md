@@ -16,7 +16,7 @@
 ---
 
 > **Diretriz obrigatória:**
-> Sempre que o arcabouço de diretrizes (incluindo anexos, fluxos, templates ou políticas) for revisado, o manifesto consolidado (`default_agents.md` e `AGENT_Rules.md`) deve ser obrigatoriamente atualizado para refletir as mudanças e garantir alinhamento total entre referência operacional e fonte da verdade.
+> Sempre que o arcabouço de diretrizes (incluindo anexos, fluxos, templates ou políticas) for revisado, o manifesto consolidado deve ser obrigatoriamente atualizado para refletir as mudanças e garantir alinhamento total entre referência operacional e fonte da verdade.
 
 ## Observações
 - Sempre manter o arquivo principal enxuto, com detalhes e exemplos nos anexos.

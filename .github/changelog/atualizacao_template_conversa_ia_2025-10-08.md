@@ -1,0 +1,5 @@
+- Data/hora: 2025-10-08
+- Responsável: GitHub Copilot
+- Descrição: Atualização do template de conversa IA e revisão da seção 7 do manifesto consolidado para formato ampliado, incluindo campos de artefatos, subprojeto, status, justificativa e links de referência.
+- Status final: concluído
+- Link para novo manifesto: ../ManifestoMCP.md

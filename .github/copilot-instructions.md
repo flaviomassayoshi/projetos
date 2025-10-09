@@ -1,6 +1,11 @@
 # AVISO IMPORTANTE
 
-O manifesto consolidado é um produto do arcabouço e deve ser sempre gerado ou atualizado utilizando obrigatoriamente o template `.github/TEMPLATE_ATUALIZACAO_MANIFESTO.md`. É obrigatório incorporar as diretrizes, regras e exemplos dos anexos diretamente ao texto do manifesto, garantindo autossuficiência e alinhamento total ao funcionamento do laboratório para o MCP. Em caso de dúvida, conflito ou decisão estratégica, consulte sempre este arquivo (`copilot-instructions.md`) e os anexos em `.github/copilot-diretrizes/`, que são a única fonte da verdade do ScarecrowLab.
+
+O manifesto consolidado é um produto do arcabouço e deve ser sempre gerado ou atualizado utilizando obrigatoriamente o template `.github/TEMPLATE_ATUALIZACAO_MANIFESTO.md`. É obrigatório incorporar as diretrizes, regras e exemplos dos anexos diretamente ao texto do manifesto, garantindo autossuficiência e alinhamento total ao funcionamento do laboratório para o MCP.
+
+> O painel central de subprojetos (`.github/painel_subprojetos.md`) é a fonte única e oficial para status, pendências e checklists de todos os subprojetos. Todos os fluxos, templates, validações automáticas e relatórios do MCP/GHC devem consumir e referenciar esse painel para garantir rastreabilidade, governança e atuação proativa.
+
+Em caso de dúvida, conflito ou decisão estratégica, consulte sempre este arquivo (`copilot-instructions.md`), o painel central e os anexos em `.github/copilot-diretrizes/`, que são a única fonte da verdade do ScarecrowLab.
 
 
 # Copilot Instructions

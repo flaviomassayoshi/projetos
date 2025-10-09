@@ -1,0 +1,5 @@
+- Data/hora: 2025-10-09
+- Responsável: GitHub Copilot
+- Descrição: Inclusão do campo obrigatório “Subprojetos Impactados” no TEMPLATE_ATUALIZACAO_MANIFESTO.md, instrução de validação automática pelo MCP e nota sobre rastreabilidade. Fluxo de atualização de manifestos ajustado para exigir referência explícita e validação dos subprojetos no índice oficial.
+- Status final: concluído
+- Link para template: ../TEMPLATE_ATUALIZACAO_MANIFESTO.md

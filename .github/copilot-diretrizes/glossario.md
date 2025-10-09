@@ -17,7 +17,7 @@
 - **GHB**: GitHub Copilot (Copilot tradicional, integrado ao GitHub e editores de código)
 - **Identidade ScarecrowLab**: Conjunto de elementos, padrões e práticas que caracterizam e diferenciam o laboratório, orientando padronização e documentação.
 - **Interação**: Todo o fluxo de execução do Copilot para uma resposta, iniciando quando o agente começa a processar a solicitação do usuário e encerrando ao concluir a resposta completa, liberando o usuário para um novo prompt.
-- **Manifesto de Diretrizes**: Documento consolidado (ex: `default_agents.md`) que reúne, em formato único e autoexplicativo, todos os fluxos, templates, comandos e exemplos essenciais do laboratório. Serve como referência operacional para agentes (MCP, GHC, GPT, etc.), facilitando o consumo das diretrizes sem análise profunda de múltiplos arquivos. Não substitui o arcabouço original, que permanece como única fonte da verdade para decisões estratégicas e revisões profundas.
+- **Manifesto de Diretrizes**: Documento consolidado que reúne, em formato único e autoexplicativo, todos os fluxos, templates, comandos e exemplos essenciais do laboratório. Serve como referência operacional para agentes (MCP, GHC, GPT, etc.), facilitando o consumo das diretrizes sem análise profunda de múltiplos arquivos. Não substitui o arcabouço original, que permanece como única fonte da verdade para decisões estratégicas e revisões profundas.
 - **MCP**: Microsoft Copilot (Copilot integrado ao VS Code, Windows, Microsoft 365, etc.)
 - **Padronização de fluxos**: Adoção de templates, checklists e changelogs para garantir uniformidade e rastreabilidade.
 - **Pendência**: Tarefa, requisito ou decisão ainda não concluída, podendo ser geral do projeto ou específica de um subprojeto/checklist.

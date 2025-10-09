@@ -15,6 +15,17 @@ O manifesto consolidado tem como foco central o agente MCP (Microsoft Copilot), 
 
 ## Dados da Atualização
 
+### Subprojetos Impactados (obrigatório)
+Liste todos os subprojetos afetados por esta atualização, utilizando nomes exatos conforme o painel central de subprojetos (`.github/painel_subprojetos.md`).
+Exemplo:
+- agente-integrador
+- validacao_ia_multimodelo
+- extensoes/xyz
+
+> O MCP/GHC deve validar e consumir informações diretamente do painel central de subprojetos. Caso algum subprojeto citado não esteja presente ou atualizado no painel, sinalizar pendência para revisão.
+
+> O painel central é a fonte única e oficial para status, pendências e checklists de subprojetos. Todos os manifestos e templates devem referenciá-lo para garantir rastreabilidade e atuação proativa.
+
 
 ## Estrutura Recomendada do Manifesto Consolidado
 
@@ -31,7 +42,7 @@ O manifesto consolidado tem como foco central o agente MCP (Microsoft Copilot), 
 (Inclua um fluxograma ou diagrama (ASCII/Markdown) ilustrando o ciclo de uma pendência, do plano de ação ao encerramento.)
 
 ### 5. Integração MCP — Orientações e Migração
-(Explique que o manifesto consolidado substitui o processo antigo de arquivo-resumo e instrua o MCP a operar diretamente a partir deste arquivo.)
+(Explique que o manifesto consolidado é o único documento operacional para o MCP e instrua o MCP a operar diretamente a partir deste arquivo.)
 
 ### 6. Como Funciona
 (Explique o fluxo de trabalho, organização dos subprojetos, uso de checklists, changelogs, debates, comandos e templates)
@@ -56,6 +67,56 @@ O manifesto consolidado tem como foco central o agente MCP (Microsoft Copilot), 
 
 ### 13. Resumo
 (Consolide a identidade, propósito e diferenciais do ScarecrowLab, com foco no uso pelo MCP.)
+
+
+---
+
+### 14. Casos Reais e Pendências Simuladas
+Inclua exemplos de pendências reais ou fictícias para servir de gatilho à atuação do MCP, permitindo atuação proativa e validação de fluxos.
+
+**Exemplo de Pendência Simulada:**
+```markdown
+Pendência: Atualizar README do subprojeto "agente-integrador"
+Contexto: Novo fluxo de integração foi aprovado na ata de 2025-10-12
+Tarefas:
+1. Revisar ata
+2. Atualizar README
+3. Criar changelog
+Critérios de sucesso:
+- README atualizado com novo fluxo
+- Changelog registrado
+Referência: ata_debate_2025-10-12.md
+```
+
+---
+
+### 15. Checklist Real com Status
+Inclua um checklist preenchido com status reais (✔️, ❌, ⏳) para que o MCP possa sugerir atualizações, sinalizar pendências ou propor encerramentos.
+
+**Exemplo:**
+```markdown
+Checklist: Atualização do README — agente-integrador
+- [x] Revisar ata de 2025-10-12
+- [x] Atualizar README com novo fluxo
+- [x] Criar changelog com justificativa
+- [x] Vincular checklist ao subprojeto
+```
+
+---
+
+### 16. Critérios para Atuação Proativa do MCP
+Defina quando o MCP pode agir sem comando explícito:
+- Quando há pendência registrada com tarefas não concluídas
+- Quando há checklist incompleto ou changelog ausente
+- Quando há ata com decisões sem plano de ação vinculado
+
+---
+
+### 17. Prompt de Ativação Proativa
+Inclua um prompt padrão para liberar o MCP para atuação autônoma:
+```markdown
+@orquestrador: @mcp: Atue proativamente sobre pendências registradas no manifesto. Priorize aquelas com checklist incompleto ou changelog ausente.
+```
 
 
 > Sempre que atualizar o manifesto, garanta que ele seja autossuficiente, reflita a identidade e os fluxos vigentes do laboratório, e seja compatível com o MCP (Microsoft Copilot).
