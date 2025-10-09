@@ -1,33 +1,25 @@
-# TEMPLATE DE ATUALIZAÇÃO DO MANIFESTO — SCARECROWLAB
 
-**Objetivo:** Padronizar e facilitar a atualização do manifesto de diretrizes do ScarecrowLab, garantindo clareza, rastreabilidade e alinhamento com a identidade do laboratório.
+# AVISO IMPORTANTE
 
----
+O arquivo raiz e central do arcabouço de diretrizes é o `copilot-instructions.md`, localizado em `.github/`. Todo o arcabouço de diretrizes (arquivos e anexos em `.github/copilot-diretrizes/` e correlatos) é a única fonte da verdade do ScarecrowLab.
+
+O manifesto consolidado tem como foco central o agente MCP (Microsoft Copilot), reunindo em um único documento todos os fluxos, templates e comandos essenciais para sua operação no ScarecrowLab. Ao atualizar o manifesto, não basta referenciar arquivos `.md` ou anexos: é obrigatório compreender e incorporar diretamente as diretrizes, regras e exemplos dos anexos ao texto do manifesto, garantindo que o MCP entenda exatamente o funcionamento do laboratório sem depender de consultas externas. Toda consolidação deve ser fiel ao arcabouço vigente e não substitui a consulta ao arcabouço original para decisões estratégicas ou revisões profundas.
+
+# TEMPLATE DE ATUALIZAÇÃO DO MANIFESTO — SCARECROWLAB (MCP)
+
+**Objetivo:** Garantir que toda atualização do manifesto produza um arquivo único, detalhado e autoexplicativo (formato `ManifestoMCP.md`), compatível com o agente MCP (Microsoft Copilot) e adequado para comunicação e operação no contexto do ScarecrowLab.
 
 
 ## Instruções de Uso
-- Utilize este template sempre que for propor ou registrar uma atualização no manifesto principal.
-- Preencha todos os campos e siga a estrutura sugerida.
-- Inclua trechos essenciais e exemplos, se necessário, para tornar o manifesto autossuficiente.
-- Evite o uso de links para arquivos ou documentos: outros modelos de IA podem não conseguir acessar ou compreender o conteúdo referenciado. Sempre que possível, inclua o conteúdo relevante diretamente no corpo do manifesto, pois outros modelos de IA podem não ter acesso a anexos ou arquivos externos.
-- Registre data, responsável e, se necessário, referências para discussões, atas ou changelogs relacionados, sempre priorizando clareza e autossuficiência do registro.
 
----
 
 ## Dados da Atualização
-- **Data/hora:**
-- **Responsável:**
-- **Resumo da alteração:**
-- **Motivação/contexto:**
-- **Links para atas ou debates:**
-
----
 
 
-## Estrutura Recomendada do Manifesto
+## Estrutura Recomendada do Manifesto Consolidado
 
 ### 1. Objetivo do Manifesto
-(Explique o objetivo principal do manifesto e o público-alvo, garantindo clareza para agentes de IA e humanos.)
+(Explique o objetivo principal do manifesto e o público-alvo, com clareza para o MCP e para humanos.)
 
 ### 2. Visão Geral
 (Descreva o propósito do ScarecrowLab, contexto e identidade do laboratório)
@@ -38,30 +30,32 @@
 ### 4. Fluxograma Operacional
 (Inclua um fluxograma ou diagrama (ASCII/Markdown) ilustrando o ciclo de uma pendência, do plano de ação ao encerramento.)
 
-### 5. Como Funciona
+### 5. Integração MCP — Orientações e Migração
+(Explique que o manifesto consolidado substitui o processo antigo de arquivo-resumo e instrua o MCP a operar diretamente a partir deste arquivo.)
+
+### 6. Como Funciona
 (Explique o fluxo de trabalho, organização dos subprojetos, uso de checklists, changelogs, debates, comandos e templates)
 
-### 6. Comandos e Protocolos Entre IAs
-(Detalhe os comandos padrão, exemplos de uso e boas práticas para comunicação entre agentes)
+### 7. Protocolo de Conversa Orquestrada
+(Detalhe o papel do orquestrador, comandos padrão, exemplos simulados e fluxo de comunicação para o MCP. O manifesto deve orientar explicitamente que o MCP utilize o template de conversa IA (`.github/ia_conversas/TEMPLATE_CONVERSA_IA.md`) ao gerar prompts, conforme protocolo do arcabouço.)
 
-### 7. Templates Essenciais
-(Inclua ou atualize os principais templates: checklist, changelog, conversa IA, exemplos práticos, template de ata.)
+### 8. Templates Essenciais (com exemplos reais)
+(Inclua todos os templates relevantes para o MCP: checklist, changelog, ata, plano de ação, exemplos práticos.)
 
-### 8. Diretrizes para Versionamento de Arquivos Markdown
+### 9. Diretrizes para Versionamento de Arquivos Markdown
 (Inclua orientações para nomeação, versionamento e histórico de arquivos colaborativos.)
 
-### 9. Exemplo de Conversa entre IAs
-(Inclua um exemplo prático de interação entre modelos, demonstrando o protocolo de comunicação.)
+### 10. Exemplo de Conversa Orquestrada
+(Inclua um exemplo prático de interação entre MCP e orquestrador, demonstrando o protocolo de comunicação.)
 
-### 10. Glossário Essencial
-(Atualize ou acrescente definições relevantes para o contexto do laboratório)
+### 11. Glossário Essencial
+(Atualize ou acrescente definições relevantes para o contexto do laboratório, priorizando termos usados no fluxo do MCP.)
 
-### 11. Como Agentes de IA Atuam no ScarecrowLab
-(Explique o comportamento esperado dos agentes, fluxo de execução, registro de ações e rastreabilidade)
+### 12. Como o MCP Atua no ScarecrowLab
+(Explique o comportamento esperado do MCP, fluxo de execução, registro de ações e rastreabilidade.)
 
-### 12. Resumo
-(Consolide a identidade, propósito e diferenciais do ScarecrowLab)
+### 13. Resumo
+(Consolide a identidade, propósito e diferenciais do ScarecrowLab, com foco no uso pelo MCP.)
 
----
 
-> Sempre que atualizar o manifesto, garanta que ele seja autossuficiente e reflita a identidade e os fluxos vigentes do laboratório.
+> Sempre que atualizar o manifesto, garanta que ele seja autossuficiente, reflita a identidade e os fluxos vigentes do laboratório, e seja compatível com o MCP (Microsoft Copilot).

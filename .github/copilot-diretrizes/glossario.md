@@ -1,8 +1,8 @@
-
 # Glossário de Termos — Copilot
 
-
 **Objetivo:** Consolidar definições e siglas relevantes para agentes de IA no contexto do Copilot/ScarecrowLab.
+
+# Arcabouço: Conjunto estruturado de diretrizes, templates, anexos e regras que compõem a base normativa e operacional do ScarecrowLab. Inclui o arquivo central `copilot-instructions.md`, todos os anexos em `.github/copilot-diretrizes/` e documentos correlatos. É a única fonte da verdade para decisões, fluxos e padronizações do laboratório.
 
 - **Artefato persistente**: Qualquer plano, checklist ou documento que deve ser salvo e referenciado para rastreabilidade futura, conforme critérios definidos nas diretrizes.
 - **Artefato temporário**: Plano, checklist ou documento criado apenas para controle pontual, não arquivado formalmente.
@@ -17,7 +17,7 @@
 - **GHB**: GitHub Copilot (Copilot tradicional, integrado ao GitHub e editores de código)
 - **Identidade ScarecrowLab**: Conjunto de elementos, padrões e práticas que caracterizam e diferenciam o laboratório, orientando padronização e documentação.
 - **Interação**: Todo o fluxo de execução do Copilot para uma resposta, iniciando quando o agente começa a processar a solicitação do usuário e encerrando ao concluir a resposta completa, liberando o usuário para um novo prompt.
-- **Manifesto de Diretrizes**: Documento central que resume e consolida as diretrizes do laboratório, servindo como referência rápida para agentes e IAs.
+- **Manifesto de Diretrizes**: Documento consolidado (ex: `default_agents.md`) que reúne, em formato único e autoexplicativo, todos os fluxos, templates, comandos e exemplos essenciais do laboratório. Serve como referência operacional para agentes (MCP, GHC, GPT, etc.), facilitando o consumo das diretrizes sem análise profunda de múltiplos arquivos. Não substitui o arcabouço original, que permanece como única fonte da verdade para decisões estratégicas e revisões profundas.
 - **MCP**: Microsoft Copilot (Copilot integrado ao VS Code, Windows, Microsoft 365, etc.)
 - **Padronização de fluxos**: Adoção de templates, checklists e changelogs para garantir uniformidade e rastreabilidade.
 - **Pendência**: Tarefa, requisito ou decisão ainda não concluída, podendo ser geral do projeto ou específica de um subprojeto/checklist.

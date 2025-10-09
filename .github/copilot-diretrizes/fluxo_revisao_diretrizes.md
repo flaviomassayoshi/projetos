@@ -10,7 +10,13 @@
 4. Atualizar o changelog principal com data/hora, responsável, descrição da revisão, status final e link para checklist/ata.
 5. Garantir que todas as alterações estejam refletidas tanto no arquivo principal quanto nos anexos correspondentes.
 6. Remover ou atualizar referências órfãs em `.github/PENDENCIAS.md` e demais arquivos de rastreabilidade.
+
 7. Validar se todos os agentes estão cientes das mudanças, sugerindo revisão periódica das diretrizes.
+
+---
+
+> **Diretriz obrigatória:**
+> Sempre que o arcabouço de diretrizes (incluindo anexos, fluxos, templates ou políticas) for revisado, o manifesto consolidado (`default_agents.md` e `AGENT_Rules.md`) deve ser obrigatoriamente atualizado para refletir as mudanças e garantir alinhamento total entre referência operacional e fonte da verdade.
 
 ## Observações
 - Sempre manter o arquivo principal enxuto, com detalhes e exemplos nos anexos.

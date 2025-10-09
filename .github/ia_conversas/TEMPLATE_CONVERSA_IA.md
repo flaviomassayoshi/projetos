@@ -1,38 +1,44 @@
-# Template de Conversa entre IAs (IA only)
 
-> Instruções de uso: Este arquivo serve como ponto de troca de mensagens entre diferentes modelos de IA ou agentes. Utilize sempre este template ao criar novas conversas. Siga as diretrizes de nomeação e comandos definidos nas diretrizes do repositório.
+# Template de Conversa Orquestrada entre IAs (Protocolo ScarecrowLab)
+
+> Instruções de uso: Este arquivo serve como ponto de troca de mensagens entre agentes de IA, sempre mediado por orquestrador humano, conforme protocolo do arcabouço. Utilize este template ao criar novas conversas. Siga as diretrizes de nomeação, comandos e fluxo definidos no repositório.
 
 ## Participantes
-- IA/Agente 1: 
-- IA/Agente 2: 
-- (Adicione outros, se necessário)
+- Orquestrador (humano):
+- MCP (Microsoft Copilot):
+- GHC (GitHub Copilot), se aplicável:
 
 ## Protocolo de Uso
-- Cada mensagem deve ser precedida pelo nome do agente/remetente.
-- Utilize comandos especiais, se necessário, conforme definido nas diretrizes (ex: `@copilot: ler`, `@modeloX: escrever`).
-- Mantenha o histórico completo e não apague mensagens anteriores.
-- Para comandos de leitura/escrita, siga o padrão:
-  - `@copilot: ler arquivoX.md`
-  - `@modeloY: escrever resposta em arquivoY.md`
+- Toda comunicação entre agentes deve ser mediada pelo orquestrador humano.
+- Cada mensagem deve ser precedida pelo nome do agente/remetente (ex: `@mcp:`, `@ghc:`, `@orquestrador:`).
+- Utilize comandos padronizados conforme o arcabouço (ex: `@mcp: ler arquivoX.md`, `@ghc: atualizar manifesto`).
+- Mantenha o histórico completo, sem apagar mensagens anteriores.
+- Registre sempre contexto, tarefas, critérios de sucesso e referência, quando aplicável.
 
-## Exemplo de Conversa
 
----
-
-**@copilot:**
-Solicito análise do trecho abaixo pelo modelo Y:
-
-```
-<trecho ou contexto>
-```
-
-**@modeloY:**
-Análise realizada. Resposta:
-
-```
-<resposta>
-```
+## Exemplo de Conversa Orquestrada
 
 ---
 
-> Sempre registre comandos e respostas de forma clara e rastreável. Consulte as diretrizes para mais detalhes sobre o fluxo de comunicação manual entre IAs.
+**@orquestrador:**
+@mcp: Atualizar checklist de entrega conforme instruções abaixo.
+
+Contexto:
+- Nova pendência identificada no subprojeto X.
+
+Tarefas:
+1. Criar checklist de entrega.
+2. Registrar changelog.
+
+Critérios de sucesso:
+- Checklist criado e vinculado ao subprojeto.
+- Changelog registrado.
+
+Referência: ata_debate_2025-10-08.md
+
+**@mcp:**
+Checklist criado e changelog registrado conforme solicitado.
+
+---
+
+> Sempre registre comandos, contexto e respostas de forma clara e rastreável. Consulte o arcabouço para detalhes completos do protocolo de comunicação orquestrada entre agentes.
