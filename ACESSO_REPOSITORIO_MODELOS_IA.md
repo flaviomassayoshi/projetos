@@ -25,6 +25,26 @@ Como agente de IA operando via GitHub Actions, eu **não tenho permissões** par
 
 Este documento esclarece como diferentes modelos de IA podem acessar o repositório `flaviomassayoshi/projetos`, as permissões disponíveis e as limitações técnicas de cada abordagem.
 
+## Diagrama de Acesso
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                 Repositório GitHub                          │
+│           flaviomassayoshi/projetos                         │
+└────────────────┬───────────────┬───────────────┬────────────┘
+                 │               │               │
+        ┌────────▼────────┐ ┌───▼──────┐ ┌─────▼─────────┐
+        │ GitHub Copilot  │ │Owner/    │ │Modelos Locais │
+        │ (GitHub Actions)│ │Colabor.  │ │(Mistral, etc.)│
+        └────────┬────────┘ └───┬──────┘ └─────┬─────────┘
+                 │               │               │
+        ┌────────▼────────┐ ┌───▼──────┐ ┌─────▼─────────┐
+        │✅ Ler/Escrever │ │✅ Config. │ │✅ Clone Local │
+        │✅ PRs/Issues   │ │✅ Permiss.│ │✅ Git Push/Pull│
+        │❌ Gerenc.Perm. │ │✅ Tokens  │ │⚠️ Requer Creds│
+        └─────────────────┘ └──────────┘ └───────────────┘
+```
+
 ## Modelo de Acesso Atual
 
 ### GitHub Copilot (via GitHub Actions)
