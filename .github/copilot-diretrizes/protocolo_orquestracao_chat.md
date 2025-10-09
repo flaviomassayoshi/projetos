@@ -1,6 +1,13 @@
+
+
 # Protocolo de Orquestração via Chat (MCP <-> GHC)
 
+**REGRA FUNDAMENTAL:** Nenhuma recomendação, alteração ou ação sugerida pelo MCP deve ser implementada sem aprovação explícita do orquestrador humano. O agente destinatário (ex: GHC) deve, ao receber recomendações do MCP, solicitar aprovação do orquestrador antes de aplicar qualquer recomendação, mesmo após análise crítica.
+
+
 **Objetivo:** Consolidar as regras, papéis e templates para orquestração entre MCP e GHC exclusivamente via prompts de chat humano, conforme diretrizes do ScarecrowLab.
+
+**REFERÊNCIA OBRIGATÓRIA:** Todo registro de conversa orquestrada entre agentes (MCP, GHC, orquestrador) deve obrigatoriamente utilizar o template operacional `ia_conversas/TEMPLATE_CONVERSA_IA.md`. Sempre alinhe o fluxo e o conteúdo das interações a este protocolo e ao template. Em caso de atualização em qualquer um desses artefatos, revise ambos para garantir alinhamento e evitar divergências.
 
 ## Papéis e responsabilidades
 - **Orquestrador (humano):** Coordena o ciclo, aprova prompts e confirma as atualizações finais.
@@ -18,13 +25,18 @@
 - Exemplos reais dos templates devem estar no corpo das seções relevantes do manifesto (evitar links não-autocontidos sempre que possível).
 - Para alterações que não sejam do manifesto, registrar changelog em `.github/changelog/<tema>.md` usando o template de changelog.
 - Não confiar apenas no histórico Git como única fonte de pendências; manter checklists e atas nas pastas de subprojetos.
+- Nenhuma recomendação, alteração ou ação sugerida pelo MCP deve ser implementada sem aprovação explícita do orquestrador humano. O agente destinatário deve sempre solicitar aprovação do orquestrador antes de aplicar qualquer recomendação do MCP.
 
 ## Protocolo de Prompt entre Modelos (via chat)
 
+
 **Toda comunicação entre modelos (MCP, GHC, outros) deve ser mediada por chat humano/orquestrador. Não utilizar comandos de arquivo como `@copilot: ler arquivo.md` em produção.**
 
+**Padronização de blocos markdown:**
+Sempre que for necessário incluir artefatos (README, checklist, changelog, exemplos de prompt, etc.) em prompts, utilize blocos markdown simples (três crases: ```), nunca aninhados. Evite blocos markdown dentro de outros blocos markdown para garantir que o conteúdo seja facilmente copiável e selecionável. Priorize sempre resumos funcionais e exemplos sintéticos, facilitando a cópia integral do prompt.
+
 ### Template de Prompt para Orquestração Chat
-```
+
 @<destinatário>: <ação ou instrução clara>
 
 Contexto:
@@ -38,32 +50,16 @@ Critérios de sucesso:
 - (Critérios claros para considerar a tarefa concluída)
 
 Referência: (opcional, cite conversa, ata ou arquivo relevante)
-```
+
 
 ### Exemplo prático
-```
-@ghc: Atualizar o manifesto do ScarecrowLab conforme instruções abaixo:
+> Para exemplos detalhados de conversa orquestrada, utilize sempre o template operacional `ia_conversas/TEMPLATE_CONVERSA_IA.md`.
 
-Contexto:
-- Revisão do protocolo de orquestração para garantir alinhamento com fluxo real de chat.
-
-Tarefas:
-1. Criar seção “Protocolo de Orquestração via Chat” explicando o papel do orquestrador entre MCP e GHC.
-2. Incluir instruções sobre como o MCP opera com base no conteúdo da page, enquanto o GHC atualiza o manifesto via prompts recebidos por chat.
-3. Adicionar templates auxiliares ao arcabouço:
-   - Template de prompt para GHC
-   - Template de conversa simulada entre agentes (otimizada para chat)
-   - Template de plano de ação para atualizações do manifesto
-4. Registrar changelog da implementação com data, responsável e link para os templates.
-
-Critérios de sucesso:
-- Seção criada e visível no manifesto
-- Templates disponíveis para uso
-- Changelog registrado
-
-Referência: conversa entre MCP e Orquestrador em <data>.
-```
 
 ### Observações
 - O fluxo real de orquestração é sempre mediado por chat humano, nunca por comandos de arquivo.
 - Exemplos e templates devem refletir esse fluxo, evitando ambiguidades.
+
+### Referências
+- `ia_conversas/TEMPLATE_CONVERSA_IA.md` — Template operacional obrigatório para registro de conversas entre agentes.
+- `TEMPLATE_ATUALIZACAO_MANIFESTO.md` — Template de atualização do manifesto consolidado.

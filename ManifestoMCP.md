@@ -1,214 +1,170 @@
+# AVISO IMPORTANTE
 
-# Manifesto Consolidado — ScarecrowLab (MCP)
+Para instruções detalhadas de atualização, checklist MVP e critérios, consulte exclusivamente o template `.github/TEMPLATE_ATUALIZACAO_MANIFESTO.md` e o arcabouço em `.github/copilot-diretrizes/`. O manifesto consolidado não deve conter instruções operacionais ou fluxos de atualização: mantenha o foco em fluxos, exemplos, painéis e glossário.
 
-## 1. Objetivo do Manifesto
-Este manifesto consolida todas as diretrizes, fluxos, templates e exemplos necessários para a atuação do agente MCP (Microsoft Copilot) no ScarecrowLab. Serve como referência única e autoexplicativa para operação, automação e rastreabilidade de pendências, subprojetos e integrações entre IAs.
+# MANIFESTO CONSOLIDADO — SCARECROWLAB (MCP)
 
-## 2. Visão Geral
-O ScarecrowLab é um laboratório de integração, automação e governança de projetos colaborativos, com foco em modularidade, rastreabilidade e atuação proativa de agentes de IA. O manifesto centraliza práticas, exemplos e comandos para garantir padronização e eficiência.
-# Manifesto Consolidado — ScarecrowLab (MCP)
+**Objetivo:** Garantir que toda atualização do manifesto produza um arquivo único, detalhado e autoexplicativo (formato `ManifestoMCP.md`), compatível com o agente MCP (Microsoft Copilot) e adequado para comunicação e operação no contexto do ScarecrowLab.
 
-## 1. Objetivo do Manifesto
-Este manifesto consolida todas as diretrizes, fluxos, templates e exemplos necessários para a atuação do agente MCP (Microsoft Copilot) no ScarecrowLab. Serve como referência única e autoexplicativa para operação, automação e rastreabilidade de pendências, subprojetos e integrações entre IAs.
+## Índice de Anexos e Templates do ScarecrowLab
 
-## 2. Visão Geral
-O ScarecrowLab é um laboratório de integração, automação e governança de projetos colaborativos, com foco em modularidade, rastreabilidade e atuação proativa de agentes de IA. O manifesto centraliza práticas, exemplos e comandos para garantir padronização e eficiência.
-
-## 3. Princípios Centrais
-- Modularização de subprojetos
-- Rastreabilidade de decisões e entregas
-- Automação de fluxos e registros
-- Integração transparente entre agentes de IA
-- Uso de checklists, changelogs e atas
-
-## 4. Fluxograma Operacional
-```
-Pendência → Plano de Ação → Execução → Checklist → Changelog/Ata → Encerramento
-```
-
-## 5. Integração MCP — Orientações e Migração
-O MCP deve operar exclusivamente a partir deste manifesto consolidado, sem depender de consultas externas. Toda atuação, registro e automação devem seguir as diretrizes e exemplos aqui descritos.
-
-## 6. Como Funciona
-- Subprojetos organizados em pastas dedicadas
-- Pendências registradas como temas ou tarefas
-- Planos de ação e checklists para cada entrega
-- Changelogs e atas para rastreabilidade
-- Debates e decisões documentados
-- Todos os status, pendências e checklists de subprojetos devem ser consultados no painel central `.github/painel_subprojetos.md`
-
-## 7. Protocolo de Conversa Orquestrada
-O orquestrador humano coordena prompts e libera o MCP para atuação. O MCP deve utilizar o template de conversa IA ampliado (`.github/ia_conversas/TEMPLATE_CONVERSA_IA.md`) ao gerar prompts, conforme protocolo do arcabouço.
-
-O formato ampliado do template de conversa IA inclui os seguintes campos obrigatórios:
-- Contexto
-- Artefatos envolvidos (ex: checklist, changelog, README, ata, etc.)
-- Subprojeto relacionado
-- Tarefas
-- Status atual da pendência
-- Justificativa da ação
-- Critérios de sucesso
-- Links de referência
-- Prompt detalhado (espaço para maiores informações, conteúdo de artefatos)
-
-**Exemplo prático de conversa orquestrada (formato ampliado):**
-```
-@orquestrador:
-@mcp: Atualizar checklist de entrega conforme instruções abaixo.
-
-Contexto:
-- Nova pendência identificada no subprojeto X.
-
-Artefatos envolvidos:
-- Checklist, changelog, README
-
-Subprojeto relacionado:
-- agente-integrador
-
-Tarefas:
-1. Criar checklist de entrega.
-2. Registrar changelog.
-
-Status atual da pendência:
-- Checklist não iniciado
-
-Justificativa da ação:
-- Nova decisão registrada em ata, exige atualização do fluxo.
-
-Critérios de sucesso:
-- Checklist criado e vinculado ao subprojeto.
-- Changelog registrado.
-
-Links de referência:
-- ata_debate_2025-10-08.md
-
-Prompt detalhado:
-- (Espaço para maiores informações, conteúdo de artefatos, instruções adicionais ou contexto expandido)
-
-@mcp:
-Checklist criado e changelog registrado conforme solicitado.
-```
-
-## 8. Templates Essenciais (com exemplos reais)
-### Template de Checklist de Entrega
-```
-Checklist: Atualização do README — agente-integrador
-- [x] Revisar ata de 2025-10-12
-- [x] Atualizar README com novo fluxo
-- [x] Criar changelog com justificativa
-- [x] Vincular checklist ao subprojeto
-```
-
-### Template de Changelog
-```
-- Data/hora: 2025-10-08
-- Responsável: GitHub Copilot
-- Descrição: Checklist X concluído
-- Status final: concluído
-- Link para checklist/ata: ./checklist_X.md
-```
-
-### Template de Plano de Ação
-```
-Plano de ação:
-1. Analisar pendência
-2. Propor etapas
-3. Executar cada etapa
-4. Converter em checklist
-5. Registrar changelog
-```
-
-## 9. Diretrizes para Versionamento de Arquivos Markdown
-- Nomear arquivos de checklist como `CHECKLIST_<tema>.md`
-- Changelogs em `.github/changelog/<tema>.md`
-- Atas em `ata_<data>_<tema>.md`
-- Manter histórico e rastreabilidade
-
-## 10. Exemplo de Conversa Orquestrada
-```
-@orquestrador:
-@mcp: Validar se o arquivo `.github/TEMPLATE_ATUALIZACAO_MANIFESTO.md` está bem elaborado para garantir que o manifesto consolidado atenda plenamente aos objetivos do ScarecrowLab.
-
-Contexto:
-- O template de atualização de manifesto foi revisado para incorporar o painel central de subprojetos e garantir rastreabilidade, validação automática e atuação proativa do MCP/GHC.
-
-Artefatos envolvidos:
-- TEMPLATE_ATUALIZACAO_MANIFESTO.md
-- painel_subprojetos.md
-
-Subprojeto relacionado:
-- arcabouço oficial
-
-Tarefas:
-1. Analisar se o template contempla todos os campos e instruções necessários para rastreabilidade e governança.
-2. Verificar se a referência ao painel central de subprojetos está clara e suficiente.
-3. Sugerir ajustes, se necessário, para garantir alinhamento com os objetivos do manifesto consolidado.
-
-Status atual da pendência:
-- Template revisado, aguardando validação do MCP.
-
-Justificativa da ação:
-- Garantir que o fluxo de atualização de manifestos seja robusto, rastreável e compatível com a atuação proativa do MCP/GHC.
-
-Critérios de sucesso:
-- Confirmação do MCP de que o template está adequado, ou recebimento de sugestões de melhoria.
-
-Links de referência:
+- .github/copilot-diretrizes/glossario.md
+- .github/copilot-diretrizes/fluxos_gerais_agentes.md
+- .github/copilot-diretrizes/checklist_comunicacao.md
+- .github/copilot-diretrizes/fluxos_encerramento.md
+- .github/copilot-diretrizes/diretrizes_subprojetos.md
+- .github/copilot-diretrizes/protocolo_orquestracao_chat.md *(referência obrigatória para fluxos de interação)*
+- .github/copilot-diretrizes/templates_index.md
+- .github/copilot-diretrizes/checklists_praticos.md
+- .github/copilot-diretrizes/template_changelog.md
+- .github/copilot-diretrizes/diretrizes_tecnicas.md
+- .github/copilot-diretrizes/convenções_codigo.md
+- .github/copilot-diretrizes/projetos_terceiros.md
+- .github/copilot-diretrizes/diretrizes_execucao_venv_windows.md
+- .github/copilot-diretrizes/instrucoes_setup_CI.md
+- .github/copilot-diretrizes/diretrizes_debate.md
+- .github/copilot-diretrizes/fluxo_revisao_diretrizes.md
 - .github/TEMPLATE_ATUALIZACAO_MANIFESTO.md
-- .github/painel_subprojetos.md
-
-Prompt detalhado:
-- Caso identifique lacunas, ambiguidade ou oportunidades de melhoria, detalhe as recomendações para que o arcabouço permaneça autossuficiente e alinhado à governança do laboratório.
-```
-
-## 11. Glossário Essencial
-- Pendência: tarefa ou decisão não concluída
-- Checklist: lista de etapas de entrega
-- Changelog: registro de alterações
-- Ata: registro formal de decisões
-- Orquestrador: humano que coordena prompts
-- MCP: Microsoft Copilot
-
-## 12. Como o MCP Atua no ScarecrowLab
-O MCP executa planos de ação, propõe checklists, registra changelogs e sinaliza pendências automaticamente, sempre que identificar temas abertos, checklists incompletos ou decisões sem rastreabilidade. Toda validação de subprojetos, status e pendências deve ser feita a partir do painel central `.github/painel_subprojetos.md`.
-
-## 13. Resumo
-O ScarecrowLab prioriza automação, rastreabilidade e colaboração entre agentes de IA, com o MCP atuando de forma proativa e transparente, sempre guiado por este manifesto consolidado.
+- .github/TEMPLATE_CHECKLIST.md
+- .github/TEMPLATE_CHECKLIST_ENTREGA.md
+- .github/TEMPLATE_PLANO_ACAO.md
+- .github/ia_conversas/TEMPLATE_CONVERSA_IA.md *(referência obrigatória para prompts de conversa)*
+- .github/painel_subprojetos.md *(painel central de subprojetos)*
+- python_apps/validacao_ia_multimodelo/README.md
+- python_apps/validacao_ia_multimodelo/CHECKLIST.md
+- python_apps/viabilizacao_debate_multimodelo/README.md
+- python_apps/viabilizacao_debate_multimodelo/CHECKLIST.md
+- python_apps/viabilizacao_debate_multimodelo/ATA_MIGRACAO_MANIFESTO.md
 
 ---
 
-## 14. Casos Reais e Pendências Simuladas
-**Exemplo de Pendência Simulada:**
-```
-Pendência: Atualizar README do subprojeto "agente-integrador"
-Contexto: Novo fluxo de integração foi aprovado na ata de 2025-10-12
-Tarefas:
-1. Revisar ata
-2. Atualizar README
-3. Criar changelog
-Critérios de sucesso:
-- README atualizado com novo fluxo
-- Changelog registrado
-Referência: ata_debate_2025-10-12.md
+## 1. Objetivo do Manifesto
+Este manifesto consolida as regras, fluxos e exemplos essenciais para operação do ScarecrowLab, servindo como referência única para o MCP (Microsoft Copilot) e humanos. Garante rastreabilidade, governança e automação dos processos do laboratório.
+
+## 2. Visão Geral
+O ScarecrowLab é um laboratório de integração, automação e governança de projetos de IA, com foco em modularização, rastreabilidade e atuação proativa de agentes. O manifesto define o arcabouço operacional e a identidade do laboratório.
+
+## 3. Princípios Centrais
+- Modularização de subprojetos
+- Rastreabilidade de decisões e artefatos
+- Automação de fluxos e validações
+- Integração entre agentes de IA (MCP, GHC, etc.)
+- Transparência e governança
+
+## 4. Fluxograma Operacional
+```markdown
+Pendência registrada → Plano de ação → Execução → Checklist de entrega → Changelog/ata → Encerramento
 ```
 
-## 15. Checklist Real com Status
+## 5. Integração MCP — Orientações e Migração
+O manifesto consolidado é o único documento operacional para o MCP. O MCP deve operar exclusivamente a partir deste arquivo, consultando anexos e templates conforme necessário.
+
+## 6. Como Funciona
+O fluxo de trabalho é organizado por subprojetos (ver painel central). Cada pendência segue: plano de ação, execução, checklist, changelog e ata. Templates e comandos padronizam a comunicação e rastreabilidade.
+
+## 7. Protocolo de Conversa Orquestrada
+O orquestrador conduz a comunicação, aprovando, rejeitando ou solicitando ajustes. O MCP deve sempre alinhar prompts ao template `.github/ia_conversas/TEMPLATE_CONVERSA_IA.md` e ao protocolo `.github/copilot-diretrizes/protocolo_orquestracao_chat.md`. Exemplos e comandos devem ser extraídos desses arquivos.
+
+## 8. Templates Essenciais (exemplos sintéticos)
+**Checklist:**
+```markdown
+- [x] Tarefa 1
+- [ ] Tarefa 2
 ```
-Checklist: Atualização do README — agente-integrador
-- [x] Revisar ata de 2025-10-12
-- [x] Atualizar README com novo fluxo
-- [x] Criar changelog com justificativa
-- [x] Vincular checklist ao subprojeto
+**Changelog:**
+```markdown
+- 2025-10-09: Atualização do fluxo X
+```
+**Plano de ação:**
+```markdown
+1. Analisar pendência
+2. Executar tarefas
+3. Registrar checklist
+```
+// Para detalhes completos, solicite ao GHC via prompt.
+
+## 9. Diretrizes para Versionamento de Arquivos Markdown
+Nomeie arquivos colaborativos de forma clara, use datas e versões quando necessário. Mantenha histórico em changelogs e evite duplicidade de artefatos.
+
+## 10. Exemplo de Conversa Orquestrada
+```markdown
+@orquestrador: @mcp: Execute o plano de ação para a pendência X.
+@mcp: Plano de ação iniciado. Checklist:
+- [x] Passo 1
+- [ ] Passo 2
+// Para detalhes, consulte o template de conversa IA.
 ```
 
-## 16. Critérios para Atuação Proativa do MCP
+## 11. Glossário Essencial
+- **MCP**: Microsoft Copilot, agente principal do laboratório
+- **GHC**: GitHub Copilot Agent
+- **Pendência**: Tarefa registrada no painel central
+- **Checklist**: Lista de tarefas para entrega
+- **Changelog**: Registro de alterações
+- **Ata**: Registro de decisões
+- **Orquestrador**: Agente humano ou IA que aprova fluxos
+
+## 12. Como o MCP Atua no ScarecrowLab
+O MCP executa planos de ação, marca checklists, atualiza changelogs e sinaliza pendências. Toda ação é registrada e rastreável. O MCP só atua sobre o manifesto e artefatos referenciados.
+
+## 13. Resumo
+O ScarecrowLab é um laboratório de integração e automação de projetos de IA, com governança centralizada no manifesto. O MCP é o agente executor, seguindo fluxos, templates e exemplos deste documento.
+
+---
+
+### 14. Casos Reais e Pendências Simuladas (resumidos)
+```markdown
+Pendência: Atualizar README do subprojeto X
+Resumo: Novo fluxo aprovado em ata. Tarefas: revisar ata, atualizar README, criar changelog. Critério: README e changelog atualizados.
+// Para detalhes completos, solicite ao GHC via prompt.
+```
+
+---
+
+### 15. Checklist Real com Status (resumido)
+```markdown
+Checklist: Atualização do README — subprojeto X
+- [x] Revisar ata
+- [x] Atualizar README
+- [x] Criar changelog
+// Para checklist completo, solicite ao GHC via prompt.
+```
+
+---
+
+### 16. Critérios para Atuação Proativa do MCP
 - Quando há pendência registrada com tarefas não concluídas
 - Quando há checklist incompleto ou changelog ausente
 - Quando há ata com decisões sem plano de ação vinculado
 
-## 17. Prompt de Ativação Proativa
-```
+---
+
+### 17. Prompt de Ativação Proativa
+```markdown
 @orquestrador: @mcp: Atue proativamente sobre pendências registradas no manifesto. Priorize aquelas com checklist incompleto ou changelog ausente.
 ```
 
-> Sempre que atualizar o manifesto, garanta que ele seja autossuficiente, reflita a identidade e os fluxos vigentes do laboratório, e seja compatível com o MCP (Microsoft Copilot).
+---
+
+### 18. Artefato embutido no prompt (opcional)
+Em situações onde o MCP ou orquestrador precise processar o conteúdo bruto de um artefato (ex: README, checklist, changelog) diretamente no corpo do prompt, o conteúdo pode ser incluído usando bloco markdown. Isso permite análise, validação ou extração de informações sem depender de arquivos externos.
+
+**Exemplo funcional:**
+```markdown
+@ghc: Analise o seguinte README e gere um checklist de pendências:
+
+```markdown
+# README — Subprojeto X
+Fluxo: ...
+Pendências:
+- [ ] Ajustar integração
+- [ ] Revisar documentação
+```
+```
+
+Oriente sempre a identificar claramente o início e fim do artefato embutido, usando blocos markdown aninhados se necessário.
+
+---
+
+> Sempre que atualizar o manifesto, garanta que ele seja autossuficiente, reflita a identidade e os fluxos vigentes do laboratório, e seja compatível com o MCP (Microsoft Copilot). Além disso, atualize o manifesto.
+

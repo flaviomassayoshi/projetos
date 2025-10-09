@@ -1,0 +1,5 @@
+- Data/hora: 2025-10-09
+- Responsável: GitHub Copilot
+- Descrição: Padronização do fluxo de atualização do manifesto consolidado. Agora, toda alteração deve ser feita exclusivamente no template `.github/TEMPLATE_ATUALIZACAO_MANIFESTO.md`. Manifesto nunca deve ser editado diretamente. Instruções reforçadas no arcabouço e anexos, checklist MVP incluído no template.
+- Status final: concluído
+- Link para checklist/ata: .github/TEMPLATE_ATUALIZACAO_MANIFESTO.md

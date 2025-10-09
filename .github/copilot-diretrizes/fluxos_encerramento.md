@@ -4,7 +4,10 @@ Este anexo consolida fluxos de encerramento, exemplos de changelog e modelo de p
 
 ## Fluxos de Encerramento e Changelog
 
+
 Para registrar o encerramento de temas/checklists, utilize o [Template de Changelog](./template_changelog.md).
+
+**Atenção:** Alterações no manifesto consolidado devem SEMPRE ser feitas via template `.github/TEMPLATE_ATUALIZACAO_MANIFESTO.md`. Nunca edite o manifesto diretamente.
 
 Exemplo:
 

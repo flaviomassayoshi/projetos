@@ -1,11 +1,12 @@
+
 # AVISO IMPORTANTE
 
-
-O manifesto consolidado é um produto do arcabouço e deve ser sempre gerado ou atualizado utilizando obrigatoriamente o template `.github/TEMPLATE_ATUALIZACAO_MANIFESTO.md`. É obrigatório incorporar as diretrizes, regras e exemplos dos anexos diretamente ao texto do manifesto, garantindo autossuficiência e alinhamento total ao funcionamento do laboratório para o MCP.
+O manifesto consolidado é um produto do arcabouço e deve ser SEMPRE gerado ou atualizado utilizando EXCLUSIVAMENTE o template `.github/TEMPLATE_ATUALIZACAO_MANIFESTO.md`. É EXPRESSAMENTE PROIBIDO editar o manifesto diretamente. Toda alteração deve ser feita no template, e o manifesto gerado a partir dele, incorporando as diretrizes, regras e exemplos dos anexos. Alterações diretas no manifesto serão descartadas na próxima geração. Isso garante autossuficiência, rastreabilidade e alinhamento total ao funcionamento do laboratório para o MCP.
 
 > O painel central de subprojetos (`.github/painel_subprojetos.md`) é a fonte única e oficial para status, pendências e checklists de todos os subprojetos. Todos os fluxos, templates, validações automáticas e relatórios do MCP/GHC devem consumir e referenciar esse painel para garantir rastreabilidade, governança e atuação proativa.
 
-Em caso de dúvida, conflito ou decisão estratégica, consulte sempre este arquivo (`copilot-instructions.md`), o painel central e os anexos em `.github/copilot-diretrizes/`, que são a única fonte da verdade do ScarecrowLab.
+
+Em caso de dúvida, conflito ou decisão estratégica, consulte sempre este arquivo (`copilot-instructions.md`), o painel central e os anexos em `.github/copilot-diretrizes/`, que são a única fonte da verdade do ScarecrowLab. Nunca altere o manifesto consolidado diretamente: siga o fluxo editar template → gerar manifesto.
 
 
 # Copilot Instructions
@@ -21,12 +22,16 @@ Todos os termos como "tema", "pendência", "checklist", "subprojeto" e "ata" dev
 
 ## Fluxos Gerais para Agentes de IA (Prioritário para GPT-4.1)
 
+
 **Fluxo padrão de interação:**
+
+> Nota: O rigor de apresentar plano de ação, checklist de entrega e justificativa de persistência é obrigatório apenas para o agente operador principal (MCP/GHC). Agentes auxiliares, externos ou participantes de rodadas de debate podem atuar de forma mais flexível, sem essa exigência formal.
 1. Apresentar plano de ação com etapas previstas.
 2. Executar cada etapa sinalizando início, andamento e conclusão.
 3. Converter o plano de ação em checklist de entrega ao final, marcando cada item como concluído.
 4. Justificar se o checklist/plano será temporário ou persistente, conforme critérios do arcabouço.
 5. Registrar e referenciar artefatos persistentes em changelog e/ou índice de pendências.
+6. Para alterações no manifesto consolidado, NUNCA edite o arquivo diretamente: utilize o template `.github/TEMPLATE_ATUALIZACAO_MANIFESTO.md` e gere o manifesto a partir dele.
 
 **Critérios para persistência:**
 - Complexidade, múltiplos agentes, decisões estratégicas, fluxos longos, dependências externas, impacto relevante ou solicitação do responsável.
@@ -76,26 +81,113 @@ Consulte o anexo [Fluxo para Revisão de Diretrizes](./copilot-diretrizes/fluxo_
 
 
 
-Consulte sempre os anexos antes de responder ou executar tarefas. Os detalhes, exemplos, templates e fluxos completos estão modularizados nos arquivos abaixo:
 
-- [Glossário de Termos](./copilot-diretrizes/glossario.md)
-- [Diretrizes para Novos Subprojetos](./copilot-diretrizes/diretrizes_subprojetos.md)
-- [Fluxos Gerais para Agentes de IA](./copilot-diretrizes/fluxos_gerais_agentes.md)
-- [Protocolo de Orquestração via Chat](./copilot-diretrizes/protocolo_orquestracao_chat.md)
-- [Templates e Exemplos — Índice Central](./copilot-diretrizes/templates_index.md)
-- [Checklist de Comunicação](./copilot-diretrizes/checklist_comunicacao.md)
-- [Checklists Práticos e Templates](./copilot-diretrizes/checklists_praticos.md)
-- [Fluxos de Encerramento, Changelog e Prompt de Retomada](./copilot-diretrizes/fluxos_encerramento.md)
-- [Diretrizes Técnicas do Ambiente Local](./copilot-diretrizes/diretrizes_tecnicas.md)
-- [Convenções de Código e Documentação](./copilot-diretrizes/convenções_codigo.md)
-- [Diretrizes para Projetos Clonados de Terceiros](./copilot-diretrizes/projetos_terceiros.md)
-- [Execução de Scripts e Ativação de venv no Windows](./copilot-diretrizes/diretrizes_execucao_venv_windows.md)
-- [Instruções de Setup, CI e Automação](./copilot-diretrizes/instrucoes_setup_CI.md)
-- [Rodadas de Debate e Encerramento](./copilot-diretrizes/diretrizes_debate.md)
-- [Fluxo para Revisão de Diretrizes](./copilot-diretrizes/fluxo_revisao_diretrizes.md)
-- [Comandos e Protocolo de Conversa entre IAs](./ia_conversas/README.md)
+# Blocos Funcionais de Artefatos do Arcabouço
 
-> Para templates, exemplos e fluxos completos, consulte sempre o índice central de templates e os anexos temáticos.
+## .github/copilot-diretrizes/glossario.md
+Resumo: Definições e siglas essenciais para agentes MCP/GHC.
+Exemplo sintético:
+- MCP: Microsoft Copilot
+- Checklist: Lista de tarefas
+- Changelog: Registro de alterações
 
+## .github/copilot-diretrizes/checklist_comunicacao.md
+Resumo: Critérios mínimos para comunicação entre agentes MCP e GHC.
+Checklist:
+- [ ] Mensagem clara
+- [ ] Referência ao template
+- [ ] Validação pelo orquestrador
 
-> Este arquivo é otimizado exclusivamente para operação com GPT-4.1 como agente principal do ScarecrowLab. Não há suporte ou recomendações para preload/context_digest ou leveza para múltiplos modelos. Todos os detalhes, exemplos e fluxos completos devem estar em anexos, que são obrigatórios para consulta antes de qualquer resposta ou execução por agentes de IA.
+## .github/copilot-diretrizes/fluxos_gerais_agentes.md
+Resumo: Fluxo padrão de execução para agentes de IA.
+Exemplo:
+1. Apresentar plano de ação
+2. Executar etapas
+3. Converter em checklist
+
+## .github/copilot-diretrizes/diretrizes_subprojetos.md
+Resumo: Regras para criação e organização de subprojetos.
+Exemplo:
+- Nova proposta = nova pasta
+- Usar TEMPLATE_SUBPROJETO.md
+
+## .github/copilot-diretrizes/protocolo_orquestracao_chat.md
+Resumo: Protocolo para prompts e orquestração MCP <-> GHC.
+Exemplo:
+@ghc: executar plano de ação
+Contexto: resumo objetivo
+Tarefas: lista numerada
+
+## .github/copilot-diretrizes/fluxos_encerramento.md
+Resumo: Fluxos de encerramento, changelog e prompt de retomada.
+Exemplo de changelog:
+- Data/hora: 2025-10-08
+- Responsável: GitHub Copilot
+- Descrição: Checklist X concluído
+
+## .github/copilot-diretrizes/instrucoes_setup_CI.md
+Resumo: Setup de ambiente, CI e automações para agentes de IA.
+Exemplo:
+- Consultar/atualizar .github/PENDENCIAS.md
+- Executar comandos de setup
+
+## .github/copilot-diretrizes/fluxo_revisao_diretrizes.md
+Resumo: Processo padronizado de revisão e atualização das diretrizes.
+Exemplo:
+1. Abrir checklist de revisão
+2. Registrar atualização via TEMPLATE_ATUALIZACAO_MANIFESTO.md
+
+## .github/copilot-diretrizes/templates_index.md
+Resumo: Índice central de templates e exemplos operacionais.
+Exemplo:
+- Template de Plano de Ação
+- Template de Checklist de Entrega
+
+## .github/copilot-diretrizes/checklists_praticos.md
+Resumo: Exemplos práticos e templates de checklist.
+Exemplo:
+- [ ] Validar ambiente virtual
+- [ ] Executar testes
+
+## .github/copilot-diretrizes/diretrizes_tecnicas.md
+Resumo: Diretrizes técnicas para ambiente local e escolha de modelos de IA.
+Exemplo:
+- Python 3.10.11
+- Usar modelo 0x para rotina
+
+## .github/copilot-diretrizes/convenções_codigo.md
+Resumo: Convenções de código para agentes de IA.
+Exemplo:
+- snake_case para funções
+- PascalCase para classes
+
+## .github/copilot-diretrizes/projetos_terceiros.md
+Resumo: Regras para projetos de terceiros e customizações.
+Exemplo:
+- Não inicializar Git em clonado
+- Customizações em pasta separada
+
+## .github/copilot-diretrizes/diretrizes_execucao_venv_windows.md
+Resumo: Execução de scripts e venv no Windows.
+Exemplo:
+- Ativar venv: .\venv\Scripts\Activate.ps1
+
+## .github/copilot-diretrizes/diretrizes_debate.md
+Resumo: Estrutura e fluxo para rodadas de debate entre IAs.
+Exemplo:
+| Item | Proposta | Justificativa |
+|------|----------|---------------|
+| 1    | ...      | ...           |
+
+## .github/ia_conversas/README.md
+Resumo: Manual para conversas entre IAs, comandos e histórico.
+Exemplo:
+@copilot: ler conversa_modeloA_modeloB.md
+@modeloB: escrever conversa_modeloA_modeloB.md
+
+## .github/copilot-diretrizes/manual_redacao_mcp.md
+Resumo: Manual minimificado para padronizar a redação do manifesto e artefatos, otimizando a atuação do MCP.
+Exemplo:
+- Usar títulos hierárquicos
+- Blocos padronizados por artefato
+- Glossário sintético

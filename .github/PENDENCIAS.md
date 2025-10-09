@@ -10,13 +10,18 @@
 # Checklists e Pendências de Subprojetos (índice)
 
 - [Checklist: Execução de scripts e ativação de venv no Windows](checklist_execucao_venv_windows.md)
- 
+- [Checklist Reformulação do Manifesto e Integração do Manual de Redação MCP](../automacao_manifesto/CHECKLIST_REFORMULACAO_MANIFESTO.md)
+
 - [Checklist Mistral Ollama](../python_apps/mistral_ollama/CHECKLIST.md)
 - [Checklist Antigo Mistral Ollama](../python_apps/mistral_ollama/CHECKLIST_antigo.md)
- - [Checklist Integração MCP Markdown](../python_apps/integracao_mcp_markdown/CHECKLIST.md)
- - [Checklist Mistral Ollama Debate](../python_apps/mistral_ollama_debate/CHECKLIST.md)
- - [Checklist Validação IA Multimodelo](../python_apps/validacao_ia_multimodelo/CHECKLIST.md)
- - [Checklist Viabilização Debate Multimodelo](../python_apps/viabilizacao_debate_multimodelo/CHECKLIST.md)
- 
- - [Checklist Revisão da Modularização e Estrutura do Projeto](CHECKLIST_revisao_modularizacao_estrutura.md)
-<!-- Checklist Revisão Modular das Diretrizes Copilot (concluído) -->
+- [Checklist Integração MCP Markdown](../python_apps/integracao_mcp_markdown/CHECKLIST.md)
+- [Checklist Mistral Ollama Debate](../python_apps/mistral_ollama_debate/CHECKLIST.md)
+- [Checklist Validação IA Multimodelo](../python_apps/validacao_ia_multimodelo/CHECKLIST.md)
+- [Checklist Viabilização Debate Multimodelo](../python_apps/viabilizacao_debate_multimodelo/CHECKLIST.md)
+- [Checklist Teste Serverless Bots Telegram](../teste_serverless_bots_telegram/CHECKLIST.md)
+
+- [Checklist Revisão da Modularização e Estrutura do Projeto](CHECKLIST_revisao_modularizacao_estrutura.md)
+
+# Encerramentos e Atualizações Recentes
+
+- [Encerrado] Análise crítica e ATA de validação das plataformas serverless para bots Telegram registrada em `teste_serverless_bots_telegram` (2025-10-09)

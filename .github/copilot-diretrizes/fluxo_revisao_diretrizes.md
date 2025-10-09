@@ -5,7 +5,7 @@
 ## Passos para Revisão
 
 1. Abrir checklist específico para a revisão, utilizando o [Template de Checklist](../TEMPLATE_CHECKLIST.md).
-2. Em caso de revisão do manifesto principal, é obrigatório registrar a atualização utilizando o [TEMPLATE_ATUALIZACAO_MANIFESTO.md](../TEMPLATE_ATUALIZACAO_MANIFESTO.md), mesmo para revisões de conformidade sem alteração de conteúdo. Não é necessário criar changelog para atualização do manifesto; registre apenas em ata se relevante.
+2. Em caso de revisão do manifesto principal, é OBRIGATÓRIO registrar a atualização utilizando o [TEMPLATE_ATUALIZACAO_MANIFESTO.md](../TEMPLATE_ATUALIZACAO_MANIFESTO.md), mesmo para revisões de conformidade sem alteração de conteúdo. Nunca altere o manifesto diretamente: toda alteração deve ser feita no template e o manifesto gerado a partir dele. Não é necessário criar changelog para atualização do manifesto; registre apenas em ata se relevante.
 3. Registrar todas as discussões, decisões e justificativas em ata, conforme modelo de changelog e atas do projeto.
 4. Atualizar o changelog principal com data/hora, responsável, descrição da revisão, status final e link para checklist/ata.
 5. Garantir que todas as alterações estejam refletidas tanto no arquivo principal quanto nos anexos correspondentes.

@@ -1,0 +1,5 @@
+- Data/hora: 2025-10-09
+- Responsável: GitHub Copilot
+- Descrição: Ajustes no Manifesto Consolidado e TEMPLATE_ATUALIZACAO_MANIFESTO.md conforme checklist MVPs: reforço de rastreabilidade, governança de subprojetos, automação proativa e síntese operacional. Glossário expandido, prompts proativos ampliados, campo de impacto esperado adicionado e instruções de validação cruzada formalizadas.
+- Status final: concluído
+- Arquivos alterados: ManifestoMCP.md, TEMPLATE_ATUALIZACAO_MANIFESTO.md

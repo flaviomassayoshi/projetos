@@ -2,11 +2,28 @@
 
 > Fonte única e oficial para status, pendências e checklists de todos os subprojetos. Deve ser referenciado por manifestos, templates e pelo MCP/GHC para validação, rastreabilidade e atuação proativa.
 
-| Subprojeto                  | Status Geral   | Pendências Abertas | Itens de Checklist | Responsável      | Última Atualização | Links Relevantes                  |
-|----------------------------|----------------|--------------------|--------------------|------------------|--------------------|------------------------------------|
-| agente-integrador           | Em andamento   | 2                  | 1 pendente         | flaviomassayoshi | 2025-10-09         | [README](../agente-integrador/README.md), [Checklist](../agente-integrador/CHECKLIST.md) |
-| validacao_ia_multimodelo    | Concluído      | 0                  | 0                  | userX            | 2025-10-08         | [README](../validacao_ia_multimodelo/README.md)         |
-| extensoes/xyz               | Em andamento   | 1                  | 2 pendentes        | userY            | 2025-10-07         | [README](../extensoes/xyz/README.md)                   |
+
+| Subprojeto                  | Status Geral   | Pendências Abertas | Itens de Checklist (detalhado)                                                                                                   | Responsável      | Última Atualização |
+|----------------------------|----------------|--------------------|----------------------------------------------------------------------------------------------------------------------------------|------------------|--------------------|
+| agente-integrador           | Em andamento   | 2                  | - Revisar ata de 2025-10-12 (✔️)
+	- Atualizar README com novo fluxo (⏳)
+	- Criar changelog com justificativa (⏳)
+	- Vincular checklist ao subprojeto (⏳) | flaviomassayoshi | 2025-10-09         |
+| validacao_ia_multimodelo    | Concluído      | 0                  | - Checklist de validação IA concluído (✔️)                                                                                       | userX            | 2025-10-08         |
+| extensoes/xyz               | Em andamento   | 1                  | - Implementar integração Z (⏳)
+	- Revisar documentação (⏳)                                                                                                     | userY            | 2025-10-07         |
+| automacao_tarefas_lab      | Em andamento   | 1                  | - Tarefas repetitivas mapeadas (⏳)\n- Protótipos de automação implementados (⏳)\n- Integração testada (⏳) | flaviomassayoshi | 2025-10-09         |
+## Pendências Detalhadas
+
+### agente-integrador
+- Pendência: Atualizar README do subprojeto "agente-integrador"
+	- Contexto: Novo fluxo de integração aprovado na ata de 2025-10-12
+	- Critérios de sucesso: README atualizado, changelog registrado
+
+### extensoes/xyz
+- Pendência: Implementar integração Z
+	- Contexto: Nova extensão aprovada
+	- Critérios de sucesso: integração funcional, documentação revisada
 
 ## Instruções
 - Atualize este painel sempre que houver mudança de status, pendência ou checklist em qualquer subprojeto.

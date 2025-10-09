@@ -4,11 +4,11 @@
 
 # Arcabouço: Conjunto estruturado de diretrizes, templates, anexos e regras que compõem a base normativa e operacional do ScarecrowLab. Inclui o arquivo central `copilot-instructions.md`, todos os anexos em `.github/copilot-diretrizes/` e documentos correlatos. É a única fonte da verdade para decisões, fluxos e padronizações do laboratório.
 
-- **Artefato persistente**: Qualquer plano, checklist ou documento que deve ser salvo e referenciado para rastreabilidade futura, conforme critérios definidos nas diretrizes.
+- **Artefato persistente**: Qualquer plano, checklist, changelog, README ou documento que deve ser salvo e referenciado para rastreabilidade futura, conforme critérios definidos nas diretrizes.
 - **Artefato temporário**: Plano, checklist ou documento criado apenas para controle pontual, não arquivado formalmente.
 - **Ata**: Registro formal e rastreável de decisões, debates ou reuniões, contendo data, participantes, pontos discutidos e decisões tomadas.
 - **Changelog**: Documento que registra o histórico de alterações, encerramentos de pendências e decisões relevantes, com data, responsável e status. Não inclui atualizações do manifesto do projeto.
-- **Checklist de entrega**: Lista de etapas executadas em uma interação, usada para garantir que todos os itens do plano de ação foram cumpridos antes da resposta final. Pode ser temporária (controle pontual) ou persistente (rastreabilidade futura).
+- **Checklist de entrega**: Lista de etapas executadas em uma interação, usada para garantir que todos os itens do plano de ação foram cumpridos antes da resposta final. No contexto do operador principal, o checklist de entrega é o protocolo operacional obrigatório: serve como lembrete e validação do fluxo correto a cada interação, devendo ser apresentado e preenchido ao final de toda execução relevante. Pode ser temporária (controle pontual) ou persistente (rastreabilidade futura).
 - **Checklist de entrega persistente**: Checklist de entrega que, por decisão do agente, é salvo e referenciado para rastreabilidade futura.
 - **Checklist de revisão modular**: Checklist específico para avaliar modularização, rastreabilidade e alinhamento estrutural do laboratório.
 - **Checklist temporário**: Lista de etapas ou tarefas criada para controle de uma interação ou entrega pontual, não rastreada como documento formal do projeto.
@@ -17,7 +17,8 @@
 - **GHB**: GitHub Copilot (Copilot tradicional, integrado ao GitHub e editores de código)
 - **Identidade ScarecrowLab**: Conjunto de elementos, padrões e práticas que caracterizam e diferenciam o laboratório, orientando padronização e documentação.
 - **Interação**: Todo o fluxo de execução do Copilot para uma resposta, iniciando quando o agente começa a processar a solicitação do usuário e encerrando ao concluir a resposta completa, liberando o usuário para um novo prompt.
-- **Manifesto de Diretrizes**: Documento consolidado que reúne, em formato único e autoexplicativo, todos os fluxos, templates, comandos e exemplos essenciais do laboratório. Serve como referência operacional para agentes (MCP, GHC, GPT, etc.), facilitando o consumo das diretrizes sem análise profunda de múltiplos arquivos. Não substitui o arcabouço original, que permanece como única fonte da verdade para decisões estratégicas e revisões profundas.
+- **Manifesto de Diretrizes**: Documento consolidado que reúne, em formato único e autoexplicativo, todos os fluxos, templates, comandos, exemplos e instruções essenciais do laboratório. Serve como referência operacional para agentes (MCP, GHC, GPT, etc.), facilitando o consumo das diretrizes sem análise profunda de múltiplos arquivos. Não substitui o arcabouço original, que permanece como única fonte da verdade para decisões estratégicas e revisões profundas.
+- **Artefato embutido no prompt**: Prática de incluir o conteúdo bruto de um artefato (README, checklist, changelog, etc.) diretamente no corpo do prompt, usando bloco markdown simples (três crases: ```), nunca aninhado. Essa padronização garante que o conteúdo seja facilmente copiável e selecionável, facilitando análise, extração e reutilização sem depender de arquivos externos. Sempre evitar blocos markdown dentro de outros blocos markdown.
 - **MCP**: Microsoft Copilot (Copilot integrado ao VS Code, Windows, Microsoft 365, etc.)
 - **Padronização de fluxos**: Adoção de templates, checklists e changelogs para garantir uniformidade e rastreabilidade.
 - **Pendência**: Tarefa, requisito ou decisão ainda não concluída, podendo ser geral do projeto ou específica de um subprojeto/checklist.
