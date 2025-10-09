@@ -1,5 +1,26 @@
 # Acesso ao Repositório para Modelos de IA
 
+## Resposta Direta à Pergunta
+
+**"Você consegue liberar acesso ao repositório para qualquer modelo de IA utilizado por você?"**
+
+**Resposta:** ❌ **Não, eu (GitHub Copilot) não posso conceder acesso ao repositório.**
+
+Como agente de IA operando via GitHub Actions, eu **não tenho permissões** para:
+- Adicionar colaboradores
+- Criar ou revogar tokens de acesso
+- Alterar configurações do repositório
+- Gerenciar permissões
+
+✅ **O que você pode fazer:**
+1. **Como owner** (@flaviomassayoshi): Você pode adicionar colaboradores ou criar tokens de acesso via interface web do GitHub
+2. **Repositório público**: Qualquer modelo pode clonar e ler (já tem acesso de leitura)
+3. **Clone local**: Configure suas credenciais Git e qualquer modelo local (Mistral, Ollama) pode interagir
+
+📖 **Continue lendo para detalhes completos sobre todas as opções de acesso disponíveis.**
+
+---
+
 ## Contexto
 
 Este documento esclarece como diferentes modelos de IA podem acessar o repositório `flaviomassayoshi/projetos`, as permissões disponíveis e as limitações técnicas de cada abordagem.
@@ -200,6 +221,46 @@ Se você precisa de acesso específico:
    - Configure suas credenciais Git localmente
    - Clone o repositório
    - Siga as diretrizes em `.github/copilot-instructions.md`
+
+## Perguntas Frequentes (FAQ)
+
+### P: O GitHub Copilot pode adicionar meu modelo de IA como colaborador?
+**R:** Não. O GitHub Copilot não tem permissões para gerenciar colaboradores ou permissões do repositório. Apenas o owner (@flaviomassayoshi) pode fazer isso através da interface web do GitHub.
+
+### P: Meu modelo precisa de um token de acesso?
+**R:** Depende:
+- **Para leitura de repositório público:** Não precisa
+- **Para escrita ou repositório privado:** Sim, precisa de token pessoal (PAT) ou credenciais SSH
+- **Para automações:** Recomenda-se GitHub App ou PAT com escopo limitado
+
+### P: Como faço para testar se meu modelo tem acesso?
+**R:** 
+1. Clone o repositório: `git clone https://github.com/flaviomassayoshi/projetos.git`
+2. Tente ler um arquivo: `cat README.md` (dentro do clone)
+3. Tente fazer uma alteração: `echo "teste" > teste.txt && git add teste.txt`
+4. Se der erro de autenticação no push, configure suas credenciais
+
+### P: É seguro compartilhar um token de acesso entre modelos?
+**R:** Não é recomendado. Cada modelo/serviço deve ter suas próprias credenciais para:
+- Auditoria (saber quem fez o quê)
+- Segurança (revogar acesso individual se necessário)
+- Controle de escopo (diferentes níveis de permissão)
+
+### P: Posso usar o GitHub Copilot para fazer commits em meu nome?
+**R:** O GitHub Copilot (via GitHub Actions) faz commits em nome do bot `github-actions[bot]`. Se você quer commits em seu nome, deve usar suas próprias credenciais Git localmente.
+
+### P: Como integro o Mistral/Ollama com este repositório?
+**R:** 
+1. Instale Mistral/Ollama localmente (veja `python_apps/mistral_ollama/`)
+2. Clone o repositório com suas credenciais Git
+3. Crie scripts que leiam/escrevam arquivos Markdown no clone
+4. Faça commit e push das alterações
+5. Siga o padrão de debate em `python_apps/integracao_mcp_markdown/`
+
+### P: Este repositório é público ou privado?
+**R:** Para verificar, acesse: https://github.com/flaviomassayoshi/projetos  
+- Se conseguir ver sem login: é público
+- Se pedir login: é privado
 
 ## Referências
 
