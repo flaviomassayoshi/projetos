@@ -1,59 +1,83 @@
 # Reestruturação e Modularização do ScarecrowLab
 
-## Objetivo
-Centralizar, debater e executar iniciativas de reestruturação, agrupamento e modularização dos subprojetos, artefatos globais e fluxos do laboratório, visando escalabilidade, clareza e governança.
-- Proposição e avaliação do conceito de engines: módulos ou sistemas automatizados para geração de aplicações, fluxos, artefatos e integrações, visando acelerar e padronizar a criação de soluções no laboratório
-- Discussão e padronização de gestão de pacotes/bibliotecas baixados de outros repositórios Git, visando controle de versionamento e rastreabilidade
-- Novos tipos de artefatos de governança (cards, kanban, formulários, dashboards, etc.) avaliados, prototipados e documentados
-- Inovações implementadas e comparadas com padrões de mercado
-
-## Próximos Passos
-1. Consolidar checklists, ideias e discussões existentes neste subprojeto
-2. Mapear categorias e propor nova estrutura de diretórios
-3. Debater e aprovar fluxo de amadurecimento de ideias
-4. Avaliar e propor estratégia para gestão de pacotes/bibliotecas externos
-5. Pesquisar e comparar novos tipos de artefatos de governança com padrões de mercado (Jira, Trello, Notion, etc.)
-6. Prototipar e documentar inovações em artefatos e fluxos
-7. Executar checklist de modularização de artefatos globais
-
-
-# Reestruturação e Modularização de Artefatos Globais
-
 ## Sumário Executivo
 
-Este subprojeto visa revisar, modularizar e otimizar os artefatos globais do laboratório, promovendo clareza, rastreabilidade e governança conforme o arcabouço de diretrizes. O objetivo é garantir que todos os fluxos, templates e anexos estejam acessíveis, exemplificados e alinhados ao consumo por agentes de IA e humanos.
+Este subprojeto centraliza, debate e executa iniciativas de reestruturação, agrupamento e modularização dos subprojetos, artefatos globais e fluxos do laboratório ScarecrowLab. O objetivo é promover escalabilidade, clareza, rastreabilidade e governança através de:
+
+- **Modularização de artefatos globais:** Revisão e otimização de templates, checklists, diretrizes e anexos do arcabouço
+- **Proposição de engines:** Conceito de módulos automatizados para geração de aplicações, fluxos e artefatos
+- **Gestão de pacotes externos:** Padronização do controle de versionamento de bibliotecas de terceiros
+- **Inovação em governança:** Avaliação e prototipagem de novos artefatos (cards, kanban, dashboards) comparados com padrões de mercado
+
+Este subprojeto é o núcleo de governança para evolução estrutural do ScarecrowLab, garantindo que todos os fluxos, templates e anexos estejam acessíveis, exemplificados e alinhados ao consumo por agentes de IA e humanos.
 
 ## Proposta Vigente
 
-- Consolidar e modularizar os artefatos globais, seguindo o template de subprojeto e as diretrizes de subprojetos.
-- Enriquecer cada anexo com sumário funcional, exemplos sintéticos e links cruzados.
-- Garantir navegação fluida e rastreável entre anexos, checklists, atas e changelogs.
-- Planejar e executar ações de revisão periódica e validação colaborativa.
+### Fase 1: Consolidação e Modularização (Atual)
+- Consolidar e modularizar artefatos globais seguindo templates e diretrizes oficiais
+- Enriquecer cada anexo com sumário funcional, exemplos sintéticos e links cruzados
+- Garantir navegação fluida e rastreável entre anexos, checklists, atas e changelogs
+- Executar checklist de modularização de artefatos globais
+
+### Fase 2: Proposição de Inovações
+- Mapear categorias e propor nova estrutura de diretórios
+- Debater e aprovar fluxo de amadurecimento de ideias
+- Avaliar estratégia para gestão de pacotes/bibliotecas externos
+- Pesquisar e comparar novos artefatos de governança (Jira, Trello, Notion, etc.)
+
+### Fase 3: Prototipagem e Documentação
+- Prototipar e documentar inovações em artefatos e fluxos
+- Implementar e comparar com padrões de mercado
+- Validar e documentar aprendizados
 
 ## Histórico de Debates e Atas
 
-- [ ] Adicionar links para atas e debates relevantes (ex: `debates/ATA_ABERTURA.md`)
+- [Ata de Abertura — 2025-10-09](debates/ATA_ABERTURA.md): Aprovação do subprojeto e criação de artefatos iniciais
 
 ## Checklists
 
-- [ ] Referenciar e manter atualizado o checklist de modularização: [`checklists/CHECKLIST_MODULARIZACAO_ARTEFATOS_GLOBAIS.md`](checklists/CHECKLIST_MODULARIZACAO_ARTEFATOS_GLOBAIS.md)
-- [ ] Checklist geral do subprojeto: [`CHECKLIST.md`](CHECKLIST.md)
+- [Checklist Principal do Subprojeto](CHECKLIST.md): Lista geral de tarefas e entregas
+- [Checklist de Modularização de Artefatos Globais](checklists/CHECKLIST_MODULARIZACAO_ARTEFATOS_GLOBAIS.md): Checklist específico para modularização de `.github/`
 
 ## Documentação Técnica
 
-- [ ] Detalhar requisitos, dependências e fluxos de revisão dos artefatos globais.
-- [ ] Incluir exemplos sintéticos de sumário, links e navegação cruzada.
-- [ ] Documentar critérios de validação e persistência dos artefatos.
+- [Análise de Artefatos Existentes](docs/ANALISE_ARTEFATOS.md): Levantamento completo dos artefatos relacionados ao subprojeto
+- [Changelog](CHANGELOG.md): Histórico de alterações e decisões
+
+## Estrutura do Subprojeto
+
+```
+reestruturacao_modularizacao_lab/
+├── README.md                    # Este arquivo
+├── CHECKLIST.md                 # Checklist principal
+├── CHANGELOG.md                 # Histórico de alterações
+├── debates/                     # Atas e discussões
+│   └── ATA_ABERTURA.md
+├── checklists/                  # Checklists específicos
+│   └── CHECKLIST_MODULARIZACAO_ARTEFATOS_GLOBAIS.md
+└── docs/                        # Documentação técnica
+    └── ANALISE_ARTEFATOS.md
+```
+
+## Referências ao Arcabouço
+
+### Diretrizes Aplicadas
+- [Diretrizes de Subprojetos](./../.github/copilot-diretrizes/diretrizes_subprojetos.md)
+- [Glossário](./../.github/copilot-diretrizes/glossario.md)
+- [Fluxos Gerais de Agentes](./../.github/copilot-diretrizes/fluxos_gerais_agentes.md)
+- [Protocolo de Orquestração](./../.github/copilot-diretrizes/protocolo_orquestracao_chat.md)
+- [Fluxos de Encerramento](./../.github/copilot-diretrizes/fluxos_encerramento.md)
+- [Templates Index](./../.github/copilot-diretrizes/templates_index.md)
+
+### Templates Utilizados
+- [Template de Subprojeto](./../.github/TEMPLATE_SUBPROJETO.md)
+- [Template de Checklist](./../.github/TEMPLATE_CHECKLIST.md)
+- [Template de Changelog](./../.github/copilot-diretrizes/template_changelog.md)
+- [Template de Ata](./../.github/copilot-diretrizes/TEMPLATE_ATA.md)
+
+### Rastreabilidade
+- [Painel Central de Subprojetos](./../.github/painel_subprojetos.md): Fonte única de status e pendências
 
 ---
 
-### Estrutura Recomendada
-
-- `debates/` — atas e discussões
-- `checklists/` — roteiros e listas de tarefas
-- `docs/` — documentação técnica complementar (criar se necessário)
-
-> Siga as diretrizes do repositório e utilize o painel central de subprojetos para rastreabilidade.
----
-
-> Este subprojeto é o núcleo de governança para evolução estrutural do ScarecrowLab.
+> Siga as diretrizes do repositório e utilize o painel central de subprojetos para rastreabilidade total.
