@@ -22,6 +22,7 @@
 | python_apps/stable_diffusion_webui | Em andamento | (definir) | (atualizar) |
 | python_apps/validacao_ia_multimodelo | Em andamento | (definir) | (atualizar) |
 | python_apps/viabilizacao_debate_multimodelo | Em andamento | (definir) | (atualizar) |
+| processamento_fragmentado | Em andamento | 1 | (definir) | 2025-10-10 |
 | agente-integrador | Em andamento | flaviomassayoshi | 2025-10-09 |
 | extensoes/xyz | Em andamento | userY | 2025-10-07 |
 | validacao_ia_multimodelo | Concluído | userX | 2025-10-08 |
@@ -62,8 +63,13 @@
 ### python_apps/validacao_ia_multimodelo
 - [ ] (Adicionar checklist se aplicável): (descrever pendência, prioridade, impacto, critério de sucesso)
 
-### python_apps/viabilizacao_debate_multimodelo
-- [ ] (Adicionar checklist se aplicável): (descrever pendência, prioridade, impacto, critério de sucesso)
+
+### processamento_fragmentado
+- [ ] [Plano de Ação — Convenção de Arquivos Temporários Persistidos](../processamento_fragmentado/checklists/PLANO_ACAO_CONVENCAO_TMP.md):
+    - Pendência: Implementar e validar convenção de arquivos temporários persistidos
+    - Prioridade: Alta
+    - Impacto: Alto
+    - Critérios de sucesso: Diretriz formalizada, templates e automações aderentes, rastreabilidade garantida
 
 ### agente-integrador
 - [ ] [Checklist principal](../agente-integrador/CHECKLIST.md): (descrever pendência, prioridade, impacto, critério de sucesso)

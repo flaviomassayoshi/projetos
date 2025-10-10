@@ -81,42 +81,16 @@ Descreva brevemente o efeito da atualização sobre fluxos operacionais, decisõ
 
 ## Estrutura Recomendada do Manifesto Consolidado
 
-### 0. Índice de Anexos e Templates (obrigatório)
-Inclua uma lista dos principais arquivos markdown do arcabouço, templates, painéis, exemplos e artefatos relevantes de subprojetos. **Os arquivos `copilot-diretrizes/protocolo_orquestracao_chat.md` e `ia_conversas/TEMPLATE_CONVERSA_IA.md` devem ser sempre destacados como referência obrigatória para fluxos de interação e orquestração.** Essa seção deve ser atualizada sempre que houver inclusão, remoção ou renomeação de arquivos relevantes. Oriente o MCP a referenciar esses arquivos em prompts usando o nome exato. Sempre que houver atualização nesses arquivos, revise e ajuste os tópicos de protocolo e exemplos do manifesto para garantir alinhamento.
 
-**Exemplo:**
-```markdown
-## Índice de Anexos e Templates do ScarecrowLab
+### 0. Sumário dos Anexos e Templates (obrigatório)
 
-- .github/copilot-diretrizes/glossario.md
-- .github/copilot-diretrizes/fluxos_gerais_agentes.md
-- .github/copilot-diretrizes/checklist_comunicacao.md
-- .github/copilot-diretrizes/fluxos_encerramento.md
-- .github/copilot-diretrizes/diretrizes_subprojetos.md
-- .github/copilot-diretrizes/protocolo_orquestracao_chat.md
-- .github/copilot-diretrizes/templates_index.md
-- .github/copilot-diretrizes/checklists_praticos.md
-- .github/copilot-diretrizes/template_changelog.md
-- .github/copilot-diretrizes/diretrizes_tecnicas.md
-- .github/copilot-diretrizes/convenções_codigo.md
-- .github/copilot-diretrizes/projetos_terceiros.md
-- .github/copilot-diretrizes/diretrizes_execucao_venv_windows.md
-- .github/copilot-diretrizes/instrucoes_setup_CI.md
-- .github/copilot-diretrizes/diretrizes_debate.md
-- .github/copilot-diretrizes/fluxo_revisao_diretrizes.md
-- .github/TEMPLATE_ATUALIZACAO_MANIFESTO.md
-- .github/TEMPLATE_CHECKLIST.md
-- .github/TEMPLATE_CHECKLIST_ENTREGA.md
-- .github/TEMPLATE_PLANO_ACAO.md
-- .github/ia_conversas/TEMPLATE_CONVERSA_IA.md
-- .github/painel_subprojetos.md
-- python_apps/validacao_ia_multimodelo/README.md
-- python_apps/validacao_ia_multimodelo/CHECKLIST.md
-- python_apps/viabilizacao_debate_multimodelo/README.md
-- python_apps/viabilizacao_debate_multimodelo/CHECKLIST.md
-- python_apps/viabilizacao_debate_multimodelo/ATA_MIGRACAO_MANIFESTO.md
-- ... (demais arquivos relevantes de subprojetos)
-```
+Liste cada anexo ou template relevante do arcabouço, seguido de um resumo funcional minificado (1-2 linhas) que explique seu propósito e uso prático. O objetivo é tornar o manifesto autossuficiente para o MCP, sem depender de consulta externa.
+
+**Exemplo de preenchimento:**
+- **Nome_do_Anexo:** Breve resumo funcional (ex: "Define termos essenciais e siglas do laboratório.")
+- **Outro_Anexo:** Resumo funcional minificado (ex: "Fluxo padrão para execução de tarefas por agentes MCP/GHC.")
+
+> Substitua os exemplos acima pelos anexos reais do laboratório, sempre com resumos objetivos e sintéticos.
 
 ### 1. Objetivo do Manifesto
 (Explique o objetivo principal do manifesto e o público-alvo, com clareza para o MCP e para humanos.)

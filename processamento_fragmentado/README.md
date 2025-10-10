@@ -1,19 +1,27 @@
+
 # Subprojeto: Processamento Fragmentado de Memória IA
 
-## Objetivo
-Investigar, propor e validar um protocolo para persistência modular de conclusões/intermediárias de IA, utilizando fragmentos de memória (arquivos pequenos, rastreáveis e facilmente recombináveis), garantindo retomada, rastreabilidade e eficiência em fluxos longos.
+## Sumário Executivo
+Investigar, propor e validar um protocolo para persistência modular de conclusões/intermediárias de IA, utilizando fragmentos de memória (arquivos pequenos, rastreáveis e recombináveis), garantindo retomada, rastreabilidade e eficiência em fluxos longos. Evita perda de progresso, facilita auditoria, retomada e histórico de decisões.
 
-## Justificativa
-Evitar perda de progresso em sessões longas, facilitar auditoria, retomada e montagem de histórico de decisões.
+## Proposta Vigente
+<!-- Atualize esta seção ao final de cada debate ou decisão importante, consolidando melhorias e mudanças. -->
 
-## Próximos Passos
-- Detalhar requisitos e casos de uso
-- Propor modelo de fragmentação e nomenclatura
-- Validar integração com arcabouço atual
-- Documentar aprendizados e recomendações
+## Histórico de Debates e Atas
+- [ATA de Abertura](debates/ATA_ABERTURA.md)
 
-## Artefatos
-- README.md (este)
-- ATA_ABERTURA.md
-- CHECKLIST.md
-- Exemplos de fragmentos
+## Checklists
+- [Plano de Ação — Convenção de Arquivos Temporários Persistidos](checklists/PLANO_ACAO_CONVENCAO_TMP.md)
+
+## Documentação Técnica
+- [ ] Detalhe requisitos, dependências, scripts, fluxos e integrações relevantes. Exemplos: modelo de fragmentação, nomenclatura, integração com arcabouço.
+
+---
+
+Estrutura sugerida de pastas:
+
+- `debates/` — arquivos de debate e atas
+- `checklists/` — roteiros, listas de tarefas, procedimentos
+- `docs/` — documentação técnica complementar
+
+> Siga as diretrizes do repositório para governança, debates e versionamento.
