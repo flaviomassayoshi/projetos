@@ -24,14 +24,14 @@ Este documento detalha as ações recomendadas, arquivos-alvo e justificativas p
 | Checklists de modularização/revisão estrutural       | Revisar/atualizar    | checklists/CHECKLIST_MODULARIZACAO_ARTEFATOS_GLOBAIS.md   | Validar cobertura     |
 | Checklists de entrega/reformulação                   | Revisar/atualizar    | checklists/CHECKLIST_ENTREGA.md, checklists/CHECKLIST_REFORMULACAO.md | Confirmar uso |
 | Workflows de automação/geração de manifesto          | Revisar/atualizar    | docs/workflow_geracao_manifesto.yml, docs/gerar_manifesto.py | Validar integração |
-| Documentos de apoio/atas de subprojetos              | Manter               | automacao_tarefas_lab/DOCUMENTO_APOIO_PROCESSAMENTO.md, debates/ATA_ABERTURA.md | Aprendizados e decisões|
+| Documentos de apoio/atas de subprojetos              | Manter               | debates/ATA_ABERTURA.md | Aprendizados e decisões (documento de apoio obsoleto removido)|
 
 | Item/Tema                                      | Ação Recomendada      | Destino/Arquivo-Alvo                | Justificativa/Observação |
 |------------------------------------------------|----------------------|-------------------------------------|-------------------------|
-| Checklists persistentes e logs incrementais     | Manter               | DOCUMENTO_APOIO_PROCESSAMENTO.md    | Alinhado à prática atual |
-| Atas e decisões em arquivos de apoio            | Manter               | DOCUMENTO_APOIO_PROCESSAMENTO.md    | Rastreabilidade         |
-| Automação/workflow para grandes volumes         | Manter               | DOCUMENTO_APOIO_PROCESSAMENTO.md    | Já validado             |
-| Comunicação clara e checkpoints                 | Manter               | DOCUMENTO_APOIO_PROCESSAMENTO.md    | Já validado             |
+| Checklists persistentes e logs incrementais     | Manter               | automacao_tarefas_lab/README.md    | Alinhado à prática atual (consolidado no README) |
+| Atas e decisões em arquivos de apoio            | Manter               | automacao_tarefas_lab/README.md    | Rastreabilidade (consolidado no README)         |
+| Automação/workflow para grandes volumes         | Manter               | automacao_tarefas_lab/README.md    | Já validado (consolidado no README)             |
+| Comunicação clara e checkpoints                 | Manter               | automacao_tarefas_lab/README.md    | Já validado (consolidado no README)             |
 | Fluxo padrão de interação                      | Consolidar/reescrever| copilot-instructions.md             | Eliminar redundâncias    |
 | Critérios de persistência                      | Consolidar           | copilot-instructions.md             | Unificar exemplos        |
 | Checklist de comunicação                       | Revisar/atualizar    | checklist_comunicacao.md            | Atualizar exemplos       |
