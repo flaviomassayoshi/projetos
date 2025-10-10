@@ -1,89 +1,84 @@
+
 # Diretrizes para Rodadas de Debate e Encerramento
 
 Estas diretrizes são parte do arcabouço geral de governança do Copilot e devem ser seguidas em todos os projetos que utilizam rodadas de debate entre modelos de IA.
 
 ## 1. Estrutura das Rodadas de Debate
 
+O fluxo de debate é padronizado para todos os subprojetos, com foco em modularização, rastreabilidade e amadurecimento incremental:
 
-O fluxo de debate é padronizado para todos os subprojetos:
-   1. **Elaboração de Pontos pelo Responsável:**
-       - O responsável pode, a qualquer momento, propor novos pontos, dúvidas ou sugestões para debate, criando um novo arquivo em uma subpasta `debates/` do subprojeto (ex: `debates/debate_<data>_<tema>.md`). Recomenda-se registrar data/hora e contexto.
-  2. **Ajustes/Propostas do Copilot:**
-     - O Copilot propõe ajustes, alternativas ou pede esclarecimentos antes de abrir a rodada formal.
-  3. **Abertura de Nova Rodada de Debate:**
-     - Cada rodada deve ser numerada/sequenciada no arquivo de debate, com separadores visuais e tema/ponto debatido.
-  4. **Análise e Sugestões de Modelo Participante Externo:**
-     - O modelo externo deve exercer análise crítica sobre os pontos propostos, evitando concordância automática e apresentando argumentos fundamentados, sugestões de melhoria, correções ou acréscimos.
-     - É obrigatório que cada modelo envolvido no debate manifeste posicionamento próprio, mesmo que parcialmente divergente, salvo quando houver consenso justificado após análise crítica.
-     - Os modelos devem manter flexibilidade para buscar soluções que atendam aos objetivos do projeto, mas sem abrir mão da análise crítica independente.
-  5. **Réplica do GitHub Copilot:**
-     - O Copilot responde ponto a ponto, devendo também exercer análise crítica, evitando concordância automática e apresentando justificativas claras para cada posição (concordância, discordância ou alternativas).
-     - A concordância total só é permitida quando houver consenso justificado após análise crítica explícita.
-  6. **Tréplica do Modelo Participante Externo:**
-     - O modelo externo responde à réplica, reforçando, ajustando ou contrapondo argumentos, sempre com análise crítica e fundamentação.
-  7. **Tabela de Decisões para Aprovação Final:**
-     - Pontos debatidos são organizados em tabela, com justificativa, opção recomendada e campo para alternativa. A tabela deve ser obrigatória ao final de cada rodada, mesmo que parcial.
+1. **Elaboração de Pontos e Subpontos pelo Responsável:**
+   - O responsável pode propor novos pontos ou subpontos (ex: D1.1, D1.2), criando arquivos próprios em `debates/`.
+   - Recomenda-se registrar data/hora, contexto e vincular subpontos ao tema principal.
 
-   - O responsável pode iniciar novas rodadas a qualquer momento, bastando criar novos arquivos de debate. Não há limite de rodadas.
-   - Permite múltiplos pontos em paralelo, com arquivos separados.
-   - O README de cada subprojeto deve conter apenas o sumário executivo, proposta vigente consolidada e links para os arquivos de debate/atas.
-   - É vedada a concordância automática entre modelos; todos os participantes devem demonstrar análise crítica e justificar suas posições, promovendo debates construtivos e flexíveis para atingir os objetivos do projeto.
+2. **Ajustes/Propostas do Copilot:**
+   - O Copilot pode sugerir ajustes, alternativas ou pedir esclarecimentos antes da rodada formal.
 
-### Template para Nova Rodada de Debate
+3. **Abertura de Nova Rodada de Debate:**
+   - Cada rodada/subponto deve ser numerada/sequenciada, com separadores visuais e tema claro.
+   - Recomenda-se criar um `README_DEBATE.md` por debate, com índice e status dos subpontos (ex: Encerrado ✅, Em andamento 🔄, Pendente ⏳).
 
-```
-### Rodada de Debate #N — <tema ou ponto debatido> (Data: DD/MM/AAAA)
+4. **Checkpoints Intermediários:**
+   - Registrar blocos de progresso por subponto, sinalizando etapas concluídas e pendentes (ex: análise crítica, réplica, tréplica, decisão).
 
-**Ponto sugerido pelo responsável:**  
+5. **Análise e Sugestões de Modelo Participante Externo:**
+   - Análise crítica obrigatória, evitando concordância automática.
+   - Todos os modelos devem justificar suas posições, promovendo debates construtivos.
+
+6. **Réplica e Tréplica:**
+   - O Copilot responde ponto a ponto, seguido de tréplica do modelo externo, sempre com argumentação fundamentada.
+
+7. **Tabela de Decisões para Aprovação Final:**
+   - Ao final de cada rodada/subponto, preencher tabela de decisões com propostas, justificativas e opções escolhidas.
+
+- Debates podem ocorrer em paralelo, cada um com arquivos e subpontos próprios.
+- O README do subprojeto deve conter sumário executivo, proposta vigente e links para debates/atas.
+
+### Template para Nova Rodada/Subponto
+
+Título: Rodada de Debate #N — <tema ou subponto> (Data: DD/MM/AAAA)
+ID: D1.2
+
+Ponto sugerido pelo responsável:
 <Descreva o ponto, contexto, motivação, etc.>
 
-**Ajustes/Propostas do Copilot:**  
+Ajustes/Propostas do Copilot:
 <Propostas de ajuste, alternativas, dúvidas ou esclarecimentos do Copilot.>
 
-#### Análise e Sugestões de Modelo Participante Externo
+Checkpoint D1.2 — 2025-10-10
+- [x] Análise crítica inicial
+- [x] Réplica do MCP
+- [ ] Tréplica pendente
+- [ ] Consolidação de decisão
+
+Análise e Sugestões de Modelo Participante Externo:
 <Análise crítica, sugestões de melhoria, correções ou acréscimos.>
 
-#### Réplica do GitHub Copilot
+Réplica do GitHub Copilot:
 <Resposta ponto a ponto do Copilot.>
 
-#### Tréplica do Modelo Participante Externo
+Tréplica do Modelo Participante Externo:
 <Resposta final do modelo externo.>
 
-#### Tabela de Decisões para Aprovação Final
+Tabela de Decisões para Aprovação Final:
 
 | Item | Proposta | Justificativa | Opção Escolhida | Outra Opção |
 |------|----------|---------------|-----------------|-------------|
 | 1    | ...      | ...           | ...             | ...         |
-```
 
 ## 2. Mecanismo de Encerramento do Debate
 
-- O encerramento pode ser feito por ponto/rodada, não sendo necessário aguardar o fechamento de todo o debate.
-- Para cada ponto encerrado:
-   - Marque na tabela de decisões se está “aceito”, “rejeitado” ou “em aberto para nova rodada”.
-   - Gere uma ata por tema ou grupo de pontos relacionados, nomeando conforme o assunto principal debatido.
-   - Registre explicitamente se houve consenso, maioria ou decisão unilateral do responsável, justificando no campo de observações da ata.
-   - Atualize incrementalmente a proposta vigente no README, mantendo o histórico das rodadas e decisões.
+- O encerramento pode ser feito por subponto, com ata e atualização incremental do README_DEBATE.md e do README principal.
+- Para cada subponto encerrado:
+   - Marque na tabela de decisões o status (“aceito”, “rejeitado”, “em aberto”).
+   - Gere ata por tema ou grupo de subpontos, nomeando conforme o assunto principal.
+   - Registre consenso, maioria ou decisão unilateral, justificando na ata.
+   - Atualize a proposta vigente e o índice de status dos subpontos.
 
-- O debate geral é considerado encerrado quando todos os pontos relevantes estiverem marcados como “aceito” ou “rejeitado” e não houver novas objeções ou sugestões relevantes nas etapas de tréplica.
-
-- Ao encerrar:
-   1. **Consolidação:**
-       - O resultado da tabela de decisões deve ser incorporado à proposta vigente, ajustando o texto conforme as opções escolhidas.
-   2. **Registro de Ata:**
-       - Criar uma ata resumida do debate, contendo:
-          - Data de encerramento
-          - Participantes
-          - Principais pontos debatidos
-          - Decisões tomadas (resumo da tabela)
-          - Observações relevantes (incluindo se houve consenso, maioria ou decisão unilateral)
-       - A ata deve ser salva em `ata_debate_<data>_<tema>.md` (tema ou assunto principal do debate, de forma abrangente) na pasta do projeto.
-   3. **Atualização do README.md:**
-       - Atualizar a seção da proposta vigente com o texto consolidado.
-       - Remover ou arquivar a tabela de decisões e registros intermediários, mantendo apenas a versão final e o link para a ata.
+- O debate geral é encerrado quando todos os subpontos relevantes estiverem resolvidos e não houver novas objeções.
 
 ## 3. Observações
 
 - Todo o processo deve prezar por transparência, rastreabilidade e clareza.
-- Recomenda-se que cada rodada seja identificada por data e número sequencial.
-- Caso haja divergência não resolvida, o responsável pelo projeto pode decidir pelo encerramento unilateral, registrando a justificativa na ata.
+- Recomenda-se identificar cada rodada/subponto por data e ID.
+- Em caso de divergência não resolvida, o responsável pode encerrar unilateralmente, justificando na ata.

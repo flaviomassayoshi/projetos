@@ -58,6 +58,24 @@ Exemplo de fluxo:
 3. Resultado é registrado e comunicado ao solicitante
 
 ## Próximos Passos
+
+---
+
+## ATA DE RASTREABILIDADE — PROCESSAMENTO DE GRANDE VOLUME DE INFORMAÇÕES (2025-10-09)
+
+Durante a revisão e reorganização do arcabouço do ScarecrowLab, o subprojeto "automacao_tarefas_lab" foi utilizado como estudo de caso para processar um grande volume de artefatos, diretrizes e fluxos. O processo envolveu:
+- Leitura sequencial e análise de mais de 20 arquivos/anexos
+- Criação de checklist persistente para rastreabilidade
+- Registro de status macro e logs incrementais
+- Comunicação frequente com o orquestrador para validação de cada etapa
+- Consolidação de matriz de rastreabilidade e plano de modificação
+
+Principais aprendizados:
+- Operações longas exigem mecanismos persistentes e checkpoints frequentes
+- A validação humana é fundamental para evitar desvios
+- Documentar o processo em tempo real facilita retomada e auditoria
+
+Recomenda-se consultar o documento de apoio [`DOCUMENTO_APOIO_PROCESSAMENTO.md`](./DOCUMENTO_APOIO_PROCESSAMENTO.md) para detalhes, recomendações e relato completo do fluxo.
 1. Mapear tarefas repetitivas prioritárias
 2. Definir requisitos e ferramentas para automação (scripts, GitHub Actions, bots, etc.)
 3. Implementar protótipos de automação

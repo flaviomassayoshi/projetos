@@ -1,0 +1,1 @@
+- 2025-10-10: Atualização das diretrizes de debate com estrutura modular, checkpoints e encerramento incremental.
