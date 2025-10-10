@@ -123,18 +123,33 @@ copilot-instructions.md (índice central)
 │   └─ Manual para conversas entre IAs, comandos e histórico.
 ├── .github/copilot-diretrizes/manual_redacao_mcp.md
 │   └─ Manual minimificado para padronizar a redação do manifesto e artefatos.
-└── .github/painel_subprojetos.md
-	└─ Fonte única e oficial para status, pendências e checklists de subprojetos.
+├── .github/painel_subprojetos.md
+│   └─ Fonte única e oficial para status, pendências e checklists de subprojetos.
+├── .github/TEMPLATE_CHECKLIST.md
+│   └─ Template para criação de checklists genéricos.
+├── .github/TEMPLATE_CHECKLIST_ENTREGA.md
+│   └─ Template para checklists de entrega vinculados a planos de ação.
+├── .github/TEMPLATE_PLANO_ACAO.md
+│   └─ Template para estruturação de planos de ação.
+├── .github/TEMPLATE_SUBPROJETO.md
+│   └─ Template base para criação de novos subprojetos.
+├── .github/TEMPLATE_ATUALIZACAO_MANIFESTO.md
+│   └─ Template exclusivo para atualização do manifesto consolidado.
+├── .github/copilot-diretrizes/TEMPLATE_ATA.md
+│   └─ Template para registro de atas de debates e reuniões.
+└── .github/ia_conversas/TEMPLATE_CONVERSA_IA.md
+	└─ Template para conversas orquestradas entre agentes de IA.
 ```
 
 **Contextos de uso:**
 - Para dúvidas sobre termos, consulte o glossário.
 - Para comunicação, use o checklist de comunicação.
 - Para execução de tarefas, siga o fluxo geral de agentes.
-- Para criação/gestão de subprojetos, consulte as diretrizes de subprojetos.
+- Para criação/gestão de subprojetos, consulte as diretrizes de subprojetos e use o TEMPLATE_SUBPROJETO.
 - Para prompts/orquestração, siga o protocolo de orquestração via chat.
 - Para automação, setup e CI, consulte instruções específicas.
 - Para revisão de diretrizes, siga o fluxo de revisão.
 - Para exemplos/templates, use o índice de templates e checklists práticos.
-- Para debates, use as diretrizes de debate e o manual de conversas IA.
+- Para debates, use as diretrizes de debate, o manual de conversas IA e o TEMPLATE_ATA.
 - Para governança e rastreabilidade de subprojetos, consulte o painel central.
+- Para criar checklists, planos de ação ou changelogs, use os templates correspondentes.
