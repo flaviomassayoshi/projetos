@@ -26,6 +26,7 @@
 | agente-integrador | Em andamento | flaviomassayoshi | 2025-10-09 |
 | extensoes/xyz | Em andamento | userY | 2025-10-07 |
 | validacao_ia_multimodelo | Concluído | userX | 2025-10-08 |
+| arcabouço_governanca | Em andamento | GitHub Copilot | 2025-10-10 |
 
 ---
 
@@ -79,6 +80,15 @@
 
 ### validacao_ia_multimodelo
 - [x] [Checklist de validação IA](../validacao_ia_multimodelo/CHECKLIST.md): concluído
+
+### arcabouço_governanca
+- [x] Regeneração de templates oficiais ausentes:
+    - Pendência: Criar templates referenciados mas ausentes no repositório
+    - Prioridade: Alta
+    - Impacto: Crítico para rastreabilidade e autossuficiência do MCP
+    - Status: Concluído
+    - Critérios de sucesso: Todos os templates referenciados em copilot-instructions.md devem estar acessíveis
+    - Resultado: ✅ TEMPLATE_SUBPROJETO.md relocado para .github/, TEMPLATE_ATA.md criado, templates_index.md atualizado
 
 ---
 
