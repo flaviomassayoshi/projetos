@@ -44,6 +44,33 @@ Validar checklists e status de subprojetos
 Integrar automações com templates e governança do arcabouço
 Permitir acionamento automático de scripts via comandos customizados (ex: /atualizar_painel, /validar_links)
 
+## Automações Implementadas
+
+### 1. Auto-Aprovação de Pull Requests
+
+**Status:** ✅ Implementado
+
+**Descrição:** Workflow do GitHub Actions que aprova automaticamente PRs que atendem a critérios de confiança.
+
+**Localização:** `.github/workflows/auto-approve-pr.yml`
+
+**Critérios de Auto-Aprovação:**
+- PRs com label `auto-approve`
+- PRs criados por bots confiáveis (dependabot, renovate)
+- PRs criados pelo dono do repositório
+
+**Documentação:** Ver [.github/workflows/README.md](../.github/workflows/README.md)
+
+**Benefícios:**
+- Reduz gargalos de aprovação para mudanças de baixo risco
+- Acelera integração de atualizações de dependências
+- Mantém rastreabilidade com comentários automáticos
+
+**Próximos Passos:**
+- Implementar merge automático após aprovação (opcional)
+- Adicionar validações de CI antes da aprovação
+- Expandir critérios conforme necessidades do laboratório
+
 ## Comandos Automáticos e Integração de Scripts
 
 O projeto irá mapear e padronizar comandos que possam ser acionados por agentes (ex: Copilot, bots, CI) para executar scripts específicos do laboratório. Isso inclui:

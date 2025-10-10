@@ -39,7 +39,10 @@
 - [ ] [Checklist reformulação](../automacao_manifesto/checklists/CHECKLIST_REFORMULACAO.md): (descrever pendência, prioridade, impacto, critério de sucesso)
 
 ### automacao_tarefas_lab
-- [ ] [Checklist principal](../automacao_tarefas_lab/CHECKLIST.md): (descrever pendência, prioridade, impacto, critério de sucesso)
+- [x] Implementar workflow de auto-aprovação de PRs (✅ 2025-10-10)
+  - Contexto: Primeiro workflow de automação implementado no laboratório
+  - Critérios de sucesso: Workflow funcional, documentado e integrado ao subprojeto
+- [ ] [Checklist principal](../automacao_tarefas_lab/CHECKLIST.md): Implementar automações adicionais (atualização de painel, validação de checklists)
 
 ### avaliacao_engenharia_prompt
 - [ ] [Checklist principal](../avaliacao_engenharia_prompt/CHECKLIST.md): (descrever pendência, prioridade, impacto, critério de sucesso)
