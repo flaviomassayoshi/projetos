@@ -82,112 +82,59 @@ Consulte o anexo [Fluxo para Revisão de Diretrizes](./copilot-diretrizes/fluxo_
 
 
 
-# Blocos Funcionais de Artefatos do Arcabouço
 
-## .github/copilot-diretrizes/glossario.md
-Resumo: Definições e siglas essenciais para agentes MCP/GHC.
-Exemplo sintético:
-- MCP: Microsoft Copilot
-- Checklist: Lista de tarefas
-- Changelog: Registro de alterações
+# Árvore de Anexos e Blocos Funcionais do Arcabouço
 
-## .github/copilot-diretrizes/checklist_comunicacao.md
-Resumo: Critérios mínimos para comunicação entre agentes MCP e GHC.
-Checklist:
-- [ ] Mensagem clara
-- [ ] Referência ao template
-- [ ] Validação pelo orquestrador
+> Utilize esta árvore para decidir rapidamente qual anexo consultar em cada contexto. Cada nó traz o caminho, resumo e contexto de uso recomendado.
 
-## .github/copilot-diretrizes/fluxos_gerais_agentes.md
-Resumo: Fluxo padrão de execução para agentes de IA.
-Exemplo:
-1. Apresentar plano de ação
-2. Executar etapas
-3. Converter em checklist
+```
+copilot-instructions.md (índice central)
+├── .github/copilot-diretrizes/glossario.md
+│   └─ Definições e siglas essenciais para agentes MCP/GHC.
+├── .github/copilot-diretrizes/checklist_comunicacao.md
+│   └─ Critérios mínimos para comunicação entre agentes MCP e GHC.
+├── .github/copilot-diretrizes/fluxos_gerais_agentes.md
+│   └─ Fluxo padrão de execução para agentes de IA.
+├── .github/copilot-diretrizes/diretrizes_subprojetos.md
+│   └─ Regras para criação e organização de subprojetos.
+├── .github/copilot-diretrizes/protocolo_orquestracao_chat.md
+│   └─ Protocolo para prompts e orquestração MCP <-> GHC.
+├── .github/copilot-diretrizes/fluxos_encerramento.md
+│   └─ Fluxos de encerramento, changelog e prompt de retomada.
+├── .github/copilot-diretrizes/instrucoes_setup_CI.md
+│   └─ Setup de ambiente, CI e automações para agentes de IA.
+├── .github/copilot-diretrizes/fluxo_revisao_diretrizes.md
+│   └─ Processo padronizado de revisão e atualização das diretrizes.
+├── .github/copilot-diretrizes/templates_index.md
+│   └─ Índice central de templates e exemplos operacionais.
+├── .github/copilot-diretrizes/checklists_praticos.md
+│   └─ Exemplos práticos e templates de checklist.
+├── .github/copilot-diretrizes/diretrizes_tecnicas.md
+│   └─ Diretrizes técnicas para ambiente local e escolha de modelos de IA.
+├── .github/copilot-diretrizes/convenções_codigo.md
+│   └─ Convenções de código para agentes de IA.
+├── .github/copilot-diretrizes/projetos_terceiros.md
+│   └─ Regras para projetos de terceiros e customizações.
+├── .github/copilot-diretrizes/diretrizes_execucao_venv_windows.md
+│   └─ Execução de scripts e venv no Windows.
+├── .github/copilot-diretrizes/diretrizes_debate.md
+│   └─ Estrutura e fluxo para rodadas de debate entre IAs.
+├── .github/ia_conversas/README.md
+│   └─ Manual para conversas entre IAs, comandos e histórico.
+├── .github/copilot-diretrizes/manual_redacao_mcp.md
+│   └─ Manual minimificado para padronizar a redação do manifesto e artefatos.
+└── .github/painel_subprojetos.md
+	└─ Fonte única e oficial para status, pendências e checklists de subprojetos.
+```
 
-## .github/copilot-diretrizes/diretrizes_subprojetos.md
-Resumo: Regras para criação e organização de subprojetos.
-Exemplo:
-- Nova proposta = nova pasta
-- Usar TEMPLATE_SUBPROJETO.md
-
-## .github/copilot-diretrizes/protocolo_orquestracao_chat.md
-Resumo: Protocolo para prompts e orquestração MCP <-> GHC.
-Exemplo:
-@ghc: executar plano de ação
-Contexto: resumo objetivo
-Tarefas: lista numerada
-
-## .github/copilot-diretrizes/fluxos_encerramento.md
-Resumo: Fluxos de encerramento, changelog e prompt de retomada.
-Exemplo de changelog:
-- Data/hora: 2025-10-08
-- Responsável: GitHub Copilot
-- Descrição: Checklist X concluído
-
-## .github/copilot-diretrizes/instrucoes_setup_CI.md
-Resumo: Setup de ambiente, CI e automações para agentes de IA.
-Exemplo:
-- Consultar/atualizar .github/PENDENCIAS.md
-- Executar comandos de setup
-
-## .github/copilot-diretrizes/fluxo_revisao_diretrizes.md
-Resumo: Processo padronizado de revisão e atualização das diretrizes.
-Exemplo:
-1. Abrir checklist de revisão
-2. Registrar atualização via TEMPLATE_ATUALIZACAO_MANIFESTO.md
-
-## .github/copilot-diretrizes/templates_index.md
-Resumo: Índice central de templates e exemplos operacionais.
-Exemplo:
-- Template de Plano de Ação
-- Template de Checklist de Entrega
-
-## .github/copilot-diretrizes/checklists_praticos.md
-Resumo: Exemplos práticos e templates de checklist.
-Exemplo:
-- [ ] Validar ambiente virtual
-- [ ] Executar testes
-
-## .github/copilot-diretrizes/diretrizes_tecnicas.md
-Resumo: Diretrizes técnicas para ambiente local e escolha de modelos de IA.
-Exemplo:
-- Python 3.10.11
-- Usar modelo 0x para rotina
-
-## .github/copilot-diretrizes/convenções_codigo.md
-Resumo: Convenções de código para agentes de IA.
-Exemplo:
-- snake_case para funções
-- PascalCase para classes
-
-## .github/copilot-diretrizes/projetos_terceiros.md
-Resumo: Regras para projetos de terceiros e customizações.
-Exemplo:
-- Não inicializar Git em clonado
-- Customizações em pasta separada
-
-## .github/copilot-diretrizes/diretrizes_execucao_venv_windows.md
-Resumo: Execução de scripts e venv no Windows.
-Exemplo:
-- Ativar venv: .\venv\Scripts\Activate.ps1
-
-## .github/copilot-diretrizes/diretrizes_debate.md
-Resumo: Estrutura e fluxo para rodadas de debate entre IAs.
-Exemplo:
-| Item | Proposta | Justificativa |
-|------|----------|---------------|
-| 1    | ...      | ...           |
-
-## .github/ia_conversas/README.md
-Resumo: Manual para conversas entre IAs, comandos e histórico.
-Exemplo:
-@copilot: ler conversa_modeloA_modeloB.md
-@modeloB: escrever conversa_modeloA_modeloB.md
-
-## .github/copilot-diretrizes/manual_redacao_mcp.md
-Resumo: Manual minimificado para padronizar a redação do manifesto e artefatos, otimizando a atuação do MCP.
-Exemplo:
-- Usar títulos hierárquicos
-- Blocos padronizados por artefato
-- Glossário sintético
+**Contextos de uso:**
+- Para dúvidas sobre termos, consulte o glossário.
+- Para comunicação, use o checklist de comunicação.
+- Para execução de tarefas, siga o fluxo geral de agentes.
+- Para criação/gestão de subprojetos, consulte as diretrizes de subprojetos.
+- Para prompts/orquestração, siga o protocolo de orquestração via chat.
+- Para automação, setup e CI, consulte instruções específicas.
+- Para revisão de diretrizes, siga o fluxo de revisão.
+- Para exemplos/templates, use o índice de templates e checklists práticos.
+- Para debates, use as diretrizes de debate e o manual de conversas IA.
+- Para governança e rastreabilidade de subprojetos, consulte o painel central.

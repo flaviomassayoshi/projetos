@@ -1,3 +1,13 @@
+# Diretriz: Execução de Comandos Shell — Contexto e Caminhos
+
+Para garantir execução correta e evitar erros de contexto em automações, scripts e comandos shell:
+- Sempre utilize caminhos absolutos ao referenciar arquivos e pastas em comandos shell.
+- Sempre que possível, prefixe comandos shell com `cd <diretório>` para garantir o contexto correto de execução, especialmente em planos com múltiplas etapas ou diretórios distintos.
+- Em fluxos automatizados, explicite o contexto de cada etapa e valide o diretório antes de executar comandos sensíveis.
+
+Essas práticas reduzem riscos de conflitos, garantem rastreabilidade e evitam erros de execução fora do diretório esperado.
+
+> Esta diretriz complementa as recomendações de automação e scripts do arcabouço, evitando redundância e otimizando a governança operacional.
 # Diretrizes Técnicas do Ambiente Local
 
 - GPU: NVIDIA RTX 4070, driver 576.52, CUDA 12.9 (usar builds PyTorch/xFormers para CUDA 12.1+)

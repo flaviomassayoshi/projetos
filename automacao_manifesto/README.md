@@ -1,29 +1,43 @@
+
 # Subprojeto: Automação da Geração do ManifestoMCP.md
 
-## Objetivo
-Automatizar a geração do arquivo `ManifestoMCP.md` sempre que o template `.github/TEMPLATE_ATUALIZACAO_MANIFESTO.md` for atualizado, garantindo rastreabilidade, governança e eliminação de erros manuais.
+## Sumário Executivo
+Automatiza a geração do arquivo `ManifestoMCP.md` a partir do template oficial, garantindo rastreabilidade, governança e eliminação de erros manuais. Estrutura e fluxos alinhados ao arcabouço do ScarecrowLab.
 
-## Justificativa
-- Garante que o manifesto consolidado esteja sempre alinhado ao template e ao arcabouço.
-- Elimina risco de edição manual e resíduos de versões antigas.
-- Facilita governança, rastreabilidade e manutenção do laboratório.
+## Proposta Vigente
+- Geração automática do manifesto via script Python e workflow GitHub Actions.
+- Estrutura modular: checklists, atas/debates e documentação técnica organizados em subpastas.
+- Processo rastreável, auditável e fácil de manter.
 
-## Escopo
-- Workflow automatizado (ex: GitHub Actions) para regeneração do manifesto.
-- Script de extração/conversão do template para o manifesto final.
-- Documentação do fluxo e exemplos de uso.
+## Histórico de Debates e Atas
+- [ATA_ABERTURA](debates/ATA_ABERTURA.md)
 
-## Estrutura Inicial
-- `README.md` (este arquivo)
-- `workflow_geracao_manifesto.yml` (exemplo de workflow)
-- `gerar_manifesto.py` (script de geração)
-- `CHECKLIST.md` (checklist de entrega e validação)
+## Checklists
+- [Checklist de Entrega](checklists/CHECKLIST_ENTREGA.md)
+- [Checklist Reformulação Manifesto](checklists/CHECKLIST_REFORMULACAO.md)
 
-## Critérios de sucesso
-- Manifesto sempre atualizado automaticamente após alteração do template.
-- Processo rastreável, auditável e documentado.
-- Facilidade de manutenção e extensão futura.
+## Documentação Técnica
+- [Script de geração do manifesto](docs/gerar_manifesto.py)
+- [Workflow GitHub Actions](docs/workflow_geracao_manifesto.yml)
+
+## Estrutura Recomendada
+```
+automacao_manifesto/
+	README.md
+	debates/
+		ATA_ABERTURA.md
+	checklists/
+		CHECKLIST_ENTREGA.md
+		CHECKLIST_REFORMULACAO.md
+	docs/
+		gerar_manifesto.py
+		workflow_geracao_manifesto.yml
+```
+
+## Referências
+- Painel central de subprojetos: [.github/painel_subprojetos.md](../../.github/painel_subprojetos.md)
+- Diretrizes para subprojetos: [.github/copilot-diretrizes/diretrizes_subprojetos.md](../../.github/copilot-diretrizes/diretrizes_subprojetos.md)
 
 ---
 
-> Consulte o checklist e os exemplos para detalhes do fluxo.
+> Consulte os checklists, atas e documentação técnica para detalhes completos do fluxo.
