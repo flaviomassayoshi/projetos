@@ -8,6 +8,8 @@
 - [Template de Checklist de Entrega](../TEMPLATE_CHECKLIST_ENTREGA.md)
 - [Template de Checklist](../TEMPLATE_CHECKLIST.md)
 - [Template de Changelog](./template_changelog.md)
+- [Template de Ata](./TEMPLATE_ATA.md)
+- [Template de Subprojeto](../TEMPLATE_SUBPROJETO.md)
 - [Template de Atualização do Manifesto](../TEMPLATE_ATUALIZACAO_MANIFESTO.md)  
 	> O manifesto consolidado NUNCA deve ser editado diretamente. Sempre gere a partir deste template.
 - [Template de Conversa IA](../ia_conversas/TEMPLATE_CONVERSA_IA.md)

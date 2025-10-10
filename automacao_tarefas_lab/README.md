@@ -84,8 +84,6 @@ Exemplo de fluxo:
 2. Script correspondente é executado automaticamente
 3. Resultado é registrado e comunicado ao solicitante
 
-## Próximos Passos
-
 ---
 
 ## ATA DE RASTREABILIDADE — PROCESSAMENTO DE GRANDE VOLUME DE INFORMAÇÕES (2025-10-09)
@@ -101,8 +99,12 @@ Principais aprendizados:
 - Operações longas exigem mecanismos persistentes e checkpoints frequentes
 - A validação humana é fundamental para evitar desvios
 - Documentar o processo em tempo real facilita retomada e auditoria
+- Utilizar checklists persistentes e logs incrementais
+- Registrar atas e decisões em arquivos de apoio vinculados ao subprojeto
+- Priorizar automação e ferramentas de workflow para grandes volumes
+- Manter comunicação clara e checkpoints frequentes com o orquestrador
 
-Recomenda-se consultar o documento de apoio [`DOCUMENTO_APOIO_PROCESSAMENTO.md`](./DOCUMENTO_APOIO_PROCESSAMENTO.md) para detalhes, recomendações e relato completo do fluxo.
+## Próximos Passos
 1. Mapear tarefas repetitivas prioritárias
 2. Definir requisitos e ferramentas para automação (scripts, GitHub Actions, bots, etc.)
 3. Implementar protótipos de automação
