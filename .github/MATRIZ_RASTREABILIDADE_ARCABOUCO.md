@@ -4,10 +4,10 @@ Este documento consolida a matriz de rastreabilidade dos temas/diretrizes do arc
 
 | Tema/Diretriz                                                        | Origem                                 | Status      | Observações |
 |----------------------------------------------------------------------|----------------------------------------|-------------|-------------|
-| Utilizar checklists persistentes e logs incrementais                 | DOCUMENTO_APOIO_PROCESSAMENTO.md       | Validado    |             |
-| Registrar atas e decisões em arquivos de apoio vinculados ao subprojeto| DOCUMENTO_APOIO_PROCESSAMENTO.md      | Validado    |             |
-| Priorizar automação e ferramentas de workflow para grandes volumes    | DOCUMENTO_APOIO_PROCESSAMENTO.md       | Validado    | ✔️ 2025-10-09|
-| Manter comunicação clara e checkpoints frequentes com o orquestrador | DOCUMENTO_APOIO_PROCESSAMENTO.md       | Validado    | ✔️ 2025-10-09|
+| Utilizar checklists persistentes e logs incrementais                 | automacao_tarefas_lab/README.md       | Validado    | Consolidado no README do subprojeto |
+| Registrar atas e decisões em arquivos de apoio vinculados ao subprojeto| automacao_tarefas_lab/README.md      | Validado    | Consolidado no README do subprojeto |
+| Priorizar automação e ferramentas de workflow para grandes volumes    | automacao_tarefas_lab/README.md       | Validado    | ✔️ 2025-10-09 (Consolidado no README) |
+| Manter comunicação clara e checkpoints frequentes com o orquestrador | automacao_tarefas_lab/README.md       | Validado    | ✔️ 2025-10-09 (Consolidado no README) |
 | Fluxo padrão de interação para agentes de IA                         | copilot-instructions.md / fluxos_gerais_agentes.md | Parcialmente validado | Consolidar exemplos |
 | Critérios para persistência de artefatos                             | copilot-instructions.md / fluxos_gerais_agentes.md | Parcialmente validado | Detalhar casos |
 | Checklist resumido de comunicação para agentes                       | checklist_comunicacao.md               | Parcialmente validado | Revisar exemplos |
@@ -32,7 +32,7 @@ Este documento consolida a matriz de rastreabilidade dos temas/diretrizes do arc
 | Checklists de modularização e revisão estrutural                     | checklists/CHECKLIST_MODULARIZACAO_ARTEFATOS_GLOBAIS.md   | Parcialmente validado | Validar cobertura |
 | Checklists de entrega e reformulação                                 | checklists/CHECKLIST_ENTREGA.md, checklists/CHECKLIST_REFORMULACAO.md | Parcialmente validado | Confirmar uso |
 | Workflows de automação e geração de manifesto                        | docs/workflow_geracao_manifesto.yml, docs/gerar_manifesto.py | Parcialmente validado | Validar integração |
-| Documentos de apoio e atas de subprojetos                            | automacao_tarefas_lab/DOCUMENTO_APOIO_PROCESSAMENTO.md, debates/ATA_ABERTURA.md | Validado    | Aprendizados e decisões |
+| Documentos de apoio e atas de subprojetos                            | automacao_tarefas_lab/README.md, debates/ATA_ABERTURA.md | Validado    | Aprendizados consolidados (documento de apoio obsoleto removido) |
 | Painel central de subprojetos                                        | painel_subprojetos.md                  | Parcialmente validado | Confirmar governança |
 | Definições e siglas essenciais para agentes MCP/GHC                  | glossario.md                           | Parcialmente validado | Consolidar termos |
 | Critérios e tipos de artefatos persistentes/temporários              | glossario.md                           | Parcialmente validado | Confirmar exemplos |
