@@ -124,6 +124,10 @@ copilot-instructions.md (índice central)
 │   └─ Índice central de templates e exemplos operacionais.
 ├── .github/copilot-diretrizes/checklists_praticos.md
 │   └─ Exemplos práticos e templates de checklist.
+├── .github/copilot-diretrizes/template_changelog.md
+│   └─ Template padrão para registro de changelogs.
+├── .github/copilot-diretrizes/exemplos_casos_especiais.md
+│   └─ Exemplos de casos especiais e situações atípicas.
 ├── .github/copilot-diretrizes/diretrizes_tecnicas.md
 │   └─ Diretrizes técnicas para ambiente local e escolha de modelos de IA.
 ├── .github/copilot-diretrizes/convenções_codigo.md
@@ -172,3 +176,5 @@ copilot-instructions.md (índice central)
 - Para debates, use as diretrizes de debate, o manual de conversas IA e o TEMPLATE_ATA.
 - Para governança e rastreabilidade de subprojetos, consulte o painel central.
 - Para criar checklists, planos de ação ou changelogs, use os templates correspondentes.
+- Para casos especiais ou situações atípicas, consulte os exemplos de casos especiais.
+- Para persistência de contexto IA e organização do repositório, consulte persistencia_contexto_ia.md.
