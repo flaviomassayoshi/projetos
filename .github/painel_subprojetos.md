@@ -195,6 +195,7 @@
 | extensoes/xyz                      | Em andamento   | 1                  | Média     | Médio   | [Checklist integração Z](../extensoes/xyz/CHECKLIST.md), Implementar integração Z (⏳), Revisar documentação (⏳) | userY            | 2025-10-07         |
 | validacao_ia_multimodelo           | Concluído      | 0                  | -         | -       | [Checklist de validação IA](../validacao_ia_multimodelo/CHECKLIST.md) (✔️) | userX            | 2025-10-08         |
 | orquestracao_issues_api            | Em andamento (Fase 1 concluída) | 1 | Alta | Alto | [README](../orquestracao_issues_api/README.md), [Checklist Principal](../orquestracao_issues_api/CHECKLIST.md), [Changelog](../orquestracao_issues_api/CHANGELOG.md), [ATA Abertura](../orquestracao_issues_api/debates/ATA_ABERTURA.md) | GitHub Copilot | 2025-10-11 |
+| scarecrow_autoflow                 | Em andamento (Fase 1 concluída) | 9 | Crítico | Crítico | [README](../scarecrow_autoflow/README.md), [Checklist Principal](../scarecrow_autoflow/CHECKLIST.md), [Changelog](../scarecrow_autoflow/CHANGELOG.md), [ATA Abertura](../scarecrow_autoflow/debates/ATA_ABERTURA.md) | GitHub Copilot | 2025-10-11 |
 
 ## Pendências Detalhadas
 
@@ -236,6 +237,53 @@
 - [Changelog](../orquestracao_issues_api/CHANGELOG.md)
 - [ATA de Abertura](../orquestracao_issues_api/debates/ATA_ABERTURA.md)
 - [Avaliação de Projetos Existentes](../orquestracao_issues_api/docs/AVALIACAO_PROJETOS_EXISTENTES.md)
+
+### scarecrow_autoflow
+
+**Status:** Em andamento (Fase 1 concluída, Fase 2 iniciada)
+
+**Últimas Atualizações (2025-10-11):**
+- [x] Estrutura completa de diretórios criada (debates/, checklists/, docs/, scripts/, decisoes_automatizadas/)
+- [x] README.md com sumário executivo, proposta vigente, escopo e fluxo operacional
+- [x] CHECKLIST.md estruturado em 10 fases (estruturação até painel de governança)
+- [x] CHANGELOG.md inicializado
+- [x] ATA_ABERTURA.md registrando decisões iniciais e alinhamento com arcabouço
+- [x] Documentação técnica completa (critérios, regras, processos, guia de uso)
+- [x] Scripts core implementados (classificador.py, validador.py, simulador.py)
+- [x] GitHub Actions workflow básico criado (autoflow-classify-issue.yml)
+- [x] Sistema de logs estruturado (decisoes_automatizadas/)
+
+**Próximas Pendências:**
+- [ ] Fase 3-5: Testar e refinar scripts core
+    - Prioridade: Alta
+    - Impacto: Crítico
+    - Critérios de sucesso: Scripts validados com casos reais, testes unitários implementados
+- [ ] Fase 6: Completar GitHub Actions workflows (PR, validação)
+    - Prioridade: Alta
+    - Impacto: Crítico
+    - Critérios de sucesso: Workflows funcionais para issues e PRs, auto-merge operacional
+- [ ] Fase 7: Implementar sistema completo de logs e rastreabilidade
+    - Prioridade: Média
+    - Impacto: Alto
+- [ ] Fase 8: Integração completa com painel central e outros subprojetos
+    - Prioridade: Média
+    - Impacto: Alto
+- [ ] Fase 9: Testes e validação com dados reais
+    - Prioridade: Média
+    - Impacto: Alto
+- [ ] Fase 10: Painel de governança com métricas (opcional)
+    - Prioridade: Baixa
+    - Impacto: Médio
+
+**Links Principais:**
+- [README](../scarecrow_autoflow/README.md)
+- [Checklist Principal](../scarecrow_autoflow/CHECKLIST.md)
+- [Changelog](../scarecrow_autoflow/CHANGELOG.md)
+- [Ata de Abertura](../scarecrow_autoflow/debates/ATA_ABERTURA.md)
+- [Critérios de Classificação](../scarecrow_autoflow/docs/CRITERIOS_CLASSIFICACAO.md)
+- [Regras de Validação](../scarecrow_autoflow/docs/REGRAS_VALIDACAO.md)
+- [Processo de Simulação](../scarecrow_autoflow/docs/PROCESSO_SIMULACAO.md)
+- [Guia de Uso](../scarecrow_autoflow/docs/GUIA_USO.md)
 
 ### governanca_template_issue_lab
 
