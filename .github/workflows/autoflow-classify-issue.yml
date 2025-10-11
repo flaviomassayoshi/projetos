@@ -1,0 +1,148 @@
+name: AutoFlow - Classify Issue
+
+on:
+  issues:
+    types: [opened, labeled, unlabeled]
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  classify:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Get issue data
+        id: issue-data
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue = context.payload.issue;
+            const issueData = {
+              number: issue.number,
+              title: issue.title,
+              body: issue.body || '',
+              labels: issue.labels,
+              user: issue.user,
+              created_at: issue.created_at
+            };
+            core.setOutput('data', JSON.stringify(issueData));
+
+      - name: Classify issue
+        id: classify
+        run: |
+          cd scarecrow_autoflow/scripts
+          RESULT=$(python classificador.py --type issue --number ${{ github.event.issue.number }} --data '${{ steps.issue-data.outputs.data }}')
+          echo "result<<EOF" >> $GITHUB_OUTPUT
+          echo "$RESULT" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Extract category
+        id: category
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const result = JSON.parse(`${{ steps.classify.outputs.result }}`);
+            core.setOutput('category', result.category);
+            core.setOutput('confidence', result.confidence);
+            core.setOutput('justificativa', result.justificativa);
+
+      - name: Add label
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const category = '${{ steps.category.outputs.category }}';
+            const confidence = '${{ steps.category.outputs.confidence }}';
+            const justificativa = `${{ steps.category.outputs.justificativa }}`;
+            
+            // Remove old autoflow labels
+            const oldLabels = ['autoflow:auto-merge', 'autoflow:needs-simulation', 'autoflow:manual-review'];
+            for (const label of oldLabels) {
+              try {
+                await github.rest.issues.removeLabel({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: context.issue.number,
+                  name: label
+                });
+              } catch (error) {
+                // Label might not exist, ignore
+              }
+            }
+            
+            // Add new label
+            if (category !== 'skip') {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                labels: [`autoflow:${category}`]
+              });
+            }
+            
+            // Add comment
+            const comment = `## 🤖 Scarecrow AutoFlow - Classificação Automática
+
+**Categoria:** \`${category}\`  
+**Confiança:** ${confidence}%  
+**Justificativa:** ${justificativa}
+
+---
+
+${category === 'auto-merge' ? '✅ Esta issue foi classificada para **aprovação automática**. Validação de conformidade será executada.' : ''}
+${category === 'needs-simulation' ? '🔄 Esta issue foi classificada para **simulação de decisão**. Um debate entre personas será realizado.' : ''}
+${category === 'manual-review' ? '👤 Esta issue foi classificada para **revisão manual**. Um mantenedor humano deverá avaliá-la.' : ''}
+${category === 'skip' ? '⏭️ Esta issue será **ignorada** pelo sistema de automação.' : ''}
+
+*Classificação automática v1.0 - Scarecrow AutoFlow*`;
+            
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: comment
+            });
+
+      - name: Create decision log
+        run: |
+          DATE=$(date +%Y-%m-%d)
+          MONTH=$(date +%Y-%m)
+          CATEGORY="${{ steps.category.outputs.category }}"
+          mkdir -p "scarecrow_autoflow/decisoes_automatizadas/$MONTH"
+          
+          cat > "scarecrow_autoflow/decisoes_automatizadas/$MONTH/${DATE}_classification_issue-${{ github.event.issue.number }}_${CATEGORY}.md" << 'EOF'
+          # Log de Classificação — ${{ github.event.issue.title }}
+
+          **Issue:** #${{ github.event.issue.number }}  
+          **Tipo:** Issue  
+          **Data:** $(date -u +%Y-%m-%dT%H:%M:%SZ)  
+          **Versão do Sistema:** 1.0
+
+          ***
+
+          ## Resultado da Classificação
+
+          ```json
+          ${{ steps.classify.outputs.result }}
+          ```
+
+          ***
+
+          **Link:** ${{ github.event.issue.html_url }}  
+          **Log gerado por:** Scarecrow AutoFlow v1.0
+          EOF
+
+      - name: Commit log
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "autoflow: Log de classificação issue #${{ github.event.issue.number }}"
+          file_pattern: "scarecrow_autoflow/decisoes_automatizadas/**/*.md"

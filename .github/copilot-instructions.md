@@ -139,6 +139,8 @@ copilot-instructions.md (índice central)
 │   └─ Template base para criação de novos subprojetos.
 ├── .github/TEMPLATE_ATUALIZACAO_MANIFESTO.md
 │   └─ Template exclusivo para atualização do manifesto consolidado.
+├── .github/TEMPLATE_PROMPT_PADRAO.md
+│   └─ Template para estruturação de prompts padronizados com instrução [gerar_guid] para rastreabilidade.
 ├── .github/copilot-diretrizes/TEMPLATE_ATA.md
 │   └─ Template para registro de atas de debates e reuniões.
 └── .github/ia_conversas/TEMPLATE_CONVERSA_IA.md
@@ -158,6 +160,7 @@ copilot-instructions.md (índice central)
 - Para debates, use as diretrizes de debate, o manual de conversas IA e o TEMPLATE_ATA.
 - Para governança e rastreabilidade de subprojetos, consulte o painel central.
 - Para criar checklists, planos de ação ou changelogs, use os templates correspondentes.
+- Para criar prompts padronizados com rastreabilidade via GUID, use o TEMPLATE_PROMPT_PADRAO.
 
 ---
 
