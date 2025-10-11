@@ -19,7 +19,7 @@
 - [x] Criar CHANGELOG.md
 - [x] Criar ATA_ABERTURA.md
 - [x] Atualizar painel central de subprojetos
-- [ ] Validar rastreabilidade e links cruzados
+- [x] Validar rastreabilidade e links cruzados
 
 ## Fase 2: Definição de Requisitos
 
