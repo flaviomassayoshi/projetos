@@ -86,7 +86,7 @@
 - [Checklist de Modularização](checklists/CHECKLIST_MODULARIZACAO_ARTEFATOS_GLOBAIS.md)
 - [Painel Central de Subprojetos](../.github/painel_subprojetos.md)
 - [Diretrizes de Subprojetos](../.github/copilot-diretrizes/diretrizes_subprojetos.md)
-- [Template de Checklist](../.github/TEMPLATE_CHECKLIST.md)
+- [Template de Checklist](../.github/copilot-diretrizes/TEMPLATE_CHECKLIST.md)
 
 ---
 

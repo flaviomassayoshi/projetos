@@ -70,8 +70,8 @@ reestruturacao_modularizacao_lab/
 - [Templates Index](./../.github/copilot-diretrizes/templates_index.md)
 
 ### Templates Utilizados
-- [Template de Subprojeto](./../.github/TEMPLATE_SUBPROJETO.md)
-- [Template de Checklist](./../.github/TEMPLATE_CHECKLIST.md)
+- [Template de Subprojeto](./../.github/copilot-diretrizes/TEMPLATE_SUBPROJETO.md)
+- [Template de Checklist](./../.github/copilot-diretrizes/TEMPLATE_CHECKLIST.md)
 - [Template de Changelog](./../.github/copilot-diretrizes/template_changelog.md)
 - [Template de Ata](./../.github/copilot-diretrizes/TEMPLATE_ATA.md)
 

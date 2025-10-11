@@ -9,7 +9,7 @@
 3. Converter o plano de ação em checklist de entrega ao final, marcando cada item como concluído.
 4. Justificar se o checklist/plano será temporário ou persistente, conforme critérios do arcabouço.
 5. Registrar e referenciar artefatos persistentes em changelog e/ou índice de pendências.
-6. Para alterações no manifesto consolidado, é obrigatório utilizar o template `.github/TEMPLATE_ATUALIZACAO_MANIFESTO.md`. Nunca edite o manifesto diretamente: gere-o sempre a partir do template.
+6. Para alterações no manifesto consolidado, é obrigatório utilizar o template `.github/copilot-diretrizes/TEMPLATE_ATUALIZACAO_MANIFESTO.md`. Nunca edite o manifesto diretamente: gere-o sempre a partir do template.
 
 ## Critérios para persistência
 - Complexidade, múltiplos agentes, decisões estratégicas, fluxos longos, dependências externas, impacto relevante ou solicitação do responsável.

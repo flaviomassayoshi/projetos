@@ -48,11 +48,11 @@ Artefatos com última modificação APÓS 2025-10-10 19:53:00 (data da última a
 
 ### Templates Analisados
 
-- `.github/TEMPLATE_SUBPROJETO.md` — Template base para subprojetos
-- `.github/TEMPLATE_CHECKLIST.md` — Template para checklists genéricos
-- `.github/TEMPLATE_CHECKLIST_ENTREGA.md` — Template para checklists de entrega
-- `.github/TEMPLATE_PLANO_ACAO.md` — Template para planos de ação
-- `.github/TEMPLATE_ATUALIZACAO_MANIFESTO.md` — Template para manifesto consolidado
+- `.github/copilot-diretrizes/TEMPLATE_SUBPROJETO.md` — Template base para subprojetos
+- `.github/copilot-diretrizes/TEMPLATE_CHECKLIST.md` — Template para checklists genéricos
+- `.github/copilot-diretrizes/TEMPLATE_CHECKLIST_ENTREGA.md` — Template para checklists de entrega
+- `.github/copilot-diretrizes/TEMPLATE_PLANO_ACAO.md` — Template para planos de ação
+- `.github/copilot-diretrizes/TEMPLATE_ATUALIZACAO_MANIFESTO.md` — Template para manifesto consolidado
 
 ### Manifestos Analisados
 

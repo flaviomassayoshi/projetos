@@ -1,13 +1,28 @@
 
 # AVISO IMPORTANTE
 
-O manifesto consolidado é um produto do arcabouço e deve ser SEMPRE gerado ou atualizado utilizando EXCLUSIVAMENTE o template `.github/TEMPLATE_ATUALIZACAO_MANIFESTO.md`. É EXPRESSAMENTE PROIBIDO editar o manifesto diretamente. Toda alteração deve ser feita no template, e o manifesto gerado a partir dele, incorporando as diretrizes, regras e exemplos dos anexos. Alterações diretas no manifesto serão descartadas na próxima geração. Isso garante autossuficiência, rastreabilidade e alinhamento total ao funcionamento do laboratório para o MCP.
+O manifesto consolidado é um produto do arcabouço e deve ser SEMPRE gerado ou atualizado utilizando EXCLUSIVAMENTE o template `.github/copilot-diretrizes/TEMPLATE_ATUALIZACAO_MANIFESTO.md`. É EXPRESSAMENTE PROIBIDO editar o manifesto diretamente. Toda alteração deve ser feita no template, e o manifesto gerado a partir dele, incorporando as diretrizes, regras e exemplos dos anexos. Alterações diretas no manifesto serão descartadas na próxima geração. Isso garante autossuficiência, rastreabilidade e alinhamento total ao funcionamento do laboratório para o MCP.
 
 > O painel central de subprojetos (`.github/painel_subprojetos.md`) é a fonte única e oficial para status, pendências e checklists de todos os subprojetos. Todos os fluxos, templates, validações automáticas e relatórios do MCP/GHC devem consumir e referenciar esse painel para garantir rastreabilidade, governança e atuação proativa.
 
 
 Em caso de dúvida, conflito ou decisão estratégica, consulte sempre este arquivo (`copilot-instructions.md`), o painel central e os anexos em `.github/copilot-diretrizes/`, que são a única fonte da verdade do ScarecrowLab. Nunca altere o manifesto consolidado diretamente: siga o fluxo editar template → gerar manifesto.
 
+---
+
+# DIRETRIZ IA-ONLY: PERSISTÊNCIA DO CONTEXTO
+
+**Contexto permanente durante toda a sessão:**
+O contexto do laboratório ScarecrowLab é considerado persistente por toda a sessão de interação do agente de IA. Todas as instruções, diretrizes, templates e referências contidas em `copilot-instructions.md` e anexos em `.github/copilot-diretrizes/` devem ser mantidas, aplicadas e consultadas em cada interação, garantindo consistência, rastreabilidade e alinhamento total com o arcabouço do laboratório.
+
+**Implicações práticas:**
+- Agentes de IA devem sempre referenciar e seguir as diretrizes do arcabouço, mesmo em sessões longas ou após múltiplas interações.
+- O arcabouço é a única fonte da verdade: templates, protocolos e instruções aqui contidas prevalecem sobre interpretações ou padrões externos.
+- Qualquer decisão, artefato ou ação deve estar alinhada com as diretrizes persistentes do laboratório.
+
+> Para detalhes sobre organização e boas práticas, consulte [Persistência de Contexto IA](./copilot-diretrizes/persistencia_contexto_ia.md).
+
+---
 
 # Copilot Instructions
 
@@ -31,7 +46,7 @@ Todos os termos como "tema", "pendência", "checklist", "subprojeto" e "ata" dev
 3. Converter o plano de ação em checklist de entrega ao final, marcando cada item como concluído.
 4. Justificar se o checklist/plano será temporário ou persistente, conforme critérios do arcabouço.
 5. Registrar e referenciar artefatos persistentes em changelog e/ou índice de pendências.
-6. Para alterações no manifesto consolidado, NUNCA edite o arquivo diretamente: utilize o template `.github/TEMPLATE_ATUALIZACAO_MANIFESTO.md` e gere o manifesto a partir dele.
+6. Para alterações no manifesto consolidado, NUNCA edite o arquivo diretamente: utilize o template `.github/copilot-diretrizes/TEMPLATE_ATUALIZACAO_MANIFESTO.md` e gere o manifesto a partir dele.
 
 **Critérios para persistência:**
 - Complexidade, múltiplos agentes, decisões estratégicas, fluxos longos, dependências externas, impacto relevante ou solicitação do responsável.
@@ -125,18 +140,22 @@ copilot-instructions.md (índice central)
 │   └─ Manual minimificado para padronizar a redação do manifesto e artefatos.
 ├── .github/painel_subprojetos.md
 │   └─ Fonte única e oficial para status, pendências e checklists de subprojetos.
-├── .github/TEMPLATE_CHECKLIST.md
+├── .github/copilot-diretrizes/TEMPLATE_CHECKLIST.md
 │   └─ Template para criação de checklists genéricos.
-├── .github/TEMPLATE_CHECKLIST_ENTREGA.md
+├── .github/copilot-diretrizes/TEMPLATE_CHECKLIST_ENTREGA.md
 │   └─ Template para checklists de entrega vinculados a planos de ação.
-├── .github/TEMPLATE_PLANO_ACAO.md
+├── .github/copilot-diretrizes/TEMPLATE_PLANO_ACAO.md
 │   └─ Template para estruturação de planos de ação.
-├── .github/TEMPLATE_SUBPROJETO.md
+├── .github/copilot-diretrizes/TEMPLATE_SUBPROJETO.md
 │   └─ Template base para criação de novos subprojetos.
-├── .github/TEMPLATE_ATUALIZACAO_MANIFESTO.md
+├── .github/copilot-diretrizes/TEMPLATE_ATUALIZACAO_MANIFESTO.md
 │   └─ Template exclusivo para atualização do manifesto consolidado.
 ├── .github/copilot-diretrizes/TEMPLATE_ATA.md
 │   └─ Template para registro de atas de debates e reuniões.
+├── .github/copilot-diretrizes/checklist_execucao_venv_windows.md
+│   └─ Checklist para execução de scripts e venv no Windows.
+├── .github/copilot-diretrizes/persistencia_contexto_ia.md
+│   └─ Instruções IA-only sobre persistência de contexto e organização do repositório.
 └── .github/ia_conversas/TEMPLATE_CONVERSA_IA.md
 	└─ Template para conversas orquestradas entre agentes de IA.
 ```

@@ -34,7 +34,7 @@ Checklist:
 - Evitar duplicidade de artefatos
 
 ## 5. Bloco Padronizado
-Título: .github/TEMPLATE_PLANO_ACAO.md
+Título: .github/copilot-diretrizes/TEMPLATE_PLANO_ACAO.md
 Resumo: Template para planos de ação vinculados a pendências registradas
 Exemplo funcional:
 1. Analisar pendência

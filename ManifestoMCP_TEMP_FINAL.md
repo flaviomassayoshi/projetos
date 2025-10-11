@@ -1,6 +1,6 @@
 # AVISO IMPORTANTE
 
-Para instruções detalhadas de atualização, checklist MVP e critérios, consulte exclusivamente o template `.github/TEMPLATE_ATUALIZACAO_MANIFESTO.md` e o arcabouço em `.github/copilot-diretrizes/`. O manifesto consolidado não deve conter instruções operacionais ou fluxos de atualização: mantenha o foco em fluxos, exemplos, painéis e glossário.
+Para instruções detalhadas de atualização, checklist MVP e critérios, consulte exclusivamente o template `.github/copilot-diretrizes/TEMPLATE_ATUALIZACAO_MANIFESTO.md` e o arcabouço em `.github/copilot-diretrizes/`. O manifesto consolidado não deve conter instruções operacionais ou fluxos de atualização: mantenha o foco em fluxos, exemplos, painéis e glossário.
 
 # MANIFESTO CONSOLIDADO — SCARECROWLAB (MCP)
 
@@ -24,10 +24,11 @@ Para instruções detalhadas de atualização, checklist MVP e critérios, consu
 - .github/copilot-diretrizes/instrucoes_setup_CI.md
 - .github/copilot-diretrizes/diretrizes_debate.md
 - .github/copilot-diretrizes/fluxo_revisao_diretrizes.md
-- .github/TEMPLATE_ATUALIZACAO_MANIFESTO.md
-- .github/TEMPLATE_CHECKLIST.md
-- .github/TEMPLATE_CHECKLIST_ENTREGA.md
-- .github/TEMPLATE_PLANO_ACAO.md
+- .github/copilot-diretrizes/TEMPLATE_ATUALIZACAO_MANIFESTO.md
+- .github/copilot-diretrizes/TEMPLATE_CHECKLIST.md
+- .github/copilot-diretrizes/TEMPLATE_CHECKLIST_ENTREGA.md
+- .github/copilot-diretrizes/TEMPLATE_PLANO_ACAO.md
+- .github/copilot-diretrizes/TEMPLATE_SUBPROJETO.md
 - .github/ia_conversas/TEMPLATE_CONVERSA_IA.md
 - .github/painel_subprojetos.md
 - python_apps/validacao_ia_multimodelo/README.md
