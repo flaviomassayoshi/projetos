@@ -14,6 +14,7 @@ Com o aumento da orquestração entre agentes (MCP, GHC, humanos, bots), cresce 
 - Lista de responsabilidades típicas e exemplos por papel.
 - Mapeamento de artefatos principais e sua relação com cada papel.
 - Sugestão de como IAs podem usar esse mapa ao gerar ou consumir prompts e artefatos.
+- Governança automatizada por personas/roles especialistas com ciclos de auditoria e validação.
 
 ## Justificativa de Persistência
 Este subprojeto é de caráter estrutural e deve ser mantido permanentemente, sendo referência para automação, onboarding e revisão de fluxos.
@@ -21,6 +22,18 @@ Este subprojeto é de caráter estrutural e deve ser mantido permanentemente, se
 ## Relacionamento com o Arcabouço
 - Segue os templates e padrões documentados no arcabouço.
 - Deve ser referenciado no painel central de subprojetos e em diretrizes gerais.
+
+## Documentação Disponível
+
+### Debates e Atas
+- [Ata de Abertura](ATA_ABERTURA.md) — Registro inicial do subprojeto
+- [Governança Automatizada por Personas/Roles](debates/GOVERNANCA_PERSONAS_ROLES.md) — Documento de apoio detalhando ciclos, exemplos e templates
+
+### Referências Relacionadas
+- [Painel Central de Subprojetos](../painel_subprojetos.md)
+- [Protocolo de Orquestração IA](../copilot-diretrizes/protocolo_orquestracao_chat.md)
+- [Diretrizes de Debate](../copilot-diretrizes/diretrizes_debate.md)
+- [ATA Orquestração IA Arcabouço](../../automacao_tarefas_lab/ATA_ORQUESTRACAO_IA_ARCABOUCO.md)
 
 ---
 

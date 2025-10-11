@@ -17,6 +17,7 @@
 | avaliacao_engenharia_prompt | Em andamento | (definir) | (atualizar) |
 | extensoes_comandos_scarecrowlab | Em andamento | (definir) | (atualizar) |
 | framework_diretrizes_ia | Em andamento | (definir) | (atualizar) |
+| mapa_papeis_responsabilidades_ia | Em andamento | GitHub Copilot | 2025-10-11 |
 | reestruturacao_modularizacao_lab | Em andamento | (definir) | (atualizar) |
 | teste_serverless_bots_telegram | Em andamento | (definir) | (atualizar) |
 | python_apps/stable_diffusion_webui | Em andamento | (definir) | (atualizar) |
@@ -50,6 +51,32 @@
 
 ### framework_diretrizes_ia
 - [ ] [Checklist principal](../framework_diretrizes_ia/CHECKLIST.md): (descrever pendência, prioridade, impacto, critério de sucesso)
+
+### mapa_papeis_responsabilidades_ia
+
+**Status:** Em andamento
+
+**Últimas Atualizações (2025-10-11):**
+- [x] Estrutura inicial criada com README e ATA_ABERTURA
+- [x] Documento de governança automatizada por personas/roles criado
+- [x] Links e referências cruzadas estabelecidos
+
+**Próximas Pendências:**
+- [ ] Formalizar definição de cada persona/role com responsabilidades detalhadas
+    - Prioridade: Alta
+    - Impacto: Alto
+    - Critérios de sucesso: Documento estruturado com definições claras de Orquestrador, Executor, Auditor, Debatedor e Especialista Temático
+- [ ] Criar templates de auditoria para cada tipo de artefato
+    - Prioridade: Média
+    - Impacto: Alto
+- [ ] Implementar scripts de validação automatizada
+    - Prioridade: Média
+    - Impacto: Alto
+
+**Links Principais:**
+- [README](mapa_papeis_responsabilidades_ia/README.md)
+- [Ata de Abertura](mapa_papeis_responsabilidades_ia/ATA_ABERTURA.md)
+- [Governança por Personas/Roles](mapa_papeis_responsabilidades_ia/debates/GOVERNANCA_PERSONAS_ROLES.md)
 
 ### reestruturacao_modularizacao_lab
 
@@ -149,6 +176,7 @@
 | avaliacao_engenharia_prompt        | Em andamento   | 1                  | Média     | Médio   | [Checklist](../avaliacao_engenharia_prompt/CHECKLIST.md) | (definir)         | (atualizar)        |
 | extensoes_comandos_scarecrowlab    | Em andamento   | 1                  | Média     | Médio   | (Adicionar checklist se aplicável) | (definir)         | (atualizar)        |
 | framework_diretrizes_ia            | Em andamento   | 1                  | Alta      | Alto    | [Checklist](../framework_diretrizes_ia/CHECKLIST.md) | (definir)         | (atualizar)        |
+| mapa_papeis_responsabilidades_ia   | Em andamento   | 3                  | Alta      | Alto    | [README](mapa_papeis_responsabilidades_ia/README.md), [Ata Abertura](mapa_papeis_responsabilidades_ia/ATA_ABERTURA.md), [Governança Personas](mapa_papeis_responsabilidades_ia/debates/GOVERNANCA_PERSONAS_ROLES.md) | GitHub Copilot | 2025-10-11 |
 | reestruturacao_modularizacao_lab   | Em andamento (Fase 1 concluída) | 0 | Alta | Crítico | [README](../reestruturacao_modularizacao_lab/README.md), [Checklist Principal](../reestruturacao_modularizacao_lab/CHECKLIST.md), [Checklist Modularização](../reestruturacao_modularizacao_lab/checklists/CHECKLIST_MODULARIZACAO_ARTEFATOS_GLOBAIS.md), [Changelog](../reestruturacao_modularizacao_lab/CHANGELOG.md) | GitHub Copilot | 2025-10-10 |
 | teste_serverless_bots_telegram     | Em andamento   | 1                  | Média     | Médio   | [Checklist](../teste_serverless_bots_telegram/CHECKLIST.md) | (definir)         | (atualizar)        |
 | python_apps/stable_diffusion_webui | Em andamento   | 1                  | Média     | Médio   | (Adicionar checklist se aplicável) | (definir)         | (atualizar)        |
