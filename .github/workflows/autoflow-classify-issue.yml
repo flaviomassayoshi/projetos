@@ -90,20 +90,22 @@ jobs:
             }
             
             // Add comment
-            const comment = `## 🤖 Scarecrow AutoFlow - Classificação Automática
-
-**Categoria:** \`${category}\`  
-**Confiança:** ${confidence}%  
-**Justificativa:** ${justificativa}
-
----
-
-${category === 'auto-merge' ? '✅ Esta issue foi classificada para **aprovação automática**. Validação de conformidade será executada.' : ''}
-${category === 'needs-simulation' ? '🔄 Esta issue foi classificada para **simulação de decisão**. Um debate entre personas será realizado.' : ''}
-${category === 'manual-review' ? '👤 Esta issue foi classificada para **revisão manual**. Um mantenedor humano deverá avaliá-la.' : ''}
-${category === 'skip' ? '⏭️ Esta issue será **ignorada** pelo sistema de automação.' : ''}
-
-*Classificação automática v1.0 - Scarecrow AutoFlow*`;
+            const comment = [
+              '## 🤖 Scarecrow AutoFlow - Classificação Automática',
+              '',
+              `**Categoria:** \`${category}\`  `,
+              `**Confiança:** ${confidence}%  `,
+              `**Justificativa:** ${justificativa}`,
+              '',
+              '***',
+              '',
+              category === 'auto-merge' ? '✅ Esta issue foi classificada para **aprovação automática**. Validação de conformidade será executada.' : '',
+              category === 'needs-simulation' ? '🔄 Esta issue foi classificada para **simulação de decisão**. Um debate entre personas será realizado.' : '',
+              category === 'manual-review' ? '👤 Esta issue foi classificada para **revisão manual**. Um mantenedor humano deverá avaliá-la.' : '',
+              category === 'skip' ? '⏭️ Esta issue será **ignorada** pelo sistema de automação.' : '',
+              '',
+              '*Classificação automática v1.0 - Scarecrow AutoFlow*'
+            ].filter(Boolean).join('\n');
             
             await github.rest.issues.createComment({
               owner: context.repo.owner,
