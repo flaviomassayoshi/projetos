@@ -2,6 +2,7 @@
 
 **Objetivo:** Consolidar definições e siglas relevantes para agentes de IA no contexto do Copilot/ScarecrowLab.
 
+- **#lab**: Comando de verificação rápida de contexto persistente. Usado por humanos e agentes para confirmar que o contexto do repositório e arcabouço ScarecrowLab está carregado e ativo na sessão atual. Resposta padrão: "Entendido, contexto carregado!" (ver detalhes em `extensoes_comandos_scarecrowlab/README.md`).
 # Arcabouço: Conjunto estruturado de diretrizes, templates, anexos e regras que compõem a base normativa e operacional do ScarecrowLab. Inclui o arquivo central `copilot-instructions.md`, todos os anexos em `.github/copilot-diretrizes/` e documentos correlatos. É a única fonte da verdade para decisões, fluxos e padronizações do laboratório.
 
 - **Artefato persistente**: Qualquer plano, checklist, changelog, README ou documento que deve ser salvo e referenciado para rastreabilidade futura, conforme critérios definidos nas diretrizes.

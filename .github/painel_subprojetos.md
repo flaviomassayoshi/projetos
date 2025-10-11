@@ -48,7 +48,14 @@
 - [ ] [Checklist principal](../avaliacao_engenharia_prompt/CHECKLIST.md): (descrever pendência, prioridade, impacto, critério de sucesso)
 
 ### extensoes_comandos_scarecrowlab
-- [ ] (Adicionar checklist se aplicável): (descrever pendência, prioridade, impacto, critério de sucesso)
+
+**Última Atualização (2025-10-11):**
+- [x] Comando #lab documentado para verificação de contexto persistente
+- [x] README atualizado com sintaxe, comportamento e exemplos
+- [x] Integrado ao glossário e copilot-instructions.md
+
+**Próximas Pendências:**
+- [ ] Definir sintaxe para demais comandos customizados (/checklist, /ata, /aprovar, etc.)
 
 ### framework_diretrizes_ia
 - [ ] [Checklist principal](../framework_diretrizes_ia/CHECKLIST.md): (descrever pendência, prioridade, impacto, critério de sucesso)
@@ -175,7 +182,7 @@
 | automacao_manifesto                | Em andamento   | 1                  | Alta      | Alto    | [Checklist entrega](../automacao_manifesto/checklists/CHECKLIST_ENTREGA.md), [Checklist reformulação](../automacao_manifesto/checklists/CHECKLIST_REFORMULACAO.md) | (definir)         | (atualizar)        |
 | automacao_tarefas_lab              | Em andamento   | 1                  | Alta      | Alto    | [Checklist](../automacao_tarefas_lab/CHECKLIST.md) | flaviomassayoshi   | 2025-10-09         |
 | avaliacao_engenharia_prompt        | Em andamento   | 1                  | Média     | Médio   | [Checklist](../avaliacao_engenharia_prompt/CHECKLIST.md) | (definir)         | (atualizar)        |
-| extensoes_comandos_scarecrowlab    | Em andamento   | 1                  | Média     | Médio   | (Adicionar checklist se aplicável) | (definir)         | (atualizar)        |
+| extensoes_comandos_scarecrowlab    | Em andamento   | 0                  | Média     | Médio   | [README](../extensoes_comandos_scarecrowlab/README.md) | GitHub Copilot    | 2025-10-11         |
 | framework_diretrizes_ia            | Em andamento   | 1                  | Alta      | Alto    | [Checklist](../framework_diretrizes_ia/CHECKLIST.md) | (definir)         | (atualizar)        |
 | mapa_papeis_responsabilidades_ia   | Em andamento   | 3                  | Alta      | Alto    | [README](mapa_papeis_responsabilidades_ia/README.md), [Ata Abertura](mapa_papeis_responsabilidades_ia/ATA_ABERTURA.md), [Governança Personas](mapa_papeis_responsabilidades_ia/debates/GOVERNANCA_PERSONAS_ROLES.md) | GitHub Copilot | 2025-10-11 |
 | reestruturacao_modularizacao_lab   | Em andamento (Fase 1 concluída) | 0 | Alta | Crítico | [README](../reestruturacao_modularizacao_lab/README.md), [Checklist Principal](../reestruturacao_modularizacao_lab/CHECKLIST.md), [Checklist Modularização](../reestruturacao_modularizacao_lab/checklists/CHECKLIST_MODULARIZACAO_ARTEFATOS_GLOBAIS.md), [Changelog](../reestruturacao_modularizacao_lab/CHANGELOG.md) | GitHub Copilot | 2025-10-10 |

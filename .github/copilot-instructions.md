@@ -153,3 +153,20 @@ copilot-instructions.md (índice central)
 - Para debates, use as diretrizes de debate, o manual de conversas IA e o TEMPLATE_ATA.
 - Para governança e rastreabilidade de subprojetos, consulte o painel central.
 - Para criar checklists, planos de ação ou changelogs, use os templates correspondentes.
+
+---
+
+## Comandos Customizados
+
+### #lab — Verificação de Contexto Persistente
+
+**Uso:** `#lab`
+
+**Resposta esperada:** "Entendido, contexto carregado!"
+
+**Finalidade:** Comando de verificação rápida para confirmar que o contexto do repositório e arcabouço ScarecrowLab está ativo. Útil para:
+- Teste de persistência em conversas longas
+- Validação após reconexão
+- Checkpoint antes de tarefas complexas
+
+**Documentação completa:** Ver `extensoes_comandos_scarecrowlab/README.md` para detalhes de implementação e exemplos de resposta.

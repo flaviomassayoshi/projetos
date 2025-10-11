@@ -6,6 +6,49 @@ Desenvolver um sistema de @extensions e /commands customizados para ampliar, aut
 ## Motivação
 Permitir que usuários e agentes interajam com o laboratório de forma mais ágil, padronizada e automatizada, integrando comandos e extensões a bots, editores e sistemas externos.
 
+## Comandos Documentados
+
+### #lab — Verificação de Contexto Persistente
+
+**Objetivo:** Confirmar que o contexto do repositório e arcabouço está carregado e ativo na sessão atual.
+
+**Sintaxe:** `#lab`
+
+**Comportamento esperado:**
+- Reconhecido por agentes/automação como validação rápida de contexto ativo
+- Resposta padrão: "Entendido, contexto carregado!"
+- Pode incluir informações adicionais como:
+  - Confirmação de acesso ao arcabouço (copilot-instructions.md)
+  - Status de carregamento dos templates
+  - Referência ao painel central de subprojetos
+  - Última atualização do manifesto MCP
+
+**Casos de uso:**
+- Teste rápido de persistência do contexto em conversas longas
+- Validação de que o agente tem acesso às diretrizes do ScarecrowLab
+- Checkpoint antes de executar tarefas complexas
+- Verificação após reconexão ou início de nova sessão
+
+**Exemplo de resposta:**
+```
+Entendido, contexto carregado!
+
+✅ Arcabouço ScarecrowLab ativo
+✅ Acesso a copilot-instructions.md e anexos
+✅ Templates e glossário disponíveis
+✅ Painel central de subprojetos acessível
+📅 Manifesto MCP: última atualização disponível
+
+Pronto para executar tarefas conforme as diretrizes do laboratório.
+```
+
+**Implementação:**
+- Agentes automáticos devem reconhecer `#lab` como comando de verificação
+- Humanos podem usar `#lab` para confirmar que o contexto está ativo
+- IAs devem responder com confirmação padrão e informações complementares relevantes
+
+---
+
 ## Escopo Inicial
 - Definir sintaxe e arquitetura de comandos (/checklist, /ata, /aprovar, etc.)
 - Implementar protótipo de parser e executor de comandos
