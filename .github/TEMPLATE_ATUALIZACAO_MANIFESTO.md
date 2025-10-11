@@ -72,12 +72,18 @@ Exemplo:
 - validacao_ia_multimodelo
 - extensoes/xyz
 
+**Última atualização (2025-10-11):**
+- extensoes_comandos_scarecrowlab (adição do comando #lab)
+
 > O MCP/GHC deve validar e consumir informações diretamente do painel central de subprojetos. Caso algum subprojeto citado não esteja presente ou atualizado no painel, sinalizar pendência para revisão.
 
 > O painel central é a fonte única e oficial para status, pendências e checklists de subprojetos. Todos os manifestos e templates devem referenciá-lo para garantir rastreabilidade e atuação proativa.
 
 ### Impacto Esperado (opcional)
 Descreva brevemente o efeito da atualização sobre fluxos operacionais, decisões estratégicas ou automações do laboratório.
+
+**Última atualização (2025-10-11):**
+Comando #lab documentado para verificação rápida de contexto persistente. Facilita validação de que agentes MCP/GHC têm acesso ao arcabouço ScarecrowLab. Complementa o sistema de comandos customizados, permitindo teste de persistência de contexto em conversas longas ou após reconexões.
 
 ## Estrutura Recomendada do Manifesto Consolidado
 
@@ -124,6 +130,19 @@ Inclua apenas resumos, sínteses ou exemplos sintéticos dos templates relevante
 
 ### 11. Glossário Essencial
 (Atualize ou acrescente definições relevantes para o contexto do laboratório, priorizando termos usados no fluxo do MCP.)
+
+**Incluir sempre:**
+- **#lab**: Comando de verificação rápida de contexto persistente. Resposta padrão: "Entendido, contexto carregado!" (ver `extensoes_comandos_scarecrowlab/README.md`)
+- **Arcabouço**: Conjunto de diretrizes, templates e regras do laboratório.
+- **Artefato persistente**: Documento obrigatório para rastreabilidade (ex: checklist, changelog, ata).
+- **Checklist de entrega**: Lista de etapas executadas em uma interação.
+- **Changelog**: Registro de alterações, decisões e status final.
+- **Plano de ação**: Sequência de etapas para atingir um objetivo.
+- **Prompt de retomada**: Mensagem de continuidade após uma etapa.
+- **Subprojeto**: Iniciativa registrada com pasta própria.
+- **Painel central de subprojetos**: Fonte única para status, pendências e checklists.
+- **Debate**: Troca estruturada de argumentos entre IAs, com registro formal.
+- **Ata**: Registro incremental de decisões, argumentos e impasses.
 
 ### 12. Como o MCP Atua no ScarecrowLab
 (Explique o comportamento esperado do MCP, fluxo de execução, registro de ações e rastreabilidade.)
