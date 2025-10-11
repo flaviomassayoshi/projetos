@@ -27,6 +27,7 @@
 | extensoes/xyz | Em andamento | userY | 2025-10-07 |
 | validacao_ia_multimodelo | Concluído | userX | 2025-10-08 |
 | arcabouço_governanca | Em andamento | GitHub Copilot | 2025-10-10 |
+| orquestracao_issues_api | Em andamento | GitHub Copilot | 2025-10-11 |
 
 ---
 
@@ -157,6 +158,7 @@
 | agente-integrador                  | Em andamento   | 2                  | Alta      | Crítico | [Checklist principal](../agente-integrador/CHECKLIST.md), Revisar ata de 2025-10-12 (✔️), Atualizar README (⏳), Criar changelog (⏳), Vincular checklist (⏳) | flaviomassayoshi | 2025-10-09         |
 | extensoes/xyz                      | Em andamento   | 1                  | Média     | Médio   | [Checklist integração Z](../extensoes/xyz/CHECKLIST.md), Implementar integração Z (⏳), Revisar documentação (⏳) | userY            | 2025-10-07         |
 | validacao_ia_multimodelo           | Concluído      | 0                  | -         | -       | [Checklist de validação IA](../validacao_ia_multimodelo/CHECKLIST.md) (✔️) | userX            | 2025-10-08         |
+| orquestracao_issues_api            | Em andamento (Fase 1: 87,5% concluída) | 2 | Alta | Alto | [README](../orquestracao_issues_api/README.md), [Checklist Principal](../orquestracao_issues_api/CHECKLIST.md), [Changelog](../orquestracao_issues_api/CHANGELOG.md), [ATA Abertura](../orquestracao_issues_api/debates/ATA_ABERTURA.md) | GitHub Copilot | 2025-10-11 |
 
 ## Pendências Detalhadas
 
@@ -169,6 +171,39 @@
 - Pendência: Implementar integração Z
     - Contexto: Nova extensão aprovada
     - Critérios de sucesso: integração funcional, documentação revisada
+
+### orquestracao_issues_api
+
+**Status:** Fase 1 (Planejamento e Estruturação) 87,5% concluída
+
+**Últimas Atualizações (2025-10-11):**
+- [x] Avaliação formal de projetos/subprojetos existentes (sem conflitos identificados)
+- [x] Estrutura completa de diretórios criada (`debates/`, `checklists/`, `docs/`)
+- [x] README.md com sumário executivo, proposta vigente e integrações
+- [x] CHECKLIST.md estruturado em 7 fases (planejamento até evolução contínua)
+- [x] CHANGELOG.md com entrada inicial de criação
+- [x] ATA_ABERTURA.md documentando decisões e justificativas
+- [x] Documentação de avaliação de projetos existentes
+- [x] Atualização do painel central de subprojetos
+
+**Próximas Pendências:**
+- [ ] Validar rastreabilidade e links cruzados
+    - Pendência: Verificar todos os links entre artefatos e diretrizes
+    - Prioridade: Média
+    - Impacto: Médio
+    - Critérios de sucesso: Todos os links funcionais e bidirecionais
+- [ ] Iniciar Fase 2 (Definição de Requisitos)
+    - Pendência: Mapear casos de uso prioritários e especificar comandos
+    - Prioridade: Alta
+    - Impacto: Alto
+    - Critérios de sucesso: Casos de uso documentados, comandos especificados, requisitos de segurança definidos
+
+**Links Principais:**
+- [README](../orquestracao_issues_api/README.md)
+- [Checklist Principal](../orquestracao_issues_api/CHECKLIST.md)
+- [Changelog](../orquestracao_issues_api/CHANGELOG.md)
+- [ATA de Abertura](../orquestracao_issues_api/debates/ATA_ABERTURA.md)
+- [Avaliação de Projetos Existentes](../orquestracao_issues_api/docs/AVALIACAO_PROJETOS_EXISTENTES.md)
 
 ## Observação sobre PENDENCIAS.md
 - Recomenda-se migrar ou referenciar todas as pendências e checklists do arquivo `PENDENCIAS.md` para este painel central, tornando-o a única fonte de verdade para priorização e rastreabilidade. Após a migração, o arquivo pode ser removido para evitar redundância.
