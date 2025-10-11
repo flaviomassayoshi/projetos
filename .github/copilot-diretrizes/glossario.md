@@ -15,6 +15,7 @@
 - **Checklist temporário**: Lista de etapas ou tarefas criada para controle de uma interação ou entrega pontual, não rastreada como documento formal do projeto.
 - **Copilot Page**: Página de referência para agentes Copilot, consolidando diretrizes e contexto do laboratório.
 - **Critérios de persistência**: Fatores (complexidade, múltiplos agentes, impacto, etc.) que orientam a decisão de tornar um artefato persistente.
+- **Execução híbrida**: Modalidade de execução de demandas que combina automação (agentes de IA, bots, workflows) com intervenção humana, garantindo flexibilidade e governança. Comum em tarefas que requerem validação manual, decisões estratégicas ou expertise especializada ao longo do processo automatizado.
 - **GHB**: GitHub Copilot (Copilot tradicional, integrado ao GitHub e editores de código)
 - **Identidade ScarecrowLab**: Conjunto de elementos, padrões e práticas que caracterizam e diferenciam o laboratório, orientando padronização e documentação.
 - **Interação**: Todo o fluxo de execução do Copilot para uma resposta, iniciando quando o agente começa a processar a solicitação do usuário e encerrando ao concluir a resposta completa, liberando o usuário para um novo prompt.
