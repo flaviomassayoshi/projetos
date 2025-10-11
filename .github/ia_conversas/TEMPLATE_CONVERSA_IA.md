@@ -25,6 +25,7 @@
 - Mantenha o histórico completo, sem apagar mensagens anteriores.
 - Registre sempre contexto, tarefas, critérios de sucesso e referência, prompt detalhado (espaço para maiores informações, conteúdo de artefatos) quando aplicável.
 - **Todo registro de conversa deve estar alinhado ao protocolo oficial de orquestração (`copilot-diretrizes/protocolo_orquestracao_chat.md`). Em caso de atualização em qualquer um desses artefatos, revise ambos para garantir alinhamento e evitar divergências.**
+- **Cabeçalhos autossuficientes:** Todo prompt deve seguir a [Diretriz de Cabeçalhos Autossuficientes](../copilot-diretrizes/diretrizes_cabecalhos_autossuficientes.md). Valide com [Checklist de Validação](../copilot-diretrizes/CHECKLIST_VALIDACAO_CABECALHOS.md) antes de submeter.
 
 
 
@@ -38,35 +39,39 @@ Participantes:
 
 ---
 
-De: @orquestrador
-Para: @mcp
-@mcp: Atualizar checklist de entrega conforme instruções abaixo.
+**De:** @orquestrador  
+**Para:** @mcp
 
-Contexto:
-- Nova pendência identificada no subprojeto X.
+**Objetivo:** Atualizar checklist de entrega conforme instruções abaixo.
 
-Artefatos envolvidos:
-- Checklist, changelog, README
+**Contexto:**  
+Nova pendência identificada no subprojeto X. Nova decisão registrada em ata de 2025-10-08 exige atualização do fluxo.
 
-Subprojeto relacionado:
-- agente-integrador
+**Artefato(s)/Subprojeto(s):**
+- Checklist de entrega
+- Changelog  
+- README
+- Subprojeto: agente-integrador
 
-Tarefas:
-1. Criar checklist de entrega.
-2. Registrar changelog.
+**Tarefas:**
+1. Criar checklist de entrega
+2. Registrar changelog
+3. Vincular ao subprojeto no painel central
 
-Status atual da pendência:
-- Checklist não iniciado
+**Status atual da pendência:**  
+Checklist não iniciado
 
-Justificativa da ação:
-- Nova decisão registrada em ata, exige atualização do fluxo.
+**Critérios de Sucesso:**
+- [ ] Checklist criado e vinculado ao subprojeto
+- [ ] Changelog registrado
+- [ ] Painel central atualizado
 
-Critérios de sucesso:
-- Checklist criado e vinculado ao subprojeto.
-- Changelog registrado.
+**Referência:** debates/ata_debate_2025-10-08.md
 
-Links de referência:
-- ata_debate_2025-10-08.md
+---
+
+**Validação de Cabeçalho Autossuficiente:** ✅  
+(Checklist: Identificação ✓ | Objetivo ✓ | Contexto ✓ | Artefatos ✓ | Critérios ✓ | Referência ✓)
 
 ---
 
@@ -77,33 +82,32 @@ Checklist criado e changelog registrado conforme solicitado. Segue o conteúdo d
 ---
 
 **@orquestrador:**
-@mcp: Atualizar checklist de entrega conforme instruções abaixo.
 
-Contexto:
-- Nova pendência identificada no subprojeto X.
+**De:** @orquestrador  
+**Para:** @mcp
 
-Artefatos envolvidos:
-- Checklist, changelog, README
+**Objetivo:** Atualizar checklist de entrega conforme instruções abaixo.
 
-Subprojeto relacionado:
-- agente-integrador
+**Contexto:**  
+Nova pendência identificada no subprojeto X. Nova decisão registrada em ata de 2025-10-08 exige atualização do fluxo.
 
-Tarefas:
-1. Criar checklist de entrega.
-2. Registrar changelog.
+**Artefato(s)/Subprojeto(s):**
+- Checklist de entrega
+- Changelog  
+- README
+- Subprojeto: agente-integrador
 
-Status atual da pendência:
-- Checklist não iniciado
+**Tarefas:**
+1. Criar checklist de entrega
+2. Registrar changelog
+3. Vincular ao subprojeto no painel central
 
-Justificativa da ação:
-- Nova decisão registrada em ata, exige atualização do fluxo.
+**Critérios de Sucesso:**
+- [ ] Checklist criado e vinculado ao subprojeto
+- [ ] Changelog registrado
+- [ ] Painel central atualizado
 
-Critérios de sucesso:
-- Checklist criado e vinculado ao subprojeto.
-- Changelog registrado.
-
-Links de referência:
-- ata_debate_2025-10-08.md
+**Referência:** debates/ata_debate_2025-10-08.md
 
 **@mcp:**
 Checklist criado e changelog registrado conforme solicitado. Segue o conteúdo dos artefatos gerados/atualizados:

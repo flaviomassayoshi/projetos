@@ -16,6 +16,12 @@
 - [Template de Issue — Substituição de Manifesto](../ISSUE_TEMPLATE/substituicao_template_manifesto.md)
 	> Use este template para registrar, debater e rastrear solicitações de atualização do manifesto, distinguindo claramente entre issues do lab e issues do GitHub.
 
+## Diretrizes e Checklists
+- [Diretrizes para Cabeçalhos Autossuficientes](./diretrizes_cabecalhos_autossuficientes.md)  
+	> Diretriz obrigatória para garantir autossuficiência, rastreabilidade e clareza em prompts, issues e solicitações.
+- [Checklist de Validação de Cabeçalhos](./CHECKLIST_VALIDACAO_CABECALHOS.md)  
+	> Use este checklist antes de submeter qualquer prompt formal, issue orquestrada ou solicitação no laboratório.
+
 ## Exemplos práticos
 - [Checklists práticos](./checklists_praticos.md)
 - [Fluxos de encerramento, changelog e prompt de retomada](./fluxos_encerramento.md)

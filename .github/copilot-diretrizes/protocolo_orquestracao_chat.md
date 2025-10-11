@@ -37,19 +37,33 @@ Sempre que for necessário incluir artefatos (README, checklist, changelog, exem
 
 ### Template de Prompt para Orquestração Chat
 
-@<destinatário>: <ação ou instrução clara>
+**IMPORTANTE:** Todo prompt deve seguir a [Diretriz de Cabeçalhos Autossuficientes](./diretrizes_cabecalhos_autossuficientes.md). Use o [Checklist de Validação](./CHECKLIST_VALIDACAO_CABECALHOS.md) antes de submeter.
 
-Contexto:
-- (Resumo do objetivo, arquivos ou temas envolvidos)
+**Estrutura Padronizada:**
 
-Tarefas:
-1. (Descrever cada etapa de forma objetiva)
+```markdown
+**De:** @<remetente>  
+**Para:** @<destinatário>
+
+**Objetivo:** <Ação ou instrução clara>
+
+**Contexto:**  
+<Resumo do objetivo, motivação e situação>
+
+**Artefato(s)/Subprojeto(s):**
+- <Arquivos ou temas envolvidos>
+- <Subprojeto relacionado>
+
+**Tarefas:**
+1. <Descrever cada etapa de forma objetiva>
 2. ...
 
-Critérios de sucesso:
-- (Critérios claros para considerar a tarefa concluída)
+**Critérios de Sucesso:**
+- [ ] <Critério 1>
+- [ ] <Critério 2>
 
-Referência: (opcional, cite conversa, ata ou arquivo relevante)
+**Referência:** <Link para conversa, ata ou arquivo relevante>
+```
 
 
 ### Exemplo prático

@@ -236,5 +236,40 @@
 - [ATA de Abertura](../orquestracao_issues_api/debates/ATA_ABERTURA.md)
 - [Avaliação de Projetos Existentes](../orquestracao_issues_api/docs/AVALIACAO_PROJETOS_EXISTENTES.md)
 
+## Diretrizes Textuais — Governança e Rastreabilidade
+
+Esta seção concentra diretrizes e checklists relacionados à governança textual, comunicação e rastreabilidade no ScarecrowLab.
+
+### Cabeçalhos de Prompt Autossuficientes
+
+**Status:** Ativo  
+**Responsável:** Persona Revisora de Mudanças Textuais  
+**Última Atualização:** 2025-10-11
+
+**Descrição:**  
+Diretriz formal que estabelece padrão obrigatório para cabeçalhos de prompts, issues e solicitações no laboratório. Garante que qualquer destinatário compreenda a solicitação sem depender de histórico ou contexto externo.
+
+**Artefatos Principais:**
+- [Diretrizes para Cabeçalhos Autossuficientes](copilot-diretrizes/diretrizes_cabecalhos_autossuficientes.md)
+- [Checklist de Validação de Cabeçalhos](copilot-diretrizes/CHECKLIST_VALIDACAO_CABECALHOS.md)
+
+**Templates Atualizados:**
+- [Template de Conversa IA](ia_conversas/TEMPLATE_CONVERSA_IA.md) — Campo de validação adicionado
+- [Template de Issue Orquestrada](ISSUE_TEMPLATE/orchestrated-issue.md) — Seção de validação incluída
+
+**Critérios de Sucesso:**
+- [x] Diretriz formal criada e registrada
+- [x] Templates revisados e atualizados
+- [x] Checklist de validação criado
+- [x] Registro no painel central (esta seção)
+- [x] Integração com copilot-instructions.md e templates_index.md
+
+**Próximas Ações:**
+- [ ] Validar uso em cenários reais
+- [ ] Coletar feedback de agentes MCP/GHC
+- [ ] Implementar validação automatizada (opcional, futuro)
+
+---
+
 ## Observação sobre PENDENCIAS.md
 - Recomenda-se migrar ou referenciar todas as pendências e checklists do arquivo `PENDENCIAS.md` para este painel central, tornando-o a única fonte de verdade para priorização e rastreabilidade. Após a migração, o arquivo pode ser removido para evitar redundância.

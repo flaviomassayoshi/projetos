@@ -42,6 +42,7 @@ Detalhe critérios de aceitação, requisitos e resultados esperados.
 ## Checklist de Acompanhamento
 
 - [ ] Issue validada na triagem
+- [ ] Cabeçalho autossuficiente validado ([Checklist de Validação](../../copilot-diretrizes/CHECKLIST_VALIDACAO_CABECALHOS.md))
 - [ ] Responsável designado
 - [ ] Artefato atualizado/documentado
 - [ ] Comunicação de conclusão (comentário ou PR associado)
@@ -55,4 +56,18 @@ Espaço para comentários extras, links auxiliares, prints, logs ou qualquer dad
 
 ---
 
-> **Este template foi desenhado para uso por humanos e agentes, visando rastreabilidade, automação e padronização no ScarecrowLab.**
+## Validação de Cabeçalho Autossuficiente
+
+Esta issue segue a [Diretriz de Cabeçalhos Autossuficientes](../../copilot-diretrizes/diretrizes_cabecalhos_autossuficientes.md)?
+
+- [ ] Identificação clara (agente solicitante declarado)
+- [ ] Objetivo explícito (descrição clara da demanda)
+- [ ] Contexto mínimo (motivação e situação descritas)
+- [ ] Artefatos identificados (arquivos/subprojetos listados)
+- [ ] Critérios de sucesso (condições de conclusão definidas)
+- [ ] Referência presente (links para documentos relacionados, se aplicável)
+
+---
+
+> **Este template foi desenhado para uso por humanos e agentes, visando rastreabilidade, automação e padronização no ScarecrowLab.**  
+> Consulte a [Diretriz de Cabeçalhos Autossuficientes](../../copilot-diretrizes/diretrizes_cabecalhos_autossuficientes.md) e o [Checklist de Validação](../../copilot-diretrizes/CHECKLIST_VALIDACAO_CABECALHOS.md) antes de submeter.
