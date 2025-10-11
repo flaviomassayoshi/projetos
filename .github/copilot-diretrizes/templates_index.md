@@ -8,9 +8,13 @@
 - [Template de Checklist de Entrega](../TEMPLATE_CHECKLIST_ENTREGA.md)
 - [Template de Checklist](../TEMPLATE_CHECKLIST.md)
 - [Template de Changelog](./template_changelog.md)
+- [Template de Ata](./TEMPLATE_ATA.md)
+- [Template de Subprojeto](../TEMPLATE_SUBPROJETO.md)
 - [Template de Atualização do Manifesto](../TEMPLATE_ATUALIZACAO_MANIFESTO.md)  
 	> O manifesto consolidado NUNCA deve ser editado diretamente. Sempre gere a partir deste template.
 - [Template de Conversa IA](../ia_conversas/TEMPLATE_CONVERSA_IA.md)
+- [Template de Issue — Substituição de Manifesto](../ISSUE_TEMPLATE/substituicao_template_manifesto.md)
+	> Use este template para registrar, debater e rastrear solicitações de atualização do manifesto, distinguindo claramente entre issues do lab e issues do GitHub.
 
 ## Exemplos práticos
 - [Checklists práticos](./checklists_praticos.md)
