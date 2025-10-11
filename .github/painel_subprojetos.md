@@ -17,6 +17,7 @@
 | avaliacao_engenharia_prompt | Em andamento | (definir) | (atualizar) |
 | extensoes_comandos_scarecrowlab | Em andamento | (definir) | (atualizar) |
 | framework_diretrizes_ia | Em andamento | (definir) | (atualizar) |
+| mapa_papeis_responsabilidades_ia | Em andamento | GitHub Copilot | 2025-10-11 |
 | reestruturacao_modularizacao_lab | Em andamento | (definir) | (atualizar) |
 | teste_serverless_bots_telegram | Em andamento | (definir) | (atualizar) |
 | python_apps/stable_diffusion_webui | Em andamento | (definir) | (atualizar) |
@@ -27,6 +28,7 @@
 | extensoes/xyz | Em andamento | userY | 2025-10-07 |
 | validacao_ia_multimodelo | Concluído | userX | 2025-10-08 |
 | arcabouço_governanca | Em andamento | GitHub Copilot | 2025-10-10 |
+| orquestracao_issues_api | Em andamento | GitHub Copilot | 2025-10-11 |
 
 ---
 
@@ -57,6 +59,32 @@
 
 ### framework_diretrizes_ia
 - [ ] [Checklist principal](../framework_diretrizes_ia/CHECKLIST.md): (descrever pendência, prioridade, impacto, critério de sucesso)
+
+### mapa_papeis_responsabilidades_ia
+
+**Status:** Em andamento
+
+**Últimas Atualizações (2025-10-11):**
+- [x] Estrutura inicial criada com README e ATA_ABERTURA
+- [x] Documento de governança automatizada por personas/roles criado
+- [x] Links e referências cruzadas estabelecidos
+
+**Próximas Pendências:**
+- [ ] Formalizar definição de cada persona/role com responsabilidades detalhadas
+    - Prioridade: Alta
+    - Impacto: Alto
+    - Critérios de sucesso: Documento estruturado com definições claras de Orquestrador, Executor, Auditor, Debatedor e Especialista Temático
+- [ ] Criar templates de auditoria para cada tipo de artefato
+    - Prioridade: Média
+    - Impacto: Alto
+- [ ] Implementar scripts de validação automatizada
+    - Prioridade: Média
+    - Impacto: Alto
+
+**Links Principais:**
+- [README](mapa_papeis_responsabilidades_ia/README.md)
+- [Ata de Abertura](mapa_papeis_responsabilidades_ia/ATA_ABERTURA.md)
+- [Governança por Personas/Roles](mapa_papeis_responsabilidades_ia/debates/GOVERNANCA_PERSONAS_ROLES.md)
 
 ### reestruturacao_modularizacao_lab
 
@@ -156,6 +184,7 @@
 | avaliacao_engenharia_prompt        | Em andamento   | 1                  | Média     | Médio   | [Checklist](../avaliacao_engenharia_prompt/CHECKLIST.md) | (definir)         | (atualizar)        |
 | extensoes_comandos_scarecrowlab    | Em andamento   | 0                  | Média     | Médio   | [README](../extensoes_comandos_scarecrowlab/README.md) | GitHub Copilot    | 2025-10-11         |
 | framework_diretrizes_ia            | Em andamento   | 1                  | Alta      | Alto    | [Checklist](../framework_diretrizes_ia/CHECKLIST.md) | (definir)         | (atualizar)        |
+| mapa_papeis_responsabilidades_ia   | Em andamento   | 3                  | Alta      | Alto    | [README](mapa_papeis_responsabilidades_ia/README.md), [Ata Abertura](mapa_papeis_responsabilidades_ia/ATA_ABERTURA.md), [Governança Personas](mapa_papeis_responsabilidades_ia/debates/GOVERNANCA_PERSONAS_ROLES.md) | GitHub Copilot | 2025-10-11 |
 | reestruturacao_modularizacao_lab   | Em andamento (Fase 1 concluída) | 0 | Alta | Crítico | [README](../reestruturacao_modularizacao_lab/README.md), [Checklist Principal](../reestruturacao_modularizacao_lab/CHECKLIST.md), [Checklist Modularização](../reestruturacao_modularizacao_lab/checklists/CHECKLIST_MODULARIZACAO_ARTEFATOS_GLOBAIS.md), [Changelog](../reestruturacao_modularizacao_lab/CHANGELOG.md) | GitHub Copilot | 2025-10-10 |
 | teste_serverless_bots_telegram     | Em andamento   | 1                  | Média     | Médio   | [Checklist](../teste_serverless_bots_telegram/CHECKLIST.md) | (definir)         | (atualizar)        |
 | python_apps/stable_diffusion_webui | Em andamento   | 1                  | Média     | Médio   | (Adicionar checklist se aplicável) | (definir)         | (atualizar)        |
@@ -164,6 +193,7 @@
 | agente-integrador                  | Em andamento   | 2                  | Alta      | Crítico | [Checklist principal](../agente-integrador/CHECKLIST.md), Revisar ata de 2025-10-12 (✔️), Atualizar README (⏳), Criar changelog (⏳), Vincular checklist (⏳) | flaviomassayoshi | 2025-10-09         |
 | extensoes/xyz                      | Em andamento   | 1                  | Média     | Médio   | [Checklist integração Z](../extensoes/xyz/CHECKLIST.md), Implementar integração Z (⏳), Revisar documentação (⏳) | userY            | 2025-10-07         |
 | validacao_ia_multimodelo           | Concluído      | 0                  | -         | -       | [Checklist de validação IA](../validacao_ia_multimodelo/CHECKLIST.md) (✔️) | userX            | 2025-10-08         |
+| orquestracao_issues_api            | Em andamento (Fase 1 concluída) | 1 | Alta | Alto | [README](../orquestracao_issues_api/README.md), [Checklist Principal](../orquestracao_issues_api/CHECKLIST.md), [Changelog](../orquestracao_issues_api/CHANGELOG.md), [ATA Abertura](../orquestracao_issues_api/debates/ATA_ABERTURA.md) | GitHub Copilot | 2025-10-11 |
 
 ## Pendências Detalhadas
 
@@ -176,6 +206,35 @@
 - Pendência: Implementar integração Z
     - Contexto: Nova extensão aprovada
     - Critérios de sucesso: integração funcional, documentação revisada
+
+### orquestracao_issues_api
+
+**Status:** Fase 1 (Planejamento e Estruturação) 100% concluída
+
+**Últimas Atualizações (2025-10-11):**
+- [x] Avaliação formal de projetos/subprojetos existentes (sem conflitos identificados)
+- [x] Estrutura completa de diretórios criada (`debates/`, `checklists/`, `docs/`)
+- [x] README.md com sumário executivo, proposta vigente e integrações
+- [x] CHECKLIST.md estruturado em 7 fases (planejamento até evolução contínua)
+- [x] CHANGELOG.md com entrada inicial de criação
+- [x] ATA_ABERTURA.md documentando decisões e justificativas
+- [x] Documentação de avaliação de projetos existentes
+- [x] Atualização do painel central de subprojetos
+- [x] Validação de rastreabilidade e links cruzados (todos funcionais e bidirecionais)
+
+**Próximas Pendências:**
+- [ ] Iniciar Fase 2 (Definição de Requisitos)
+    - Pendência: Mapear casos de uso prioritários e especificar comandos
+    - Prioridade: Alta
+    - Impacto: Alto
+    - Critérios de sucesso: Casos de uso documentados, comandos especificados, requisitos de segurança definidos
+
+**Links Principais:**
+- [README](../orquestracao_issues_api/README.md)
+- [Checklist Principal](../orquestracao_issues_api/CHECKLIST.md)
+- [Changelog](../orquestracao_issues_api/CHANGELOG.md)
+- [ATA de Abertura](../orquestracao_issues_api/debates/ATA_ABERTURA.md)
+- [Avaliação de Projetos Existentes](../orquestracao_issues_api/docs/AVALIACAO_PROJETOS_EXISTENTES.md)
 
 ## Observação sobre PENDENCIAS.md
 - Recomenda-se migrar ou referenciar todas as pendências e checklists do arquivo `PENDENCIAS.md` para este painel central, tornando-o a única fonte de verdade para priorização e rastreabilidade. Após a migração, o arquivo pode ser removido para evitar redundância.
