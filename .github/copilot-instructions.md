@@ -123,6 +123,10 @@ copilot-instructions.md (índice central)
 │   └─ Manual para conversas entre IAs, comandos e histórico.
 ├── .github/copilot-diretrizes/manual_redacao_mcp.md
 │   └─ Manual minimificado para padronizar a redação do manifesto e artefatos.
+├── .github/copilot-diretrizes/diretrizes_cabecalhos_autossuficientes.md
+│   └─ Diretriz obrigatória para cabeçalhos autossuficientes em prompts, issues e solicitações.
+├── .github/copilot-diretrizes/CHECKLIST_VALIDACAO_CABECALHOS.md
+│   └─ Checklist de validação de autossuficiência de cabeçalhos antes de submissão.
 ├── .github/painel_subprojetos.md
 │   └─ Fonte única e oficial para status, pendências e checklists de subprojetos.
 ├── .github/TEMPLATE_CHECKLIST.md
@@ -135,6 +139,8 @@ copilot-instructions.md (índice central)
 │   └─ Template base para criação de novos subprojetos.
 ├── .github/TEMPLATE_ATUALIZACAO_MANIFESTO.md
 │   └─ Template exclusivo para atualização do manifesto consolidado.
+├── .github/TEMPLATE_PROMPT_PADRAO.md
+│   └─ Template para estruturação de prompts padronizados com instrução [gerar_guid] para rastreabilidade.
 ├── .github/copilot-diretrizes/TEMPLATE_ATA.md
 │   └─ Template para registro de atas de debates e reuniões.
 └── .github/ia_conversas/TEMPLATE_CONVERSA_IA.md
@@ -147,12 +153,14 @@ copilot-instructions.md (índice central)
 - Para execução de tarefas, siga o fluxo geral de agentes.
 - Para criação/gestão de subprojetos, consulte as diretrizes de subprojetos e use o TEMPLATE_SUBPROJETO.
 - Para prompts/orquestração, siga o protocolo de orquestração via chat.
+- Para garantir autossuficiência de prompts, consulte as diretrizes de cabeçalhos autossuficientes e use o checklist de validação.
 - Para automação, setup e CI, consulte instruções específicas.
 - Para revisão de diretrizes, siga o fluxo de revisão.
 - Para exemplos/templates, use o índice de templates e checklists práticos.
 - Para debates, use as diretrizes de debate, o manual de conversas IA e o TEMPLATE_ATA.
 - Para governança e rastreabilidade de subprojetos, consulte o painel central.
 - Para criar checklists, planos de ação ou changelogs, use os templates correspondentes.
+- Para criar prompts padronizados com rastreabilidade via GUID, use o TEMPLATE_PROMPT_PADRAO.
 
 ---
 
