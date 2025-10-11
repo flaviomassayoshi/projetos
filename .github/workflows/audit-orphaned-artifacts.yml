@@ -1,0 +1,81 @@
+name: Auditoria de Artefatos Órfãos
+
+on:
+  # Execução semanal às segundas-feiras às 9h UTC
+  schedule:
+    - cron: '0 9 * * 1'
+  
+  # Permite execução manual
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: 'Repositório (OWNER/REPO)'
+        required: false
+        default: 'flaviomassayoshi/ScarecrowLab'
+
+permissions:
+  contents: write
+  issues: read
+  pull-requests: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    name: Executar Auditoria
+    
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      
+      - name: Executar script de auditoria
+        id: audit
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd auditoria_artefatos_orfaos/scripts
+          python audit_orphaned_artifacts.py \
+            --repo ${{ github.event.inputs.repo || 'flaviomassayoshi/ScarecrowLab' }} \
+            --output ../relatorios/audit_report_${{ github.run_number }}.md
+          
+          # Mover relatório para pasta relatorios/
+          cd ..
+          ls -la relatorios/
+      
+      - name: Upload relatório como artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: audit-report-${{ github.run_number }}
+          path: auditoria_artefatos_orfaos/relatorios/audit_report_${{ github.run_number }}.md
+          retention-days: 90
+      
+      - name: Criar link para último relatório
+        run: |
+          cd auditoria_artefatos_orfaos/relatorios
+          cp audit_report_${{ github.run_number }}.md latest_report.md
+          ls -la
+      
+      - name: Commit relatório no repositório
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add auditoria_artefatos_orfaos/relatorios/
+          git diff --cached --quiet || git commit -m "Auditoria automática #${{ github.run_number }} - $(date +'%Y-%m-%d')"
+          git push
+        continue-on-error: true
+      
+      - name: Sumário da auditoria
+        run: |
+          echo "## 📊 Auditoria de Artefatos Órfãos Concluída" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Repositório:** ${{ github.event.inputs.repo || 'flaviomassayoshi/ScarecrowLab' }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Data/Hora:** $(date -u +'%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "**Run:** #${{ github.run_number }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Relatório salvo em \`auditoria_artefatos_orfaos/relatorios/audit_report_${{ github.run_number }}.md\`" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Baixe o relatório completo nos artifacts desta execução." >> $GITHUB_STEP_SUMMARY

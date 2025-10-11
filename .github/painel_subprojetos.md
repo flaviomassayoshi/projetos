@@ -29,6 +29,7 @@
 | validacao_ia_multimodelo | Concluído | userX | 2025-10-08 |
 | arcabouço_governanca | Em andamento | GitHub Copilot | 2025-10-10 |
 | orquestracao_issues_api | Em andamento | GitHub Copilot | 2025-10-11 |
+| auditoria_artefatos_orfaos | Em andamento | GitHub Copilot | 2025-10-11 |
 
 ---
 
@@ -194,6 +195,7 @@
 | extensoes/xyz                      | Em andamento   | 1                  | Média     | Médio   | [Checklist integração Z](../extensoes/xyz/CHECKLIST.md), Implementar integração Z (⏳), Revisar documentação (⏳) | userY            | 2025-10-07         |
 | validacao_ia_multimodelo           | Concluído      | 0                  | -         | -       | [Checklist de validação IA](../validacao_ia_multimodelo/CHECKLIST.md) (✔️) | userX            | 2025-10-08         |
 | orquestracao_issues_api            | Em andamento (Fase 1 concluída) | 1 | Alta | Alto | [README](../orquestracao_issues_api/README.md), [Checklist Principal](../orquestracao_issues_api/CHECKLIST.md), [Changelog](../orquestracao_issues_api/CHANGELOG.md), [ATA Abertura](../orquestracao_issues_api/debates/ATA_ABERTURA.md) | GitHub Copilot | 2025-10-11 |
+| auditoria_artefatos_orfaos         | Em andamento (Fases 1-4 concluídas) | 3 | Alta | Alto | [README](../auditoria_artefatos_orfaos/README.md), [Checklist Principal](../auditoria_artefatos_orfaos/CHECKLIST.md), [Changelog](../auditoria_artefatos_orfaos/CHANGELOG.md), [ATA Abertura](../auditoria_artefatos_orfaos/debates/ATA_ABERTURA.md), [Manual de Uso](../auditoria_artefatos_orfaos/docs/MANUAL_USO.md) | GitHub Copilot | 2025-10-11 |
 
 ## Pendências Detalhadas
 
@@ -235,6 +237,44 @@
 - [Changelog](../orquestracao_issues_api/CHANGELOG.md)
 - [ATA de Abertura](../orquestracao_issues_api/debates/ATA_ABERTURA.md)
 - [Avaliação de Projetos Existentes](../orquestracao_issues_api/docs/AVALIACAO_PROJETOS_EXISTENTES.md)
+
+### auditoria_artefatos_orfaos
+
+**Status:** Fases 1-4 concluídas. Fase 5 (Testes e Validação) pendente.
+
+**Últimas Atualizações (2025-10-11):**
+- [x] Estrutura completa do subprojeto criada (debates/, scripts/, docs/, relatorios/)
+- [x] README.md com sumário executivo, proposta vigente, escopo e justificativa
+- [x] CHECKLIST.md estruturado em 7 fases de implementação
+- [x] CHANGELOG.md com entrada inicial de criação
+- [x] ATA_ABERTURA.md documentando aprovação e decisões
+- [x] Script Python completo de auditoria (audit_orphaned_artifacts.py)
+- [x] Workflow GitHub Actions para execução periódica e manual
+- [x] Manual de uso completo (MANUAL_USO.md)
+- [x] Integração com painel central
+
+**Próximas Pendências:**
+- [ ] Testar script localmente
+    - Prioridade: Alta
+    - Impacto: Crítico
+    - Critérios de sucesso: Script executa sem erros, gera relatório válido
+- [ ] Testar workflow em branch de desenvolvimento
+    - Prioridade: Alta
+    - Impacto: Alto
+    - Critérios de sucesso: Workflow executa, artifacts gerados, relatórios versionados
+- [ ] Validar integração e rastreabilidade
+    - Prioridade: Média
+    - Impacto: Alto
+    - Critérios de sucesso: Links cruzados funcionais, painel atualizado
+
+**Links Principais:**
+- [README](../auditoria_artefatos_orfaos/README.md)
+- [Checklist Principal](../auditoria_artefatos_orfaos/CHECKLIST.md)
+- [Changelog](../auditoria_artefatos_orfaos/CHANGELOG.md)
+- [ATA de Abertura](../auditoria_artefatos_orfaos/debates/ATA_ABERTURA.md)
+- [Manual de Uso](../auditoria_artefatos_orfaos/docs/MANUAL_USO.md)
+- [Script de Auditoria](../auditoria_artefatos_orfaos/scripts/audit_orphaned_artifacts.py)
+- [Workflow GitHub Actions](../.github/workflows/audit-orphaned-artifacts.yml)
 
 ## Observação sobre PENDENCIAS.md
 - Recomenda-se migrar ou referenciar todas as pendências e checklists do arquivo `PENDENCIAS.md` para este painel central, tornando-o a única fonte de verdade para priorização e rastreabilidade. Após a migração, o arquivo pode ser removido para evitar redundância.
