@@ -1,38 +1,83 @@
+### scarecrow_autoflow
 
-# Painel Central de Subprojetos — ScarecrowLab
+**Status:** Em andamento (Fase 1 concluída, Fase 2 iniciada)
 
-> Fonte única e oficial para status, pendências e checklists de todos os subprojetos. Estrutura enxuta, sem duplicidades, para máxima rastreabilidade e leitura por agentes IA. Toda pendência deve estar vinculada a um subprojeto e checklist/ata.
+**Últimas Atualizações (2025-10-11):**
+- [x] Estrutura completa de diretórios criada (debates/, checklists/, docs/, scripts/, decisoes_automatizadas/)
+- [x] README.md com sumário executivo, proposta vigente, escopo e fluxo operacional
+- [x] CHECKLIST.md estruturado em 10 fases (estruturação até painel de governança)
+- [x] CHANGELOG.md inicializado
+- [x] ATA_ABERTURA.md registrando decisões iniciais e alinhamento com arcabouço
+- [x] Documentação técnica completa (critérios, regras, processos, guia de uso)
+- [x] Scripts core implementados (classificador.py, validador.py, simulador.py)
+- [x] GitHub Actions workflow básico criado (autoflow-classify-issue.yml)
+- [x] Sistema de logs estruturado (decisoes_automatizadas/)
 
-## Instruções
-- Atualize este painel sempre que houver mudança de status, pendência ou checklist em qualquer subprojeto.
-- Priorize pendências de acordo com prioridade/impacto e registre responsável e data.
-- Não duplique pendências: mantenha cada item apenas no bloco detalhado do subprojeto.
+**Próximas Pendências:**
+- [ ] Fase 3-5: Testar e refinar scripts core
+    - Prioridade: Alta
+    - Impacto: Crítico
+    - Critérios de sucesso: Scripts validados com casos reais, testes unitários implementados
+- [ ] Fase 6: Completar GitHub Actions workflows (PR, validação)
+    - Prioridade: Alta
+    - Impacto: Crítico
+    - Critérios de sucesso: Workflows funcionais para issues e PRs, auto-merge operacional
+- [ ] Fase 7: Implementar sistema completo de logs e rastreabilidade
+    - Prioridade: Média
+    - Impacto: Alto
+- [ ] Fase 8: Integração completa com painel central e outros subprojetos
+    - Prioridade: Média
+    - Impacto: Alto
+- [ ] Fase 9: Testes e validação com dados reais
+    - Prioridade: Média
+    - Impacto: Alto
+- [ ] Fase 10: Painel de governança com métricas (opcional)
+    - Prioridade: Baixa
+    - Impacto: Médio
 
-## Subprojetos
-| Subprojeto | Status | Responsável | Última Atualização |
-|------------|--------|-------------|--------------------|
-| ativacao_remota_ghc_web | Em andamento | (definir) | (atualizar) |
-| automacao_manifesto | Em andamento | (definir) | (atualizar) |
-| automacao_tarefas_lab | Em andamento | flaviomassayoshi | 2025-10-09 |
-| avaliacao_engenharia_prompt | Em andamento | (definir) | (atualizar) |
-| extensoes_comandos_scarecrowlab | Em andamento | (definir) | (atualizar) |
-| framework_diretrizes_ia | Em andamento | (definir) | (atualizar) |
-| mapa_papeis_responsabilidades_ia | Em andamento | GitHub Copilot | 2025-10-11 |
-| reestruturacao_modularizacao_lab | Em andamento | (definir) | (atualizar) |
-| teste_serverless_bots_telegram | Em andamento | (definir) | (atualizar) |
-| python_apps/stable_diffusion_webui | Em andamento | (definir) | (atualizar) |
-| python_apps/validacao_ia_multimodelo | Em andamento | (definir) | (atualizar) |
-| python_apps/viabilizacao_debate_multimodelo | Em andamento | (definir) | (atualizar) |
-| processamento_fragmentado | Em andamento | 1 | (definir) | 2025-10-10 |
-| agente-integrador | Em andamento | flaviomassayoshi | 2025-10-09 |
-| extensoes/xyz | Em andamento | userY | 2025-10-07 |
-| validacao_ia_multimodelo | Concluído | userX | 2025-10-08 |
-| arcabouço_governanca | Em andamento | GitHub Copilot | 2025-10-10 |
-| orquestracao_issues_api | Em andamento | GitHub Copilot | 2025-10-11 |
-| governanca_template_issue_lab | Concluído | GitHub Copilot | 2025-10-11 |
+**Links Principais:**
+- [README](../scarecrow_autoflow/README.md)
+- [Checklist Principal](../scarecrow_autoflow/CHECKLIST.md)
+- [Changelog](../scarecrow_autoflow/CHANGELOG.md)
+- [Ata de Abertura](../scarecrow_autoflow/debates/ATA_ABERTURA.md)
+- [Critérios de Classificação](../scarecrow_autoflow/docs/CRITERIOS_CLASSIFICACAO.md)
+- [Regras de Validação](../scarecrow_autoflow/docs/REGRAS_VALIDACAO.md)
+- [Processo de Simulação](../scarecrow_autoflow/docs/PROCESSO_SIMULACAO.md)
+- [Guia de Uso](../scarecrow_autoflow/docs/GUIA_USO.md)
 
----
+### governanca_template_issue_lab
 
+**Status:** Concluído ✅
+
+**Últimas Atualizações (2025-10-11):**
+- [x] Template oficial `.github/ISSUE_TEMPLATE/issue-lab.md` criado e validado
+- [x] Rodada 1 de debate simulado entre 7 personas (GovAgent, InfraAgent, DevAgent, DocAgent, TestAgent, PMAgent, Copilot)
+- [x] Análise de conformidade completa documentada
+- [x] Melhorias prioritárias implementadas (v1.1)
+- [x] Atas de abertura e final registradas
+- [x] Changelog criado
+- [x] Rastreabilidade completa garantida
+
+**Entregáveis:**
+- ✅ Template issue-lab.md v1.1 pronto para uso
+- ✅ Debate validado com consenso entre personas
+- ✅ Análise de conformidade com arcabouço
+- ✅ Roadmap de evolução (v1.2 futuro)
+
+**Próximas Ações (Pós-Conclusão):**
+- [ ] Criar issue de exemplo usando o template
+- [ ] Coletar feedback de uso inicial (4-6 semanas)
+- [ ] Avaliar melhorias para v1.2 baseadas em feedback real
+
+**Links Principais:**
+- [README](../governanca_template_issue_lab/README.md)
+- [Checklist Principal](../governanca_template_issue_lab/CHECKLIST.md)
+- [Changelog](../governanca_template_issue_lab/CHANGELOG.md)
+- [Ata de Abertura](../governanca_template_issue_lab/debates/ATA_ABERTURA.md)
+- [Debate Rodada 1](../governanca_template_issue_lab/debates/DEBATE_RODADA_1.md)
+- [Ata Final](../governanca_template_issue_lab/debates/ATA_FINAL.md)
+- [Análise de Conformidade](../governanca_template_issue_lab/docs/ANALISE_CONFORMIDADE.md)
+- [Template Aprovado](../ISSUE_TEMPLATE/issue-lab.md)
 ## Pendências Detalhadas por Subprojeto
 
 ### ativacao_remota_ghc_web
@@ -237,87 +282,6 @@
 - [Changelog](../orquestracao_issues_api/CHANGELOG.md)
 - [ATA de Abertura](../orquestracao_issues_api/debates/ATA_ABERTURA.md)
 - [Avaliação de Projetos Existentes](../orquestracao_issues_api/docs/AVALIACAO_PROJETOS_EXISTENTES.md)
-
-### scarecrow_autoflow
-
-**Status:** Em andamento (Fase 1 concluída, Fase 2 iniciada)
-
-**Últimas Atualizações (2025-10-11):**
-- [x] Estrutura completa de diretórios criada (debates/, checklists/, docs/, scripts/, decisoes_automatizadas/)
-- [x] README.md com sumário executivo, proposta vigente, escopo e fluxo operacional
-- [x] CHECKLIST.md estruturado em 10 fases (estruturação até painel de governança)
-- [x] CHANGELOG.md inicializado
-- [x] ATA_ABERTURA.md registrando decisões iniciais e alinhamento com arcabouço
-- [x] Documentação técnica completa (critérios, regras, processos, guia de uso)
-- [x] Scripts core implementados (classificador.py, validador.py, simulador.py)
-- [x] GitHub Actions workflow básico criado (autoflow-classify-issue.yml)
-- [x] Sistema de logs estruturado (decisoes_automatizadas/)
-
-**Próximas Pendências:**
-- [ ] Fase 3-5: Testar e refinar scripts core
-    - Prioridade: Alta
-    - Impacto: Crítico
-    - Critérios de sucesso: Scripts validados com casos reais, testes unitários implementados
-- [ ] Fase 6: Completar GitHub Actions workflows (PR, validação)
-    - Prioridade: Alta
-    - Impacto: Crítico
-    - Critérios de sucesso: Workflows funcionais para issues e PRs, auto-merge operacional
-- [ ] Fase 7: Implementar sistema completo de logs e rastreabilidade
-    - Prioridade: Média
-    - Impacto: Alto
-- [ ] Fase 8: Integração completa com painel central e outros subprojetos
-    - Prioridade: Média
-    - Impacto: Alto
-- [ ] Fase 9: Testes e validação com dados reais
-    - Prioridade: Média
-    - Impacto: Alto
-- [ ] Fase 10: Painel de governança com métricas (opcional)
-    - Prioridade: Baixa
-    - Impacto: Médio
-
-**Links Principais:**
-- [README](../scarecrow_autoflow/README.md)
-- [Checklist Principal](../scarecrow_autoflow/CHECKLIST.md)
-- [Changelog](../scarecrow_autoflow/CHANGELOG.md)
-- [Ata de Abertura](../scarecrow_autoflow/debates/ATA_ABERTURA.md)
-- [Critérios de Classificação](../scarecrow_autoflow/docs/CRITERIOS_CLASSIFICACAO.md)
-- [Regras de Validação](../scarecrow_autoflow/docs/REGRAS_VALIDACAO.md)
-- [Processo de Simulação](../scarecrow_autoflow/docs/PROCESSO_SIMULACAO.md)
-- [Guia de Uso](../scarecrow_autoflow/docs/GUIA_USO.md)
-
-### governanca_template_issue_lab
-
-**Status:** Concluído ✅
-
-**Últimas Atualizações (2025-10-11):**
-- [x] Template oficial `.github/ISSUE_TEMPLATE/issue-lab.md` criado e validado
-- [x] Rodada 1 de debate simulado entre 7 personas (GovAgent, InfraAgent, DevAgent, DocAgent, TestAgent, PMAgent, Copilot)
-- [x] Análise de conformidade completa documentada
-- [x] Melhorias prioritárias implementadas (v1.1)
-- [x] Atas de abertura e final registradas
-- [x] Changelog criado
-- [x] Rastreabilidade completa garantida
-
-**Entregáveis:**
-- ✅ Template issue-lab.md v1.1 pronto para uso
-- ✅ Debate validado com consenso entre personas
-- ✅ Análise de conformidade com arcabouço
-- ✅ Roadmap de evolução (v1.2 futuro)
-
-**Próximas Ações (Pós-Conclusão):**
-- [ ] Criar issue de exemplo usando o template
-- [ ] Coletar feedback de uso inicial (4-6 semanas)
-- [ ] Avaliar melhorias para v1.2 baseadas em feedback real
-
-**Links Principais:**
-- [README](../governanca_template_issue_lab/README.md)
-- [Checklist Principal](../governanca_template_issue_lab/CHECKLIST.md)
-- [Changelog](../governanca_template_issue_lab/CHANGELOG.md)
-- [Ata de Abertura](../governanca_template_issue_lab/debates/ATA_ABERTURA.md)
-- [Debate Rodada 1](../governanca_template_issue_lab/debates/DEBATE_RODADA_1.md)
-- [Ata Final](../governanca_template_issue_lab/debates/ATA_FINAL.md)
-- [Análise de Conformidade](../governanca_template_issue_lab/docs/ANALISE_CONFORMIDADE.md)
-- [Template Aprovado](../ISSUE_TEMPLATE/issue-lab.md)
 
 ## Observação sobre PENDENCIAS.md
 - Recomenda-se migrar ou referenciar todas as pendências e checklists do arquivo `PENDENCIAS.md` para este painel central, tornando-o a única fonte de verdade para priorização e rastreabilidade. Após a migração, o arquivo pode ser removido para evitar redundância.

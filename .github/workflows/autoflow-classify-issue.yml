@@ -127,7 +127,7 @@ ${category === 'skip' ? '⏭️ Esta issue será **ignorada** pelo sistema de au
           **Data:** $(date -u +%Y-%m-%dT%H:%M:%SZ)  
           **Versão do Sistema:** 1.0
 
-          ---
+          ***
 
           ## Resultado da Classificação
 
@@ -135,7 +135,7 @@ ${category === 'skip' ? '⏭️ Esta issue será **ignorada** pelo sistema de au
           ${{ steps.classify.outputs.result }}
           ```
 
-          ---
+          ***
 
           **Link:** ${{ github.event.issue.html_url }}  
           **Log gerado por:** Scarecrow AutoFlow v1.0
